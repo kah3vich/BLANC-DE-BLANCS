@@ -4,71 +4,75 @@
 
 @@include('components/_header.pug')
 
-.index
+section.ind-header 
+    .ind-header__contact
+        a(href="https://www.instagram.com/").ind-header__inst instagram
+        a(href="tel:+74956659242").ind-header__phone 
+            img(src="./svg/index/phone.svg" alt="icons")
+            p +7 (495) 665-92-42
+    .ind-header__slider
+        .swiper.indexHeader
+            .swiper-wrapper
+                .swiper-slide 
+                    .ind-header__slider-items 
+                        .ind-header__slider-bg 
+                            img(src="./img/index/slide-1.png" alt="img")
+                        .ind-header__slider-info
+                            .ind-header__slider-title BLANC DE BLANCS
+                            .ind-header__slider-text Французский ресторан
+                            button.ind-header__slider-btn Подробнее
+                .swiper-slide 
+                    .ind-header__slider-items 
+                        .ind-header__slider-bg 
+                            img(src="./img/index/slide-1.png" alt="img")
+                        .ind-header__slider-info
+                            .ind-header__slider-title BLANC DE BLANCS
+                            .ind-header__slider-text Французский ресторан
+                            button.ind-header__slider-btn Подробнее
+                .swiper-slide 
+                    .ind-header__slider-items 
+                        .ind-header__slider-bg 
+                            img(src="./img/index/slide-1.png" alt="img")
+                        .ind-header__slider-info
+                            .ind-header__slider-title BLANC DE BLANCS
+                            .ind-header__slider-text Французский ресторан
+                            button.ind-header__slider-btn Подробнее
+                .swiper-slide 
+                    .ind-header__slider-items 
+                        .ind-header__slider-bg 
+                            img(src="./img/index/slide-1.png" alt="img")
+                        .ind-header__slider-info
+                            .ind-header__slider-title BLANC DE BLANCS
+                            .ind-header__slider-text Французский ресторан
+                            button.ind-header__slider-btn Подробнее
+                .swiper-slide 
+                    .ind-header__slider-items 
+                        .ind-header__slider-bg 
+                            img(src="./img/index/slide-1.png" alt="img")
+                        .ind-header__slider-info
+                            .ind-header__slider-title BLANC DE BLANCS
+                            .ind-header__slider-text Французский ресторан
+                            button.ind-header__slider-btn Подробнее
+                .swiper-slide 
+                    .ind-header__slider-items 
+                        .ind-header__slider-bg 
+                            img(src="./img/index/slide-1.png" alt="img")
+                        .ind-header__slider-info
+                            .ind-header__slider-title BLANC DE BLANCS
+                            .ind-header__slider-text Французский ресторан
+                            button.ind-header__slider-btn Подробнее
+        .swiper-controls 
+            .swiper-button-next
+                img(src="./svg/index/arrow-next-slide.svg" alt="arrow")
+            .swiper-button-prev
+                img(src="./svg/index/arrow-prev-slide.svg" alt="arrow")
+            .swiper-pagination
 
-    section.ind-header 
-        .ind-header__contact
-            a(href="https://www.instagram.com/").ind-header__inst instagram
-            a(href="tel:+74956659242").ind-header__phone 
-                img(src="./svg/index/phone.svg" alt="icons")
-                p +7 (495) 665-92-42
-        .ind-header__slider
-            .swiper.indexHeader
-                .swiper-wrapper
-                    .swiper-slide 
-                        .ind-header__slider-items 
-                            .ind-header__slider-bg 
-                                img(src="./img/index/slide-1.png" alt="img")
-                            .ind-header__slider-info
-                                .ind-header__slider-title BLANC DE BLANCS
-                                .ind-header__slider-text Французский ресторан
-                                button.ind-header__slider-btn Подробнее
-                    .swiper-slide 
-                        .ind-header__slider-items 
-                            .ind-header__slider-bg 
-                                img(src="./img/index/slide-1.png" alt="img")
-                            .ind-header__slider-info
-                                .ind-header__slider-title BLANC DE BLANCS
-                                .ind-header__slider-text Французский ресторан
-                                button.ind-header__slider-btn Подробнее
-                    .swiper-slide 
-                        .ind-header__slider-items 
-                            .ind-header__slider-bg 
-                                img(src="./img/index/slide-1.png" alt="img")
-                            .ind-header__slider-info
-                                .ind-header__slider-title BLANC DE BLANCS
-                                .ind-header__slider-text Французский ресторан
-                                button.ind-header__slider-btn Подробнее
-                    .swiper-slide 
-                        .ind-header__slider-items 
-                            .ind-header__slider-bg 
-                                img(src="./img/index/slide-1.png" alt="img")
-                            .ind-header__slider-info
-                                .ind-header__slider-title BLANC DE BLANCS
-                                .ind-header__slider-text Французский ресторан
-                                button.ind-header__slider-btn Подробнее
-                    .swiper-slide 
-                        .ind-header__slider-items 
-                            .ind-header__slider-bg 
-                                img(src="./img/index/slide-1.png" alt="img")
-                            .ind-header__slider-info
-                                .ind-header__slider-title BLANC DE BLANCS
-                                .ind-header__slider-text Французский ресторан
-                                button.ind-header__slider-btn Подробнее
-                    .swiper-slide 
-                        .ind-header__slider-items 
-                            .ind-header__slider-bg 
-                                img(src="./img/index/slide-1.png" alt="img")
-                            .ind-header__slider-info
-                                .ind-header__slider-title BLANC DE BLANCS
-                                .ind-header__slider-text Французский ресторан
-                                button.ind-header__slider-btn Подробнее
-            .swiper-controls 
-                .swiper-button-next
-                    img(src="./svg/index/arrow-next-slide.svg" alt="arrow")
-                .swiper-button-prev
-                    img(src="./svg/index/arrow-prev-slide.svg" alt="arrow")
-                .swiper-pagination
+
+.index
+    img(class="index__bg" src="./img/bg-right.png" alt="img")
+    img(class="index__bg" src="./img/bg-left.png" alt="img")
+    img(class="index__bg" src="./img/bg-right.png" alt="img")
 
     section.ind-slider 
         .containers 
