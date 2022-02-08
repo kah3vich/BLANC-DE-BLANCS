@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css?_v=20220208173453" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20220208173453" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.4/swiper-bundle.min.css?_v=20220208173453" integrity="sha512-V5B6OaBftIs7Kx8BBx7n2W42FpHP7MiXmDaKWTBdCsnStyS3gVYuA30kG6oABmh8uayFJDsfl2hCywak1eKE2w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.4/swiper-bundle.min.js?_v=20220208173453" integrity="sha512-ztZ7m9gYJmuwemu0TmAp9QDuhFhOYbbIoN6iIKMi5ay88l8U5tkt5OOlA/fP8DI/p/OphEY7QIbuoDQKpVvf7w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="css/style.min.css?_v=20220208173453">
+</html>
+<body></body>
+<header class="header"> 
+  <div class="header__lines">
+    <div class="header__line"> </div>
+    <div class="header__line"></div>
+  </div>
+  <div class="header__btns"><a class="header__order" href="#"> 
+      <h3>Корзина</h3><img src="./svg/header/basket.svg" alt="icons">
+      <p>0</p></a><a class="header__basket" href="#"> 
+      <h3>Заказать столик</h3><img src="./svg/header/notif.svg" alt="icons"></a></div>
+  <div class="containers"> 
+    <div class="header__menu"> <img src="./svg/header/menu.svg" alt="menu"></div>
+    <div class="header__lang"> 
+      <select class="js-select-langs" name="lang" style="display: none">
+        <option value="default" selected="">EN</option>
+        <option value="RU">RU</option>
+        <option value="UK">UK</option>
+        <option value="EN">EN</option>
+        <option value="RU">RU</option>
+        <option value="UK">UK</option>
+      </select>
+    </div><a class="header__logo" href="/"> <img src="./svg/header/header-logo.svg" alt="logo"></a>
+    <div class="header__circle"></div>
+  </div>
+</header>
+<div class="bar"> <picture><source srcset="./img/bg-right.webp" type="image/webp"><img class="bar__bg" src="./img/bg-right.png" alt="img"></picture>
+  <div class="bar-block"> 
+    <div class="bar-block__bg"></div>
+    <div class="bar-block__containers"> 
+      <div class="bar-block__title">Барная карта</div>
+      <div class="bar-block__filter"> 
+        <h3>Найди свой напиток:</h3>
+        <div class="bar-block__wrappers"> 
+          <div class="bar-block__filter-catalog"> 
+            <select class="cart-select" name="cart" style="display: none">
+              <option>Все категории</option>
+              <option value="default" selected="">Новые</option>
+              <option value="price_desc">Цена уменьшение</option>
+              <option value="price_desc">Цена уменьшение</option>
+              <option value="price_desc">Цена уменьшение</option>
+              <option value="price_desc">Цена уменьшение</option>
+              <option value="price_desc">Цена уменьшение</option>
+              <option value="price_desc">Цена уменьшение</option>
+              <option value="price_desc">Цена уменьшение</option>
+            </select>
+          </div>
+          <div class="bar-block__filter-country">
+            <select class="cart-select" name="cart" style="display: none">
+              <option>Италия</option>
+              <option value="default" selected="">Новые</option>
+              <option value="price_desc">Цена уменьшение</option>
+              <option value="price_desc">Цена уменьшение</option>
+              <option value="price_desc">Цена уменьшение</option>
+              <option value="price_desc">Цена уменьшение</option>
+              <option value="price_desc">Цена уменьшение</option>
+              <option value="price_desc">Цена уменьшение</option>
+              <option value="price_desc">Цена уменьшение</option>
+            </select>
+          </div>
+          <div class="bar-block__filter-fortress">
+            <select class="cart-select" name="cart" style="display: none">
+              <option>Крепость 14%</option>
+              <option value="default" selected="">Новые</option>
+              <option value="price_desc">Цена уменьшение</option>
+              <option value="price_desc">Цена уменьшение</option>
+              <option value="price_desc">Цена уменьшение</option>
+              <option value="price_desc">Цена уменьшение</option>
+              <option value="price_desc">Цена уменьшение</option>
+              <option value="price_desc">Цена уменьшение</option>
+              <option value="price_desc">Цена уменьшение</option>
+            </select>
+          </div>
+          <div class="bar-block__filter-search"> 
+            <input type="text" placeholder="Найти напиток" value="">
+            <button class="bar-block__filter-search-btn"></button>
+          </div>
+          <div class="bar-block__filter-reset"><img src="./svg/bar/close.svg" alt="close">
+            <p>Сбросить</p>
+          </div>
+        </div>
+      </div>
+      <div class="bar-block__list"> <a class="bar-block__items bar-block__items-v" href="#">
+          <div class="bar-block__items-title">
+            <h3>Jack Daniels</h3>
+            <div class="bar-block__items-price"> 
+              <p>1200 руб</p>
+            </div>
+          </div>
+          <div class="bar-block__items-img"> <picture><source srcset="./img/bar/items.webp" type="image/webp"><img src="./img/bar/items.png" alt="img"></picture></div>
+          <div class="bar-block__items-new"> <picture><source srcset="./img/bar/new.webp" type="image/webp"><img src="./img/bar/new.png" alt="icons"></picture></div></a><a class="bar-block__items bar-block__items-v" href="#">
+          <div class="bar-block__items-title">
+            <h3>Jack Daniels</h3>
+            <div class="bar-block__items-price"> 
+              <p>1200 руб</p>
+            </div>
+          </div>
+          <div class="bar-block__items-img"> <picture><source srcset="./img/bar/items.webp" type="image/webp"><img src="./img/bar/items.png" alt="img"></picture></div>
+          <div class="bar-block__items-new"> <picture><source srcset="./img/bar/new.webp" type="image/webp"><img src="./img/bar/new.png" alt="icons"></picture></div></a><a class="bar-block__items bar-block__items-v" href="#">
+          <div class="bar-block__items-title">
+            <h3>Jack Daniels</h3>
+            <div class="bar-block__items-price"> 
+              <p>1200 руб</p>
+            </div>
+          </div>
+          <div class="bar-block__items-img"> <picture><source srcset="./img/bar/items.webp" type="image/webp"><img src="./img/bar/items.png" alt="img"></picture></div>
+          <div class="bar-block__items-new"> <picture><source srcset="./img/bar/new.webp" type="image/webp"><img src="./img/bar/new.png" alt="icons"></picture></div></a><a class="bar-block__items bar-block__items-v" href="#">
+          <div class="bar-block__items-title">
+            <h3>Jack Daniels</h3>
+            <div class="bar-block__items-price"> 
+              <p>1200 руб</p>
+            </div>
+          </div>
+          <div class="bar-block__items-img"> <picture><source srcset="./img/bar/items.webp" type="image/webp"><img src="./img/bar/items.png" alt="img"></picture></div>
+          <div class="bar-block__items-new"> <picture><source srcset="./img/bar/new.webp" type="image/webp"><img src="./img/bar/new.png" alt="icons"></picture></div></a><a class="bar-block__items bar-block__items-v" href="#">
+          <div class="bar-block__items-title">
+            <h3>Jack Daniels</h3>
+            <div class="bar-block__items-price"> 
+              <p>1200 руб</p>
+            </div>
+          </div>
+          <div class="bar-block__items-img"> <picture><source srcset="./img/bar/items.webp" type="image/webp"><img src="./img/bar/items.png" alt="img"></picture></div>
+          <div class="bar-block__items-new"> <picture><source srcset="./img/bar/new.webp" type="image/webp"><img src="./img/bar/new.png" alt="icons"></picture></div></a><a class="bar-block__items bar-block__items-v" href="#">
+          <div class="bar-block__items-title">
+            <h3>Jack Daniels</h3>
+            <div class="bar-block__items-price"> 
+              <p>1200 руб</p>
+            </div>
+          </div>
+          <div class="bar-block__items-img"> <picture><source srcset="./img/bar/items.webp" type="image/webp"><img src="./img/bar/items.png" alt="img"></picture></div>
+          <div class="bar-block__items-new"> <picture><source srcset="./img/bar/new.webp" type="image/webp"><img src="./img/bar/new.png" alt="icons"></picture></div></a><a class="bar-block__items bar-block__items-v" href="#">
+          <div class="bar-block__items-title">
+            <h3>Jack Daniels</h3>
+            <div class="bar-block__items-price"> 
+              <p>1200 руб</p>
+            </div>
+          </div>
+          <div class="bar-block__items-img"> <picture><source srcset="./img/bar/items.webp" type="image/webp"><img src="./img/bar/items.png" alt="img"></picture></div>
+          <div class="bar-block__items-new"> <picture><source srcset="./img/bar/new.webp" type="image/webp"><img src="./img/bar/new.png" alt="icons"></picture></div></a><a class="bar-block__items bar-block__items-v" href="#">
+          <div class="bar-block__items-title">
+            <h3>Jack Daniels</h3>
+            <div class="bar-block__items-price"> 
+              <p>1200 руб</p>
+            </div>
+          </div>
+          <div class="bar-block__items-img"> <picture><source srcset="./img/bar/items.webp" type="image/webp"><img src="./img/bar/items.png" alt="img"></picture></div>
+          <div class="bar-block__items-new"> <picture><source srcset="./img/bar/new.webp" type="image/webp"><img src="./img/bar/new.png" alt="icons"></picture></div></a><a class="bar-block__items" href="#">
+          <div class="bar-block__items-title">
+            <h3>Jack Daniels</h3>
+            <div class="bar-block__items-price"> 
+              <p>1200 руб</p>
+            </div>
+          </div>
+          <div class="bar-block__items-img"> <picture><source srcset="./img/bar/items.webp" type="image/webp"><img src="./img/bar/items.png" alt="img"></picture></div>
+          <div class="bar-block__items-new"> <picture><source srcset="./img/bar/new.webp" type="image/webp"><img src="./img/bar/new.png" alt="icons"></picture></div></a><a class="bar-block__items" href="#">
+          <div class="bar-block__items-title">
+            <h3>Jack Daniels</h3>
+            <div class="bar-block__items-price"> 
+              <p>1200 руб</p>
+            </div>
+          </div>
+          <div class="bar-block__items-img"> <picture><source srcset="./img/bar/items.webp" type="image/webp"><img src="./img/bar/items.png" alt="img"></picture></div>
+          <div class="bar-block__items-new"> <picture><source srcset="./img/bar/new.webp" type="image/webp"><img src="./img/bar/new.png" alt="icons"></picture></div></a><a class="bar-block__items" href="#">
+          <div class="bar-block__items-title">
+            <h3>Jack Daniels</h3>
+            <div class="bar-block__items-price"> 
+              <p>1200 руб</p>
+            </div>
+          </div>
+          <div class="bar-block__items-img"> <picture><source srcset="./img/bar/items.webp" type="image/webp"><img src="./img/bar/items.png" alt="img"></picture></div>
+          <div class="bar-block__items-new"> <picture><source srcset="./img/bar/new.webp" type="image/webp"><img src="./img/bar/new.png" alt="icons"></picture></div></a><a class="bar-block__items" href="#">
+          <div class="bar-block__items-title">
+            <h3>Jack Daniels</h3>
+            <div class="bar-block__items-price"> 
+              <p>1200 руб</p>
+            </div>
+          </div>
+          <div class="bar-block__items-img"> <picture><source srcset="./img/bar/items.webp" type="image/webp"><img src="./img/bar/items.png" alt="img"></picture></div>
+          <div class="bar-block__items-new"> <picture><source srcset="./img/bar/new.webp" type="image/webp"><img src="./img/bar/new.png" alt="icons"></picture></div></a><a class="bar-block__items" href="#">
+          <div class="bar-block__items-title">
+            <h3>Jack Daniels</h3>
+            <div class="bar-block__items-price"> 
+              <p>1200 руб</p>
+            </div>
+          </div>
+          <div class="bar-block__items-img"> <picture><source srcset="./img/bar/items.webp" type="image/webp"><img src="./img/bar/items.png" alt="img"></picture></div>
+          <div class="bar-block__items-new"> <picture><source srcset="./img/bar/new.webp" type="image/webp"><img src="./img/bar/new.png" alt="icons"></picture></div></a><a class="bar-block__items" href="#">
+          <div class="bar-block__items-title">
+            <h3>Jack Daniels</h3>
+            <div class="bar-block__items-price"> 
+              <p>1200 руб</p>
+            </div>
+          </div>
+          <div class="bar-block__items-img"> <picture><source srcset="./img/bar/items.webp" type="image/webp"><img src="./img/bar/items.png" alt="img"></picture></div>
+          <div class="bar-block__items-new"> <picture><source srcset="./img/bar/new.webp" type="image/webp"><img src="./img/bar/new.png" alt="icons"></picture></div></a><a class="bar-block__items" href="#">
+          <div class="bar-block__items-title">
+            <h3>Jack Daniels</h3>
+            <div class="bar-block__items-price"> 
+              <p>1200 руб</p>
+            </div>
+          </div>
+          <div class="bar-block__items-img"> <picture><source srcset="./img/bar/items.webp" type="image/webp"><img src="./img/bar/items.png" alt="img"></picture></div>
+          <div class="bar-block__items-new"> <picture><source srcset="./img/bar/new.webp" type="image/webp"><img src="./img/bar/new.png" alt="icons"></picture></div></a><a class="bar-block__items" href="#">
+          <div class="bar-block__items-title">
+            <h3>Jack Daniels</h3>
+            <div class="bar-block__items-price"> 
+              <p>1200 руб</p>
+            </div>
+          </div>
+          <div class="bar-block__items-img"> <picture><source srcset="./img/bar/items.webp" type="image/webp"><img src="./img/bar/items.png" alt="img"></picture></div>
+          <div class="bar-block__items-new"> <picture><source srcset="./img/bar/new.webp" type="image/webp"><img src="./img/bar/new.png" alt="icons"></picture></div></a></div>
+      <button class="bar-block__open">Смотреть еще</button>
+    </div>
+  </div>
+</div>
+<footer class="footer"> 
+  <div class="footer__wrapper">
+    <div class="footer__block"> 
+      <div class="footer__block-wrapper">
+        <div class="footer__block-logo"> <a href="/"> <img src="./svg/header/header-logo.svg" alt="logo"></a></div>
+        <div class="footer__block-contact"> <a href="#"> <img src="./svg/footer/inst.svg" alt="icons"></a><a href="#"> <img src="./svg/footer/facebook.svg" alt="icons"></a><a href="#"> <img src="./svg/footer/add.svg" alt="icons"></a></div>
+        <ul class="footer__block-list"> 
+          <li class="footer__block-items"> <a href="#">Для  бизнеса</a></li>
+          <li class="footer__block-items"> <a href="#">Бонусы</a></li>
+          <li class="footer__block-items"> <a href="#">О нас</a></li>
+        </ul>
+        <ul class="footer__block-list"> 
+          <li class="footer__block-items"> <a href="#">Доставка</a></li>
+          <li class="footer__block-items"> <a href="#">Контакты</a></li>
+          <li class="footer__block-items"> <a href="#">Информация</a></li>
+        </ul>
+        <div class="footer__block-table"> <a href="#"> <picture><source srcset="./img/footer/visa.webp" type="image/webp"><img src="./img/footer/visa.png" alt="icons"></picture></a><a href="#"> <img src="./img/footer/master.png" alt="icons"></a><a href="#"> <img src="./img/footer/mir.png" alt="icons"></a><a href="#"> <img src="./img/footer/pay.png" alt="icons"></a><a href="#"> <img src="./img/footer/pays.png" alt="icons"></a></div>
+        <div class="footer__block-create"> <a href="https://bpump.ru">Сайт разработан компанией <br><span>Bussines pump</span></a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script type="module" src="js/webpack.min.js?_v=20220208173453"></script>

@@ -1,0 +1,280 @@
+@@include('components/_head.pug', {
+    "title": "Главная",
+})
+
+@@include('components/_header.pug')
+
+.wine 
+    img(class="wine__bg" src="./img/bg-right.png" alt="img")
+
+    .wine-block 
+        .wine-block__bg
+        .wine-block__containers 
+            .wine-block__title Винная карта
+            .wine-block__filter 
+                h3 Найди своё вино:
+                .wine-block__wrappers 
+                    .wine-block__filter-catalog 
+                        select(class="cart-select" name="cart" style="display: none")
+                            option Все категории
+                            option(value="default" selected="") Новые
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                    .wine-block__filter-type
+                        select(class="cart-select" name="cart" style="display: none")
+                            option Красное
+                            option(value="default" selected="") Новые
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                    .wine-block__filter-country
+                        select(class="cart-select" name="cart" style="display: none")
+                            option Италия
+                            option(value="default" selected="") Новые
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                    .wine-block__filter-volume
+                        select(class="cart-select" name="cart" style="display: none")
+                            option Брют 0-12 г/л
+                            option(value="default" selected="") Новые
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                    .wine-block__filter-add
+                        select(class="cart-select" name="cart" style="display: none")
+                            option Морепродукты
+                            option(value="default" selected="") Новые
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                    .wine-block__filter-search 
+                        input(type="text" placeholder="Найти напиток" value='')
+                        button.wine-block__filter-search-btn
+                    .wine-block__filter-reset
+                        img(src="./svg/wine/close.svg" alt="close")
+                        p Сбросить
+            .wine-block__list 
+                a(href="#").wine-block__items.wine-block__items-v
+                    .wine-block__items-title
+                        h3 Вино белое “Инкерман”
+                        .wine-block__items-price 
+                            p 1200 руб
+                    .wine-block__items-img 
+                        img(src="./img/wine/items.png" alt="img")
+                    .wine-block__items-new 
+                        img(src="./img/wine/new.png" alt="icons")
+                    .wine-block__items-rating 
+                        img(src="./svg/wine/grat.svg" alt="icons")
+                        p 4.5
+                a(href="#").wine-block__items.wine-block__items-v
+                    .wine-block__items-title
+                        h3 Вино белое “Инкерман”
+                        .wine-block__items-price 
+                            p 1200 руб
+                    .wine-block__items-img 
+                        img(src="./img/wine/items.png" alt="img")
+                    .wine-block__items-new 
+                        img(src="./img/wine/new.png" alt="icons")
+                    .wine-block__items-rating 
+                        img(src="./svg/wine/grat.svg" alt="icons")
+                        p 4.5
+                a(href="#").wine-block__items.wine-block__items-v
+                    .wine-block__items-title
+                        h3 Вино белое “Инкерман”
+                        .wine-block__items-price 
+                            p 1200 руб
+                    .wine-block__items-img 
+                        img(src="./img/wine/items.png" alt="img")
+                    .wine-block__items-new 
+                        img(src="./img/wine/new.png" alt="icons")
+                    .wine-block__items-rating 
+                        img(src="./svg/wine/grat.svg" alt="icons")
+                        p 4.5
+                a(href="#").wine-block__items.wine-block__items-v
+                    .wine-block__items-title
+                        h3 Вино белое “Инкерман”
+                        .wine-block__items-price 
+                            p 1200 руб
+                    .wine-block__items-img 
+                        img(src="./img/wine/items.png" alt="img")
+                    .wine-block__items-new 
+                        img(src="./img/wine/new.png" alt="icons")
+                    .wine-block__items-rating 
+                        img(src="./svg/wine/grat.svg" alt="icons")
+                        p 4.5
+                a(href="#").wine-block__items.wine-block__items-v
+                    .wine-block__items-title
+                        h3 Вино белое “Инкерман”
+                        .wine-block__items-price 
+                            p 1200 руб
+                    .wine-block__items-img 
+                        img(src="./img/wine/items.png" alt="img")
+                    .wine-block__items-new 
+                        img(src="./img/wine/new.png" alt="icons")
+                    .wine-block__items-rating 
+                        img(src="./svg/wine/grat.svg" alt="icons")
+                        p 4.5
+                a(href="#").wine-block__items.wine-block__items-v
+                    .wine-block__items-title
+                        h3 Вино белое “Инкерман”
+                        .wine-block__items-price 
+                            p 1200 руб
+                    .wine-block__items-img 
+                        img(src="./img/wine/items.png" alt="img")
+                    .wine-block__items-new 
+                        img(src="./img/wine/new.png" alt="icons")
+                    .wine-block__items-rating 
+                        img(src="./svg/wine/grat.svg" alt="icons")
+                        p 4.5
+                a(href="#").wine-block__items.wine-block__items-v
+                    .wine-block__items-title
+                        h3 Вино белое “Инкерман”
+                        .wine-block__items-price 
+                            p 1200 руб
+                    .wine-block__items-img 
+                        img(src="./img/wine/items.png" alt="img")
+                    .wine-block__items-new 
+                        img(src="./img/wine/new.png" alt="icons")
+                    .wine-block__items-rating 
+                        img(src="./svg/wine/grat.svg" alt="icons")
+                        p 4.5
+                a(href="#").wine-block__items.wine-block__items-v
+                    .wine-block__items-title
+                        h3 Вино белое “Инкерман”
+                        .wine-block__items-price 
+                            p 1200 руб
+                    .wine-block__items-img 
+                        img(src="./img/wine/items.png" alt="img")
+                    .wine-block__items-new 
+                        img(src="./img/wine/new.png" alt="icons")
+                    .wine-block__items-rating 
+                        img(src="./svg/wine/grat.svg" alt="icons")
+                        p 4.5
+                a(href="#").wine-block__items
+                    .wine-block__items-title
+                        h3 Вино белое “Инкерман”
+                        .wine-block__items-price 
+                            p 1200 руб
+                    .wine-block__items-img 
+                        img(src="./img/wine/items.png" alt="img")
+                    .wine-block__items-new 
+                        img(src="./img/wine/new.png" alt="icons")
+                    .wine-block__items-rating 
+                        img(src="./svg/wine/grat.svg" alt="icons")
+                        p 4.5
+                a(href="#").wine-block__items
+                    .wine-block__items-title
+                        h3 Вино белое “Инкерман”
+                        .wine-block__items-price 
+                            p 1200 руб
+                    .wine-block__items-img 
+                        img(src="./img/wine/items.png" alt="img")
+                    .wine-block__items-new 
+                        img(src="./img/wine/new.png" alt="icons")
+                    .wine-block__items-rating 
+                        img(src="./svg/wine/grat.svg" alt="icons")
+                        p 4.5
+                a(href="#").wine-block__items
+                    .wine-block__items-title
+                        h3 Вино белое “Инкерман”
+                        .wine-block__items-price 
+                            p 1200 руб
+                    .wine-block__items-img 
+                        img(src="./img/wine/items.png" alt="img")
+                    .wine-block__items-new 
+                        img(src="./img/wine/new.png" alt="icons")
+                    .wine-block__items-rating 
+                        img(src="./svg/wine/grat.svg" alt="icons")
+                        p 4.5
+                a(href="#").wine-block__items
+                    .wine-block__items-title
+                        h3 Вино белое “Инкерман”
+                        .wine-block__items-price 
+                            p 1200 руб
+                    .wine-block__items-img 
+                        img(src="./img/wine/items.png" alt="img")
+                    .wine-block__items-new 
+                        img(src="./img/wine/new.png" alt="icons")
+                    .wine-block__items-rating 
+                        img(src="./svg/wine/grat.svg" alt="icons")
+                        p 4.5
+                a(href="#").wine-block__items
+                    .wine-block__items-title
+                        h3 Вино белое “Инкерман”
+                        .wine-block__items-price 
+                            p 1200 руб
+                    .wine-block__items-img 
+                        img(src="./img/wine/items.png" alt="img")
+                    .wine-block__items-new 
+                        img(src="./img/wine/new.png" alt="icons")
+                    .wine-block__items-rating 
+                        img(src="./svg/wine/grat.svg" alt="icons")
+                        p 4.5
+                a(href="#").wine-block__items
+                    .wine-block__items-title
+                        h3 Вино белое “Инкерман”
+                        .wine-block__items-price 
+                            p 1200 руб
+                    .wine-block__items-img 
+                        img(src="./img/wine/items.png" alt="img")
+                    .wine-block__items-new 
+                        img(src="./img/wine/new.png" alt="icons")
+                    .wine-block__items-rating 
+                        img(src="./svg/wine/grat.svg" alt="icons")
+                        p 4.5
+                a(href="#").wine-block__items
+                    .wine-block__items-title
+                        h3 Вино белое “Инкерман”
+                        .wine-block__items-price 
+                            p 1200 руб
+                    .wine-block__items-img 
+                        img(src="./img/wine/items.png" alt="img")
+                    .wine-block__items-new 
+                        img(src="./img/wine/new.png" alt="icons")
+                    .wine-block__items-rating 
+                        img(src="./svg/wine/grat.svg" alt="icons")
+                        p 4.5
+                a(href="#").wine-block__items
+                    .wine-block__items-title
+                        h3 Вино белое “Инкерман”
+                        .wine-block__items-price 
+                            p 1200 руб
+                    .wine-block__items-img 
+                        img(src="./img/wine/items.png" alt="img")
+                    .wine-block__items-new 
+                        img(src="./img/wine/new.png" alt="icons")
+                    .wine-block__items-rating 
+                        img(src="./svg/wine/grat.svg" alt="icons")
+                        p 4.5
+
+            button.wine-block__open Смотреть еще
+
+
+
+
+
+@@include('components/_footers.pug')
+
+@@include('components/_script.pug')

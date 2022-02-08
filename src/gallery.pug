@@ -1,0 +1,58 @@
+@@include('components/_head.pug', {
+    "title": "Главная",
+})
+
+@@include('components/_header.pug')
+
+.gallery 
+    img(class="gallery__bg" src="./img/bg-left.png" alt="img")
+
+    .gallery-block 
+        .gallery-block__bg
+            img(src="./img/gallery/bg.png" alt="img")
+        .gallery-block__containers 
+            button.gallery-block__back(onclick="history.back();") вернуться назад
+            .gallery-block__title Галерея
+            .gallery-block__list.gallery-block__list-v
+                .gallery-block__items 
+                    img(src="./img/gallery/img-1.png" alt="img")
+                .gallery-block__items 
+                    img(src="./img/gallery/img-2.png" alt="img")
+                .gallery-block__items 
+                    img(src="./img/gallery/img-3.png" alt="img")
+                .gallery-block__items 
+                    img(src="./img/gallery/img-4.png" alt="img")
+                .gallery-block__items 
+                    img(src="./img/gallery/img-5.png" alt="img")
+                .gallery-block__items 
+                    img(src="./img/gallery/img-6.png" alt="img")
+                .gallery-block__items 
+                    img(src="./img/gallery/img-7.png" alt="img")
+                .gallery-block__items 
+                    img(src="./img/gallery/img-8.png" alt="img")
+            .gallery-block__list
+                .gallery-block__items 
+                    img(src="./img/gallery/img-1.png" alt="img")
+                .gallery-block__items 
+                    img(src="./img/gallery/img-2.png" alt="img")
+                .gallery-block__items 
+                    img(src="./img/gallery/img-3.png" alt="img")
+                .gallery-block__items 
+                    img(src="./img/gallery/img-4.png" alt="img")
+                .gallery-block__items 
+                    img(src="./img/gallery/img-5.png" alt="img")
+                .gallery-block__items 
+                    img(src="./img/gallery/img-6.png" alt="img")
+                .gallery-block__items 
+                    img(src="./img/gallery/img-7.png" alt="img")
+                .gallery-block__items 
+                    img(src="./img/gallery/img-8.png" alt="img")
+            button.gallery-block__btn Смотреть еще
+
+
+
+
+
+@@include('components/_footer.pug')
+
+@@include('components/_script.pug')

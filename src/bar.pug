@@ -1,0 +1,210 @@
+@@include('components/_head.pug', {
+    "title": "Главная",
+})
+
+@@include('components/_header.pug')
+
+.bar 
+    img(class="bar__bg" src="./img/bg-right.png" alt="img")
+
+    .bar-block 
+        .bar-block__bg
+        .bar-block__containers 
+            .bar-block__title Барная карта
+            .bar-block__filter 
+                h3 Найди свой напиток:
+                .bar-block__wrappers 
+                    .bar-block__filter-catalog 
+                        select(class="cart-select" name="cart" style="display: none")
+                            option Все категории
+                            option(value="default" selected="") Новые
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                    .bar-block__filter-country
+                        select(class="cart-select" name="cart" style="display: none")
+                            option Италия
+                            option(value="default" selected="") Новые
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                    .bar-block__filter-fortress
+                        select(class="cart-select" name="cart" style="display: none")
+                            option Крепость 14%
+                            option(value="default" selected="") Новые
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_desc") Цена уменьшение
+                    .bar-block__filter-search 
+                        input(type="text" placeholder="Найти напиток" value='')
+                        button.bar-block__filter-search-btn
+                    .bar-block__filter-reset
+                        img(src="./svg/bar/close.svg" alt="close")
+                        p Сбросить
+            .bar-block__list 
+                a(href="#").bar-block__items.bar-block__items-v
+                    .bar-block__items-title
+                        h3 Jack Daniels
+                        .bar-block__items-price 
+                            p 1200 руб
+                    .bar-block__items-img 
+                        img(src="./img/bar/items.png" alt="img")
+                    .bar-block__items-new 
+                        img(src="./img/bar/new.png" alt="icons")
+                a(href="#").bar-block__items.bar-block__items-v
+                    .bar-block__items-title
+                        h3 Jack Daniels
+                        .bar-block__items-price 
+                            p 1200 руб
+                    .bar-block__items-img 
+                        img(src="./img/bar/items.png" alt="img")
+                    .bar-block__items-new 
+                        img(src="./img/bar/new.png" alt="icons")
+                a(href="#").bar-block__items.bar-block__items-v
+                    .bar-block__items-title
+                        h3 Jack Daniels
+                        .bar-block__items-price 
+                            p 1200 руб
+                    .bar-block__items-img 
+                        img(src="./img/bar/items.png" alt="img")
+                    .bar-block__items-new 
+                        img(src="./img/bar/new.png" alt="icons")
+                a(href="#").bar-block__items.bar-block__items-v
+                    .bar-block__items-title
+                        h3 Jack Daniels
+                        .bar-block__items-price 
+                            p 1200 руб
+                    .bar-block__items-img 
+                        img(src="./img/bar/items.png" alt="img")
+                    .bar-block__items-new 
+                        img(src="./img/bar/new.png" alt="icons")
+                a(href="#").bar-block__items.bar-block__items-v
+                    .bar-block__items-title
+                        h3 Jack Daniels
+                        .bar-block__items-price 
+                            p 1200 руб
+                    .bar-block__items-img 
+                        img(src="./img/bar/items.png" alt="img")
+                    .bar-block__items-new 
+                        img(src="./img/bar/new.png" alt="icons")
+                a(href="#").bar-block__items.bar-block__items-v
+                    .bar-block__items-title
+                        h3 Jack Daniels
+                        .bar-block__items-price 
+                            p 1200 руб
+                    .bar-block__items-img 
+                        img(src="./img/bar/items.png" alt="img")
+                    .bar-block__items-new 
+                        img(src="./img/bar/new.png" alt="icons")
+                a(href="#").bar-block__items.bar-block__items-v
+                    .bar-block__items-title
+                        h3 Jack Daniels
+                        .bar-block__items-price 
+                            p 1200 руб
+                    .bar-block__items-img 
+                        img(src="./img/bar/items.png" alt="img")
+                    .bar-block__items-new 
+                        img(src="./img/bar/new.png" alt="icons")
+                a(href="#").bar-block__items.bar-block__items-v
+                    .bar-block__items-title
+                        h3 Jack Daniels
+                        .bar-block__items-price 
+                            p 1200 руб
+                    .bar-block__items-img 
+                        img(src="./img/bar/items.png" alt="img")
+                    .bar-block__items-new 
+                        img(src="./img/bar/new.png" alt="icons")
+                a(href="#").bar-block__items
+                    .bar-block__items-title
+                        h3 Jack Daniels
+                        .bar-block__items-price 
+                            p 1200 руб
+                    .bar-block__items-img 
+                        img(src="./img/bar/items.png" alt="img")
+                    .bar-block__items-new 
+                        img(src="./img/bar/new.png" alt="icons")
+                a(href="#").bar-block__items
+                    .bar-block__items-title
+                        h3 Jack Daniels
+                        .bar-block__items-price 
+                            p 1200 руб
+                    .bar-block__items-img 
+                        img(src="./img/bar/items.png" alt="img")
+                    .bar-block__items-new 
+                        img(src="./img/bar/new.png" alt="icons")
+                a(href="#").bar-block__items
+                    .bar-block__items-title
+                        h3 Jack Daniels
+                        .bar-block__items-price 
+                            p 1200 руб
+                    .bar-block__items-img 
+                        img(src="./img/bar/items.png" alt="img")
+                    .bar-block__items-new 
+                        img(src="./img/bar/new.png" alt="icons")
+                a(href="#").bar-block__items
+                    .bar-block__items-title
+                        h3 Jack Daniels
+                        .bar-block__items-price 
+                            p 1200 руб
+                    .bar-block__items-img 
+                        img(src="./img/bar/items.png" alt="img")
+                    .bar-block__items-new 
+                        img(src="./img/bar/new.png" alt="icons")
+                a(href="#").bar-block__items
+                    .bar-block__items-title
+                        h3 Jack Daniels
+                        .bar-block__items-price 
+                            p 1200 руб
+                    .bar-block__items-img 
+                        img(src="./img/bar/items.png" alt="img")
+                    .bar-block__items-new 
+                        img(src="./img/bar/new.png" alt="icons")
+                a(href="#").bar-block__items
+                    .bar-block__items-title
+                        h3 Jack Daniels
+                        .bar-block__items-price 
+                            p 1200 руб
+                    .bar-block__items-img 
+                        img(src="./img/bar/items.png" alt="img")
+                    .bar-block__items-new 
+                        img(src="./img/bar/new.png" alt="icons")
+                a(href="#").bar-block__items
+                    .bar-block__items-title
+                        h3 Jack Daniels
+                        .bar-block__items-price 
+                            p 1200 руб
+                    .bar-block__items-img 
+                        img(src="./img/bar/items.png" alt="img")
+                    .bar-block__items-new 
+                        img(src="./img/bar/new.png" alt="icons")
+                a(href="#").bar-block__items
+                    .bar-block__items-title
+                        h3 Jack Daniels
+                        .bar-block__items-price 
+                            p 1200 руб
+                    .bar-block__items-img 
+                        img(src="./img/bar/items.png" alt="img")
+                    .bar-block__items-new 
+                        img(src="./img/bar/new.png" alt="icons")
+
+            button.bar-block__open Смотреть еще
+
+
+
+
+
+@@include('components/_footers.pug')
+
+@@include('components/_script.pug')

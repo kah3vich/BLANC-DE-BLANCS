@@ -24,6 +24,113 @@
 		background: #fefbec;
 		z-index: -1;
 	}
+	&__list {
+		width: 100%;
+		max-width: 150px;
+		background: #ffffff;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 35px;
+		cursor: pointer;
+		&-active {
+			width: 100%;
+			max-width: 370px;
+			& .menu-block__list-items {
+				& h3 {
+					display: block;
+					transition: all 0.5s ease;
+				}
+			}
+			& .menu-block__list-arrow {
+				& h3 {
+					display: block;
+					transition: all 0.5s ease;
+				}
+				& img {
+					width: 86px;
+					height: 86px;
+					object-fit: contain;
+					transform: rotate(0deg);
+					transition: all 0.5s ease;
+				}
+			}
+			& .menu-block__list-btn {
+				display: block;
+			}
+		}
+		&-items {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			& img {
+				width: 86px;
+				height: 86px;
+				object-fit: contain;
+			}
+			& h3 {
+				font-family: TT Norms;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 25px;
+				color: #021245;
+				margin: 0 0 0 40px;
+				display: none;
+				transition: all 0.5s ease;
+			}
+		}
+		&-arrow {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			& img {
+				width: 86px;
+				height: 86px;
+				object-fit: contain;
+				transform: rotate(180deg);
+				transition: all 0.5s ease;
+			}
+			& h3 {
+				font-family: TT Norms;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 25px;
+				color: #021245;
+				margin: 0 0 0 40px;
+				display: none;
+				transition: all 0.5s ease;
+			}
+		}
+		&-btn {
+			padding: 20px 11px;
+			background: #003f80;
+			border-radius: 39px;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			line-height: 25px;
+			color: #ffffff;
+			font-family: TT Norms;
+			margin: 0 0 0 30px;
+			display: none;
+			transition: all 0.5s ease;
+		}
+	}
+	&__containers {
+		max-width: 1440px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 0 0 60px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
 	&__title {
 		margin: 0 0 65px 0;
 		font-family: Prata;
@@ -32,6 +139,13 @@
 		font-size: 64px;
 		line-height: 25px;
 		color: #021245;
+	}
+	&__wrappers {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		width: 100%;
+		gap: 15px;
 	}
 	&__wrapper {
 		width: 100%;
