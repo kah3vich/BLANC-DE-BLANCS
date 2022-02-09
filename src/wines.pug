@@ -1,0 +1,49 @@
+@@include('components/_head.pug', {
+    "title": "Винная карта",
+})
+
+@@include('components/_header.pug')
+
+.wines 
+    img(class="wines__bg" src="./img/bg-right.png" alt="img")
+    img(class="wines__bg" src="./img/bg-left.png" alt="img")
+
+    .wines-block 
+        .wines-block__containers 
+            .wines-block__profile 
+                .wines-block__profile-new 
+                    img(src="./img/wines/new.png" alt="img")
+                .wines-block__profile-items 
+                    img(src="./img/wines/items.png" alt="img")
+                .wines-block__profile-status 
+                    .wines-block__profile-fortress 
+                        p Крепость
+                        span 14%
+                    .wines-block__profile-volume 
+                        p Объём
+                        span 0.75 л
+
+            .wines-block__info
+                .wines-block__info-add Новинка
+                .wines-block__info-title Красное вино 
+                    br
+                    | INCERMAN
+                .wines-block__info-status 
+                    .wines-block__info-viv 
+                        img(src="./svg/wines/grat.svg" alt="icons")
+                        p VIVINO
+                        .wines-block__info-vivs 
+                            img(src="./svg/wines/red.svg" alt="icons")
+                            p 4.5
+                    .wines-block__info-vin 
+                        p VIN
+                        .wines-block__info-vin 
+                            img(src="./svg/wines/blue.svg" alt="icons")
+                            p 90
+
+
+
+
+@@include('components/_footers.pug')
+
+@@include('components/_script.pug')

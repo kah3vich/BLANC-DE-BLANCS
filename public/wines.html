@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Галерея</title>
+    <title>Винная карта</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
   </head>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -37,51 +37,44 @@
     <div class="header__circle"></div>
   </div>
 </header>
-<div class="gallery"> <img class="gallery__bg" src="./img/bg-left.png" alt="img"><img class="gallery__bg" src="./img/bg-right.png" alt="img">
-  <div class="gallery-block"> 
-    <div class="gallery-block__containers"> 
-      <div class="gallery-block__title">Галерея</div>
-      <div class="gallery-block__list gallery-block__list-v">
-        <div class="gallery-block__items"> <img src="./img/gallery/img-1.png" alt="img"></div>
-        <div class="gallery-block__items"> <img src="./img/gallery/img-2.png" alt="img"></div>
-        <div class="gallery-block__items"> <img src="./img/gallery/img-3.png" alt="img"></div>
-        <div class="gallery-block__items"> <img src="./img/gallery/img-4.png" alt="img"></div>
-        <div class="gallery-block__items"> <img src="./img/gallery/img-5.png" alt="img"></div>
-        <div class="gallery-block__items"> <img src="./img/gallery/img-6.png" alt="img"></div>
-        <div class="gallery-block__items"> <img src="./img/gallery/img-7.png" alt="img"></div>
-        <div class="gallery-block__items"> <img src="./img/gallery/img-8.png" alt="img"></div>
+<div class="wines"> <img class="wines__bg" src="./img/bg-right.png" alt="img"><img class="wines__bg" src="./img/bg-left.png" alt="img">
+  <div class="wines-block"> 
+    <div class="wines-block__containers"> 
+      <div class="wines-block__profile"> 
+        <div class="wines-block__profile-new"> <img src="./img/wines/new.png" alt="img"></div>
+        <div class="wines-block__profile-items"> <img src="./img/wines/items.png" alt="img"></div>
+        <div class="wines-block__profile-status"> 
+          <div class="wines-block__profile-fortress"> 
+            <p>Крепость</p><span>14%</span>
+          </div>
+          <div class="wines-block__profile-volume"> 
+            <p>Объём</p><span>0.75 л</span>
+          </div>
+        </div>
       </div>
-      <div class="gallery-block__list">
-        <div class="gallery-block__items"> <img src="./img/gallery/img-1.png" alt="img"></div>
-        <div class="gallery-block__items"> <img src="./img/gallery/img-2.png" alt="img"></div>
-        <div class="gallery-block__items"> <img src="./img/gallery/img-3.png" alt="img"></div>
-        <div class="gallery-block__items"> <img src="./img/gallery/img-4.png" alt="img"></div>
-        <div class="gallery-block__items"> <img src="./img/gallery/img-5.png" alt="img"></div>
-        <div class="gallery-block__items"> <img src="./img/gallery/img-6.png" alt="img"></div>
-        <div class="gallery-block__items"> <img src="./img/gallery/img-7.png" alt="img"></div>
-        <div class="gallery-block__items"> <img src="./img/gallery/img-8.png" alt="img"></div>
+      <div class="wines-block__info">
+        <div class="wines-block__info-add">Новинка</div>
+        <div class="wines-block__info-title">Красное вино <br>INCERMAN</div>
+        <div class="wines-block__info-status"> 
+          <div class="wines-block__info-viv"> <img src="./svg/wines/grat.svg" alt="icons">
+            <p>VIVINO</p>
+            <div class="wines-block__info-vivs"> <img src="./svg/wines/red.svg" alt="icons">
+              <p>4.5</p>
+            </div>
+          </div>
+          <div class="wines-block__info-vin"> 
+            <p>VIN</p>
+            <div class="wines-block__info-vin"> <img src="./svg/wines/blue.svg" alt="icons">
+              <p>90</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <button class="gallery-block__btn">Смотреть еще</button>
     </div>
   </div>
 </div>
 <footer class="footer"> 
-  <div class="footer__line"> </div>
-  <div class="footer__title">Обратная связь</div>
   <div class="footer__wrapper">
-    <div class="footer__wrapper-bg"> <img src="./img/footer/bg.png" alt="bg"></div>
-    <div class="footer__contact"> 
-      <div class="footer__contact-info"> 
-        <h3>Контакты</h3><a href="tel:+74956659242">+7 (495) 665-92-42</a><span>Понедельник - воскресенье: <br>10:00 - 23:00</span>
-        <p>Написать директору!</p><a class="footer__contact-btn" href="#">Написать </a>
-      </div>
-      <div class="footer__contact-maps"> 
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A30d725dbf1935c1f22b566f31df66695677d16e36c23f176e0e7c41ac81df1ba&amp;amp;source=constructor" frameborder="0"></iframe>
-        <div class="footer__contact-maps-add"> 
-          <h3>Москва, ул. Люсиновская, д. 36/50</h3><a class="footer__contact-icons" href="#"> <img src="./img/footer/google-map.png" alt="icons"></a><a class="footer__contact-icons" href="#"> <img src="./img/footer/maps.png" alt="icons"></a>
-        </div>
-      </div>
-    </div>
     <div class="footer__block"> 
       <div class="footer__block-wrapper">
         <div class="footer__block-logo"> <a href="/"> <img src="./svg/footer/footer-logo.svg" alt="logo"></a></div>
