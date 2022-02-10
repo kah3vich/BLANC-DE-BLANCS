@@ -1,0 +1,97 @@
+@@include('components/_head.pug', {
+    "title": "Акции и бонусы",
+})
+
+@@include('components/_header.pug')
+
+.booking 
+    img(class="booking__bg" src="./img/bg-left.png" alt="img")
+
+    .booking-block 
+        .booking-block__containers 
+            .booking-block__title Бронирование
+            .booking-block__wrapper
+                .booking-block__nav 
+                    .booking-block__nav-items.booking-block__nav-active Большой зал
+                    .booking-block__nav-items Малый зал
+                    .booking-block__nav-items Банкет
+                .booking-block__busy
+                    p Занято:
+                    .booking-block__busy-n
+                        span 1
+                .booking-block__free 
+                    p Свободно:
+                    .booking-block__free-n
+                        span 5
+                .booking-block__date 
+                    p 15 дек
+                    .booking-block__date-l 
+                    p 18:00
+            .booking-block__list 
+                .booking-block__items
+                    img(src="./img/booking/img-1.png" alt="img")
+                    p *Для бронирование столика нажмите на интересующий и заполните данные
+                    p **Для просмотра общих характеристики столика, наведите на него значок мыши .
+                .booking-block__items.display-n
+                    img(src="./img/booking/img-2.png" alt="img")
+                    p *Для бронирование столика нажмите на интересующий и заполните данные
+                    p **Для просмотра общих характеристики столика, наведите на него значок мыши .
+                .booking-block__items.booking-block__grid.display-n 
+                    .booking-block__items-block 
+                        .booking-block__items-title 
+                            h3 Малый зал  
+                            button.booking-block__items-btn Забронировать
+                        .booking-block__items-add Варианты рассадки:
+                        .booking-block__items-check 
+                            .booking-block__items-radio
+                                input(class="booking-block__items-radio__input" name="male" type="radio" id="mal_1" checked)
+                                label(class="booking-block__items-radio__label" for="mal_1") №1:  18 человек
+                            .booking-block__items-radio
+                                input(class="booking-block__items-radio__input" name="male" type="radio" id="mal_2")
+                                label(class="booking-block__items-radio__label" for="mal_2") №2:  20 человек
+                        .booking-block__items-photo 
+                            img(src="./img/booking/imgs-1.png" alt="img")
+                            img(src="./img/booking/imgs-2.png" alt="img")
+                            img(src="./img/booking/imgs-3.png" alt="img")
+                    .booking-block__items-block 
+                        .booking-block__items-title 
+                            h3 Малый зал  
+                            button.booking-block__items-btn Забронировать
+                        .booking-block__items-add Варианты рассадки:
+                        .booking-block__items-check 
+                            .booking-block__items-radio
+                                input(class="booking-block__items-radio__input" name="cred" type="radio" id="cred_1" checked)
+                                label(class="booking-block__items-radio__label" for="cred_1") №1:  18 человек
+                            .booking-block__items-radio
+                                input(class="booking-block__items-radio__input" name="cred" type="radio" id="cred_2")
+                                label(class="booking-block__items-radio__label" for="cred_2") №2:  20 человек
+                        .booking-block__items-photo 
+                            img(src="./img/booking/imgs-1.png" alt="img")
+                            img(src="./img/booking/imgs-2.png" alt="img")
+                            img(src="./img/booking/imgs-3.png" alt="img")
+                    .booking-block__items-block 
+                        .booking-block__items-title 
+                            h3 Малый зал  
+                            button.booking-block__items-btn Забронировать
+                        .booking-block__items-add Варианты рассадки:
+                        .booking-block__items-check 
+                            .booking-block__items-radio
+                                input(class="booking-block__items-radio__input" name="bol" type="radio" id="bol_1" checked)
+                                label(class="booking-block__items-radio__label" for="bol_2") №1:  18 человек
+                            .booking-block__items-radio
+                                input(class="booking-block__items-radio__input" name="bol" type="radio" id="bol_2")
+                                label(class="booking-block__items-radio__label" for="bol_2") №2:  20 человек
+                        .booking-block__items-photo 
+                            img(src="./img/booking/imgs-1.png" alt="img")
+                            img(src="./img/booking/imgs-2.png" alt="img")
+                            img(src="./img/booking/imgs-3.png" alt="img")
+
+
+
+
+
+
+
+@@include('components/_footers.pug')
+
+@@include('components/_script.pug')

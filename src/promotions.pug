@@ -1,0 +1,37 @@
+@@include('components/_head.pug', {
+    "title": "Акции и бонусы",
+})
+
+@@include('components/_header.pug')
+
+.promotions 
+    img(class="promotions__bg" src="./img/bg-left.png" alt="img")
+    img(class="promotions__bg" src="./img/bg-right.png" alt="img")
+
+    .promotions-block 
+        .promotions-block__bg
+        .promotions-block__containers 
+            .promotions-block__photo 
+                img(src="./img/promotions/items.png" alt="img")
+            .promotions-block__info 
+                .promotions-block__info-title Позаботься о нас, а мы поможем тебе  
+                .promotions-block__info-text Дорогие друзья! 
+                    br 
+                    | Давайте беречь себя и друг друга. В эти неспокойные времена мы должны быть осторожными и понимающими. Посетителям в масках кофе за счёт заведения.
+                .promotions-block__info-btns 
+                    button.promotions-block__info-back(onclick='history.back();') 
+                        img(src="./svg/promotions/arrow.svg" alt="icons")
+                        p Назад
+                    .promotions-block__info-code 
+                        p Получите бонус
+                            br
+                            | сейчас по коду
+                            br 
+                            br
+                            | 647325
+
+
+
+@@include('components/_footers.pug')
+
+@@include('components/_script.pug')

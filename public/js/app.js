@@ -169,3 +169,18 @@ for (var i = 1; i <= $(".promotion-block__nav-items").length; i++) {
 }
 
 ;
+
+var _loop2 = function _loop2(_i) {
+  $(".booking-block__nav-items:nth-child(".concat(_i, ")")).on("click", function () {
+    $(".booking-block__nav-items").removeClass("booking-block__nav-active");
+    $(".booking-block__nav-items:nth-child(".concat(_i, ")")).addClass("booking-block__nav-active");
+    $(".booking-block__items").addClass("display-n");
+    $(".booking-block__items").eq(_i - 1).removeClass("display-n");
+  });
+};
+
+for (var _i = 1; _i <= $(".booking-block__nav-items").length; _i++) {
+  _loop2(_i);
+}
+
+;

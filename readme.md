@@ -14,4 +14,12 @@
 
 # Gallery: [click me](https://kah3vich.github.io/BLANC-DE-BLANCS/public/gallery.html)
 
+# About: [click me](https://kah3vich.github.io/BLANC-DE-BLANCS/public/about.html)
+
+# Promotions: [click me](https://kah3vich.github.io/BLANC-DE-BLANCS/public/promotions.html)
+
+# Wines: [click me](https://kah3vich.github.io/BLANC-DE-BLANCS/public/wines.html)
+
+# Booking: [click me](https://kah3vich.github.io/BLANC-DE-BLANCS/public/booking.html)
+
 # Promotion: [click me](https://kah3vich.github.io/BLANC-DE-BLANCS/public/promotion.html)

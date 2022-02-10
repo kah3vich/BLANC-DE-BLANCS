@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Винная карта</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css?_v=20220210155827" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
   </head>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.4/swiper-bundle.min.css" integrity="sha512-V5B6OaBftIs7Kx8BBx7n2W42FpHP7MiXmDaKWTBdCsnStyS3gVYuA30kG6oABmh8uayFJDsfl2hCywak1eKE2w==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.4/swiper-bundle.min.js" integrity="sha512-ztZ7m9gYJmuwemu0TmAp9QDuhFhOYbbIoN6iIKMi5ay88l8U5tkt5OOlA/fP8DI/p/OphEY7QIbuoDQKpVvf7w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <link rel="stylesheet" href="css/style.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20220210155827" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.4/swiper-bundle.min.css?_v=20220210155827" integrity="sha512-V5B6OaBftIs7Kx8BBx7n2W42FpHP7MiXmDaKWTBdCsnStyS3gVYuA30kG6oABmh8uayFJDsfl2hCywak1eKE2w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.4/swiper-bundle.min.js?_v=20220210155827" integrity="sha512-ztZ7m9gYJmuwemu0TmAp9QDuhFhOYbbIoN6iIKMi5ay88l8U5tkt5OOlA/fP8DI/p/OphEY7QIbuoDQKpVvf7w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="css/style.min.css?_v=20220210155827">
 </html>
 <body></body>
 <header class="header"> 
@@ -64,10 +64,37 @@
           </div>
           <div class="wines-block__info-vin"> 
             <p>VIN</p>
-            <div class="wines-block__info-vin"> <img src="./svg/wines/blue.svg" alt="icons">
+            <div class="wines-block__info-vins"><img src="./svg/wines/blue.svg" alt="icons">
               <p>90</p>
             </div>
           </div>
+        </div>
+        <div class="wines-block__info-description">Стилистика:  <span>Данное вино подходит для мясных блюд, хорошо сочетается с гусиным мясом. Может вам понравиться, если вы любите нотки сладости.</span></div>
+        <div class="wines-block__info-author">Производитель: <span>Nike Wels</span></div>
+        <div class="wines-block__info-combination"> 
+          <p>Сочетаемость: </p>
+          <div class="wines-block__info-combinations"> <img src="./svg/wines/icon-2.svg" alt="icons"></div>
+          <div class="wines-block__info-combinations"> <img src="./svg/wines/icon-1.svg" alt="icons"></div>
+          <div class="wines-block__info-combinations"> <img src="./svg/wines/icon-3.svg" alt="icons"></div>
+        </div>
+        <div class="wines-block__info-catalog"> 
+          <div class="wines-block__info-items"><img src="./img/wines/grat.png" alt="img">
+            <p>Рислинг</p>
+          </div>
+          <div class="wines-block__info-items"><img src="./img/wines/flag.png" alt="img">
+            <p>Франция</p>
+          </div>
+          <div class="wines-block__info-items"><img src="./img/wines/year.png" alt="img">
+            <p>1998</p>
+          </div>
+        </div>
+        <div class="wines-block__info-btns"> 
+          <button class="wines-block__info-back" onclick="history.back();"> <img src="./svg/wines/arrow.svg" alt="icons">
+            <p>Назад</p>
+          </button>
+          <button class="wines-block__info-pay"> <img src="./svg/wines/baskets.svg" alt="icons">
+            <p>290 руб</p>
+          </button>
         </div>
       </div>
     </div>
@@ -95,4 +122,4 @@
     </div>
   </div>
 </footer>
-<script type="module" src="js/webpack.min.js"></script>
+<script type="module" src="js/webpack.min.js?_v=20220210155827"></script>

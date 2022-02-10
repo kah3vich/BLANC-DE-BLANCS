@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Акции и бонусы</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css?_v=20220210155827" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20220210155827" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.4/swiper-bundle.min.css?_v=20220210155827" integrity="sha512-V5B6OaBftIs7Kx8BBx7n2W42FpHP7MiXmDaKWTBdCsnStyS3gVYuA30kG6oABmh8uayFJDsfl2hCywak1eKE2w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.4/swiper-bundle.min.js?_v=20220210155827" integrity="sha512-ztZ7m9gYJmuwemu0TmAp9QDuhFhOYbbIoN6iIKMi5ay88l8U5tkt5OOlA/fP8DI/p/OphEY7QIbuoDQKpVvf7w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="css/style.min.css?_v=20220210155827">
+</html>
+<body></body>
+<header class="header"> 
+  <div class="header__lines">
+    <div class="header__line"> </div>
+    <div class="header__line"></div>
+  </div>
+  <div class="header__btns"><a class="header__order" href="#"> 
+      <h3>Корзина</h3><img src="./svg/header/basket.svg" alt="icons">
+      <p>0</p></a><a class="header__basket" href="#"> 
+      <h3>Заказать столик</h3><img src="./svg/header/notif.svg" alt="icons"></a></div>
+  <div class="containers"> 
+    <div class="header__menu"> <img src="./svg/header/menu.svg" alt="menu"></div>
+    <div class="header__lang"> 
+      <select class="js-select-langs" name="lang" style="display: none">
+        <option value="default" selected="">EN</option>
+        <option value="RU">RU</option>
+        <option value="UK">UK</option>
+        <option value="EN">EN</option>
+        <option value="RU">RU</option>
+        <option value="UK">UK</option>
+      </select>
+    </div><a class="header__logo" href="/"> <img src="./svg/header/header-logo.svg" alt="logo"></a>
+    <div class="header__circle"></div>
+  </div>
+</header>
+<div class="promotions"> <img class="promotions__bg" src="./img/bg-left.png" alt="img"><img class="promotions__bg" src="./img/bg-right.png" alt="img">
+  <div class="promotions-block"> 
+    <div class="promotions-block__bg"></div>
+    <div class="promotions-block__containers"> 
+      <div class="promotions-block__photo"> <img src="./img/promotions/items.png" alt="img"></div>
+      <div class="promotions-block__info"> 
+        <div class="promotions-block__info-title">Позаботься о нас, а мы поможем тебе  </div>
+        <div class="promotions-block__info-text">Дорогие друзья! <br>Давайте беречь себя и друг друга. В эти неспокойные времена мы должны быть осторожными и понимающими. Посетителям в масках кофе за счёт заведения.</div>
+        <div class="promotions-block__info-btns"> 
+          <button class="promotions-block__info-back" onclick="history.back();"> <img src="./svg/promotions/arrow.svg" alt="icons">
+            <p>Назад</p>
+          </button>
+          <div class="promotions-block__info-code"> 
+            <p>Получите бонус<br>сейчас по коду<br><br>647325</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer"> 
+  <div class="footer__wrapper">
+    <div class="footer__block"> 
+      <div class="footer__block-wrapper">
+        <div class="footer__block-logo"> <a href="/"> <img src="./svg/footer/footer-logo.svg" alt="logo"></a></div>
+        <div class="footer__block-contact"> <a href="#"> <img src="./svg/footer/inst.svg" alt="icons"></a><a href="#"> <img src="./svg/footer/facebook.svg" alt="icons"></a><a href="#"> <img src="./svg/footer/add.svg" alt="icons"></a></div>
+        <ul class="footer__block-list"> 
+          <li class="footer__block-items"> <a href="#">Для  бизнеса</a></li>
+          <li class="footer__block-items"> <a href="#">Бонусы</a></li>
+          <li class="footer__block-items"> <a href="#">О нас</a></li>
+        </ul>
+        <ul class="footer__block-list"> 
+          <li class="footer__block-items"> <a href="#">Доставка</a></li>
+          <li class="footer__block-items"> <a href="#">Контакты</a></li>
+          <li class="footer__block-items"> <a href="#">Информация</a></li>
+        </ul>
+        <div class="footer__block-table"> <a href="#"> <img src="./img/footer/visa.png" alt="icons"></a><a href="#"> <img src="./img/footer/master.png" alt="icons"></a><a href="#"> <img src="./img/footer/mir.png" alt="icons"></a><a href="#"> <img src="./img/footer/pay.png" alt="icons"></a><a href="#"> <img src="./img/footer/pays.png" alt="icons"></a></div>
+        <div class="footer__block-create"> <a href="https://bpump.ru">Сайт разработан компанией <br><span>Bussines pump</span></a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script type="module" src="js/webpack.min.js?_v=20220210155827"></script>

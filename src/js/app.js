@@ -6,3 +6,4 @@
 @@include("./wines/index.js");
 @@include("./gallery/index.js");
 @@include("./promotion/index.js");
+@@include("./booking/index.js");
