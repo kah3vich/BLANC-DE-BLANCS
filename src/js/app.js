@@ -7,3 +7,4 @@
 @@include("./gallery/index.js");
 @@include("./promotion/index.js");
 @@include("./booking/index.js");
+@@include("./dish/index.js");

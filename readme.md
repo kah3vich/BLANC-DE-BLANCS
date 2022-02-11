@@ -23,3 +23,5 @@
 # Booking: [click me](https://kah3vich.github.io/BLANC-DE-BLANCS/public/booking.html)
 
 # Promotion: [click me](https://kah3vich.github.io/BLANC-DE-BLANCS/public/promotion.html)
+
+# Dish: [click me](https://kah3vich.github.io/BLANC-DE-BLANCS/public/dish.html)

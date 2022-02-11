@@ -1,0 +1,242 @@
+.dish {
+	position: relative;
+	&__bg {
+		position: absolute;
+		&:nth-child(1) {
+			left: 0;
+			top: 120px;
+		}
+		&:nth-child(2) {
+			right: 0;
+			top: 280px;
+		}
+	}
+}
+
+.dish-block {
+	width: 100%;
+	position: relative;
+	padding: 270px 0 55px 0;
+	& .swiper-slide {
+		padding: 10px 0;
+	}
+	& .swiper-controls {
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translate(-50%, 0%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 550px;
+	}
+	& .swiper-pagination {
+		bottom: -15px;
+		width: 80%;
+		left: 50%;
+		transform: translate(-50%, 0%);
+	}
+	& .swiper-pagination-bullet {
+		width: 24px;
+		border-radius: 50%;
+		height: 24px;
+		background: rgba(0, 88, 180, 0.35);
+		opacity: 1;
+		&-active {
+			width: 24px;
+			height: 24px;
+			border-radius: 50%;
+			background: #003f80;
+		}
+	}
+	& .swiper-button-next {
+		cursor: pointer;
+		&::after {
+			content: none;
+		}
+	}
+	& .swiper-button-prev {
+		cursor: pointer;
+		&::after {
+			content: none;
+		}
+	}
+	&__containers {
+		max-width: 1440px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 60px;
+		display: flex;
+		align-items: revert;
+		justify-content: space-between;
+		gap: 25px;
+	}
+	&__title {
+		font-family: TT Norms;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 64px;
+		line-height: 25px;
+		color: #021245;
+		margin: 55px 0 45px 0;
+	}
+	&__info {
+		width: 645px;
+		box-shadow: 0px 0px 10px rgb(0 88 180 / 28%);
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		padding: 25px 30px;
+		background: #fff;
+	}
+	&__path {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 12px;
+		flex-wrap: wrap;
+		&-c {
+			width: 8px;
+			height: 8px;
+			background: #003f80;
+			border-radius: 50%;
+			margin: auto 0;
+		}
+		& p {
+			font-family: PT Serif;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 24px;
+			line-height: 30px;
+			text-align: justify;
+			color: #000000;
+		}
+	}
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		width: 100%;
+		margin: 70px 0;
+	}
+	&__items {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		& p {
+			margin: 25px 0 0 0;
+			font-family: PT Serif;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 24px;
+			line-height: 30px;
+			text-align: center;
+			color: #021245;
+		}
+	}
+	&__btns {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+	}
+	&__back {
+		border: 2px solid #003f80;
+		border-radius: 38.5px;
+		padding: 14px 45px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		background: transparent;
+		& p {
+			margin: 0 0 0 10px;
+			font-family: TT Norms;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 24px;
+			line-height: 20px;
+			color: #003f80;
+		}
+	}
+	&__pay {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #003f80;
+		border: 3px solid #003f80;
+		padding: 6px 35px;
+		border-radius: 38.5px;
+		& p {
+			font-family: PT Serif;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 24px;
+			line-height: 20px;
+			color: #ffffff;
+			margin: 0 0 0 20px;
+		}
+	}
+	&__description {
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 35px;
+		text-align: justify;
+		color: #021245;
+		& span {
+			font-family: TT Norms;
+			font-weight: bold;
+		}
+	}
+	&__photo {
+		width: 645px;
+		position: relative;
+		overflow: hidden;
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		&-type {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 0;
+			border-top: 125px solid #009c30;
+			border-right: 125px solid transparent;
+		}
+		&-icons {
+			margin: 8px 0 0 8px;
+			width: unset !important;
+			height: unset !important;
+			position: absolute;
+			top: -125px;
+			left: 0;
+		}
+		&-add {
+			position: absolute;
+			right: 40px;
+			bottom: 40px;
+			border: 1px solid #ffffff;
+			border-radius: 5px;
+			padding: 15px 10px;
+			& p {
+				font-family: PT Serif;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 30px;
+				text-align: center;
+				color: #ffffff;
+				&:last-child {
+					margin: 3px 0 0 0;
+				}
+			}
+		}
+	}
+}
