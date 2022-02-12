@@ -1,0 +1,45 @@
+@@include('components/_head.pug', {
+    "title": "Галерея",
+})
+
+@@include('components/_header.pug')
+
+.business 
+    img(class="business__bg" src="./img/bg-left.png" alt="img")
+    img(class="business__bg" src="./img/bg-right.png" alt="img")
+
+    .business-block 
+        .business-block__containers
+            .business-block__title Для бизнеса
+            .business-block__titles Специальные предложения для бизнеса
+            ul.business-block__list 
+                li.business-block__items 
+                    .business-block__items-logo 
+                        img(src="./img/business/icons-1.png" alt="img")
+                    .business-block__items-line 
+                    .business-block__items-text Доставка горячего питания в офисы
+                li.business-block__items 
+                    .business-block__items-logo 
+                        img(src="./img/business/icons-2.png" alt="img")
+                    .business-block__items-line 
+                    .business-block__items-text Обслуживание VIP-мероприятий
+                li.business-block__items 
+                    .business-block__items-logo 
+                        img(src="./img/business/icons-3.png" alt="img")
+                    .business-block__items-line 
+                    .business-block__items-text Выездные мероприятия
+            .business-block__add Как происходит наше сотрудничество ?
+            .business-block__banner 
+                img(src="./img/business/icons.png" alt="img")
+
+
+
+
+
+
+
+
+
+@@include('components/_footers.pug')
+
+@@include('components/_script.pug')

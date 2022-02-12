@@ -1,0 +1,44 @@
+@@include('components/_head.pug', {
+    "title": "Галерея",
+})
+
+@@include('components/_header.pug')
+
+.delivery 
+    img(class="delivery__bg" src="./img/bg-left.png" alt="img")
+    img(class="delivery__bg" src="./img/bg-right.png" alt="img")
+
+    .delivery-block 
+        .delivery-block__containers
+            .delivery-block__title Доставка
+            ul.delivery-block__list 
+                li.delivery-block__items 
+                    .delivery-block__items-logo 
+                        img(src="./img/delivery/icons-1.png" alt="img")
+                        p 
+                    .delivery-block__items-text Доставка нашего ресторана предоставит вам все нужные услуги. Для оформления заказа на сайте, нужно перейтии в корзину и заполнить информацию ....
+                    .delivery-block__items-add * При выборе доставки нашего ресторана вы получаете скидку
+                    button.delivery-block__items-btn Подробнее
+                li.delivery-block__items 
+                    .delivery-block__items-logo.delivery-block__items-eda
+                        img(src="./img/delivery/icons-2.png" alt="img")
+                        p Яндекс.Еда
+                    .delivery-block__items-text Яндекс.Еда — сервис заказа быстрой доставки еды из ресторанов через мобильное приложение или веб-сайт. Доставку осуществляют курьерские службы — партнеры сервиса Яндекс.Еда и собственные курьеры ресторанов. На выбор доступны пиццерии, пекарни, рестораны грузинской 
+                    button.delivery-block__items-btn Подробнее
+                li.delivery-block__items 
+                    .delivery-block__items-logo.delivery-block__items-delv
+                        img(src="./img/delivery/icons-3.png" alt="img")
+                        p Delivery Club
+                    .delivery-block__items-text Delivery Club — крупнейший сервис доставки еды в России, запущенный в 2009 году. Изначально работал в формате маркетплеисах, объединяя рестораны....
+                    button.delivery-block__items-btn Подробнее
+
+
+
+
+
+
+
+
+@@include('components/_footers.pug')
+
+@@include('components/_script.pug')

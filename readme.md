@@ -25,3 +25,7 @@
 # Promotion: [click me](https://kah3vich.github.io/BLANC-DE-BLANCS/public/promotion.html)
 
 # Dish: [click me](https://kah3vich.github.io/BLANC-DE-BLANCS/public/dish.html)
+
+# Business: [click me](https://kah3vich.github.io/BLANC-DE-BLANCS/public/business.html)
+
+# Delivery: [click me](https://kah3vich.github.io/BLANC-DE-BLANCS/public/delivery.html)
