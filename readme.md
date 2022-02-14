@@ -29,3 +29,5 @@
 # Business: [click me](https://kah3vich.github.io/BLANC-DE-BLANCS/public/business.html)
 
 # Delivery: [click me](https://kah3vich.github.io/BLANC-DE-BLANCS/public/delivery.html)
+
+# Basket: [click me](https://kah3vich.github.io/BLANC-DE-BLANCS/public/basket.html)

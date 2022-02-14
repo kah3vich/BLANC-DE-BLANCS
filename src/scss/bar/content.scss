@@ -307,3 +307,120 @@
 	line-height: 20px;
 	color: #06417d;
 }
+
+.c_select {
+	padding: 13px 10px 13px 20px;
+	position: relative;
+	width: 250px;
+	position: relative;
+	background: #ffffff;
+	border: 2px solid #003f80;
+	border-radius: 30px;
+}
+.c_select .c_select-placeholder {
+	display: block;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+	cursor: pointer;
+	font-family: TT Norms;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 30px;
+	color: #06417d;
+}
+.c_select .c_select-placeholder img {
+	max-width: 32px;
+	max-height: 32px;
+	margin: 0 5px 0 0;
+}
+.c_select:after {
+	display: none !important;
+}
+.c_select .c_select-placeholder:after {
+	content: "";
+	background: url("../svg/bar/arrow-down.svg") no-repeat;
+	transition: all 0.5s ease;
+	position: absolute;
+	top: 55%;
+	right: 8px;
+	transform: translate(0, -55%);
+	height: 11px;
+	width: 22px;
+}
+.c_select.c_select-item-active .c_select-placeholder:after {
+	transition: all 0.5s ease;
+	transform: translate(0, -50%) rotate(180deg);
+}
+.c_select .c_select-block {
+	bottom: auto;
+	top: calc(100% + 3px);
+	position: absolute;
+	left: 0;
+	z-index: 5;
+}
+.c_select.c_select-item-active .c_select-block {
+	padding: 20px;
+	width: 100%;
+	height: auto;
+	box-shadow: 6px 6px 10px -1px rgb(0 0 0 / 10%), -6px -6px 10px -1px rgb(255 255 255 / 70%);
+	border-radius: 30px;
+	border: 2px solid #003f80;
+	background: #ffffff;
+}
+.c_select .c_select-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	height: 145px;
+	overflow-y: auto;
+}
+.c_select .c_select-wrapper::-webkit-scrollbar {
+	width: 27px;
+}
+.c_select .c_select-wrapper::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 10px 10px #435179;
+	box-shadow: inset 0 0 10px 10px #435179;
+	border: solid 12px transparent;
+}
+.c_select .c_select-wrapper::-webkit-scrollbar-thumb {
+	-webkit-box-shadow: inset 0 0 10px 10px #003f80;
+	box-shadow: inset 0 0 10px 10px #003f80;
+	border: solid 10px transparent;
+}
+.c_select .c_select-element {
+	width: 100%;
+	padding: 3px 0;
+	background: 0 0;
+	color: #000;
+	border: none;
+	margin: 0 0 5px 0;
+	text-align: left;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+	font-family: TT Norms;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 20px;
+	color: #06417d;
+}
+.c_select .c_select-element img {
+	width: 32px;
+	height: 32px;
+	margin: 0 5px 0 0;
+}
+.c_select .c_select-element-active {
+	background: transparent;
+}

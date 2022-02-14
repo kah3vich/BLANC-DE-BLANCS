@@ -44,10 +44,12 @@ $(".bar-block__filter-reset").on("click", () => {
 
 	let catalog = $(".bar-block__filter-catalog select option").eq(0).text();
 	let country = $(".bar-block__filter-country select option").eq(0).text();
+	let countryImg = $(".bar-block__filter-country .c_select option").eq(0).attr("data-icon");
 	let fortress = $(".bar-block__filter-fortress select option").eq(0).text();
 
 	$(".bar-block__filter-catalog .cart-select-placeholder").html(catalog);
-	$(".bar-block__filter-country .cart-select-placeholder").html(country);
+	$(".bar-block__filter-country .c_select-placeholder p").text(country);
+	$(".bar-block__filter-country .c_select-placeholder img").attr("src", `${countryImg}`);
 	$(".bar-block__filter-fortress .cart-select-placeholder").html(fortress);
 });
 
@@ -55,5 +57,56 @@ $(() => {
 	$(".bar-block__items").not(".bar-block__items-v").hide();
 	$(".bar-block__open").on("click", () => {
 		$(".bar-block__items").not(".bar-block__items-v").show();
+	});
+});
+
+$(() => {
+	$("select.c_select").each(function () {
+		var $this = $(this);
+
+		var html = '<div class="c_select"><div class="c_select-placeholder">';
+		html += $this.find("option:eq(0)").text();
+		html += "</p>";
+		html += '<img src="';
+		html += $this.find("option:eq(0)").attr("data-icon");
+		html += '" alt="icons" />';
+		html += '</div><div class="c_select-block display-n"><div class="c_select-wrapper">';
+		$this.find("option:eq(0)").css("display", "none");
+		$this.find("option").each(function () {
+			html +=
+				'<button class="c_select-element" data-val="' +
+				$(this).attr("value") +
+				'" type="button">' +
+				"<p>" +
+				$(this).text() +
+				"</p>" +
+				'<img src="' +
+				$(this).attr("data-icon") +
+				'" alt="icons"' +
+				"</button>";
+		});
+		html += "</div></div></div></div>";
+		$(html).insertAfter($this.hide());
+
+		$(".c_select-element:eq(0)").addClass("c_select-element-active");
+
+		var $next = $this.next();
+		$next
+			.find(".c_select-placeholder")
+			.on("click", function (e) {
+				e.preventDefault();
+				$next.find(".c_select-block").toggleClass("display-n"),
+					$next.toggleClass("c_select-item-active");
+			})
+			.end()
+			.find(".c_select-element")
+			.on("click", function (e) {
+				e.preventDefault();
+				$(".c_select-element").removeClass("c_select-element-active");
+				$(this).addClass("c_select-element-active");
+				$next.find(".c_select-placeholder").html($(this).html());
+				$this.val($(this).data("val")).trigger("change");
+				$next.find(".c_select-placeholder").trigger("click");
+			});
 	});
 });

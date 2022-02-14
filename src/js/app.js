@@ -8,3 +8,4 @@
 @@include("./promotion/index.js");
 @@include("./booking/index.js");
 @@include("./dish/index.js");
+@@include("./basket/index.js");

@@ -1,0 +1,150 @@
+@@include('components/_head.pug', {
+    "title": "Винная карта",
+})
+
+@@include('components/_header.pug')
+
+.basket 
+    img(class="basket__bg" src="./img/bg-left.png" alt="img")
+    img(class="basket__bg" src="./img/bg-right.png" alt="img")
+
+    .basket-block 
+        .basket-block__containers 
+            .basket-block__title Корзина
+            .basket-block__paths 
+                .basket-block__path 
+                    .basket-block__path-l.basket-block__path-a
+                    .basket-block__path-i.basket-block__path-a
+                        .basket-block__path-c 
+                        p Ваши товары
+                    .basket-block__path-l 
+                    .basket-block__path-i 
+                        .basket-block__path-c 
+                        p Оформление
+                    .basket-block__path-l 
+                    .basket-block__path-i 
+                        .basket-block__path-c 
+                        p Подтверждение заказа
+                    .basket-block__path-l 
+                    .basket-block__path-i 
+                        .basket-block__path-c 
+                        p Оплата
+                    .basket-block__path-l 
+                    .basket-block__path-i 
+                        .basket-block__path-c 
+                        p Bon appétit!
+                    .basket-block__path-l 
+            .basket-block__lists
+                .basket-block__rec 
+                    .basket-block__rec-t Рекомендации к
+                        br
+                        | вашему заказу:
+                    .basket-block__rec-l
+                        a(href="#").basket-block__rec-i 
+                            .basket-block__rec-d Клубничное безе
+                            .basket-block__rec-p 
+                                img(src="./img/basket/rec.png" alt="img")
+                        a(href="#").basket-block__rec-i 
+                            .basket-block__rec-d Клубничное безе
+                            .basket-block__rec-p 
+                                img(src="./img/basket/rec.png" alt="img")
+                        a(href="#").basket-block__rec-i 
+                            .basket-block__rec-d Клубничное безе
+                            .basket-block__rec-p 
+                                img(src="./img/basket/rec.png" alt="img")
+                        a(href="#").basket-block__rec-i 
+                            .basket-block__rec-d Клубничное безе
+                            .basket-block__rec-p 
+                                img(src="./img/basket/rec.png" alt="img")
+                        a(href="#").basket-block__rec-i 
+                            .basket-block__rec-d Клубничное безе
+                            .basket-block__rec-p 
+                                img(src="./img/basket/rec.png" alt="img")
+                        a(href="#").basket-block__rec-i 
+                            .basket-block__rec-d Клубничное безе
+                            .basket-block__rec-p 
+                                img(src="./img/basket/rec.png" alt="img")
+                        a(href="#").basket-block__rec-i 
+                            .basket-block__rec-d Клубничное безе
+                            .basket-block__rec-p 
+                                img(src="./img/basket/rec.png" alt="img")
+                        a(href="#").basket-block__rec-i 
+                            .basket-block__rec-d Клубничное безе
+                            .basket-block__rec-p 
+                                img(src="./img/basket/rec.png" alt="img")
+                .basket-block__nav 
+                    .basket-block__nav-i Изображение блюда
+                    .basket-block__nav-i Название блюда и калорийность
+                    .basket-block__nav-i Количество (шт.)
+                    .basket-block__nav-i Цена  (
+                        span 1 
+                        | шт.)
+                .basket-block__list 
+                    .basket-block__items 
+                        .basket-block__items-close 
+                            img(src="./svg/basket/close.svg" alt="icons")
+                        .basket-block__items-p 
+                            img(src="./img/basket/items.png" alt="img")
+                        .basket-block__items-d 
+                            p Банановый десерт
+                            span 348 грамм/673 ккал
+                        .basket-block__items-c 
+                            .basket-block__items-mi
+                                img(src="./svg/basket/minus.svg" alt="icons")
+                            .basket-block__items-s 
+                                p 1
+                            .basket-block__items-pl 
+                                img(src="./svg/basket/plus.svg" alt="icons")
+                        .basket-block__items-price 430 руб.
+                    .basket-block__items 
+                        .basket-block__items-close 
+                            img(src="./svg/basket/close.svg" alt="icons")
+                        .basket-block__items-p 
+                            img(src="./img/basket/items.png" alt="img")
+                        .basket-block__items-d 
+                            p Банановый десерт
+                            span 348 грамм/673 ккал
+                        .basket-block__items-c 
+                            .basket-block__items-mi
+                                img(src="./svg/basket/minus.svg" alt="icons")
+                            .basket-block__items-s 
+                                p 1
+                            .basket-block__items-pl 
+                                img(src="./svg/basket/plus.svg" alt="icons")
+                        .basket-block__items-price 430 руб.
+                    .basket-block__items 
+                        .basket-block__items-close 
+                            img(src="./svg/basket/close.svg" alt="icons")
+                        .basket-block__items-p 
+                            img(src="./img/basket/items.png" alt="img")
+                        .basket-block__items-d 
+                            p Банановый десерт
+                            span 348 грамм/673 ккал
+                        .basket-block__items-c 
+                            .basket-block__items-mi
+                                img(src="./svg/basket/minus.svg" alt="icons")
+                            .basket-block__items-s 
+                                p 1
+                            .basket-block__items-pl 
+                                img(src="./svg/basket/plus.svg" alt="icons")
+                        .basket-block__items-price 430 руб.
+
+            .basket-block__empty
+                p На данный момент ваша корзина пуста!
+
+            .basket-block__bon 
+                h3 Bon appétit!
+                p Ваш заказ принят. Ожидайте ответа
+                img(src="./svg/basket/bon.svg" alt="icons")
+                button.basket-block__bon-b 
+                    p Ок
+
+            .basket-block__arrows 
+                .basket-block__arrows-p 
+                    img(src="./svg/basket/arrow-prev.svg" alt="icons")
+                .basket-block__arrows-n 
+                    img(src="./svg/basket/arrow-next.svg" alt="icons")
+
+@@include('components/_footers.pug')
+
+@@include('components/_script.pug')
