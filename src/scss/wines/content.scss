@@ -55,7 +55,7 @@
 			justify-content: center;
 			width: 100%;
 			height: 100%;
-			margin: 120px 0;
+			margin: 50px 0 50px 0;
 			& img {
 				width: unset;
 				height: unset;
@@ -154,11 +154,20 @@
 			line-height: 60px;
 			color: #021245;
 		}
+		&-wrappers {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			width: 100%;
+			margin: 80px 0 0 0;
+		}
 		&-status {
 			margin: 5px 0 39px 0;
 			display: flex;
 			align-items: center;
+			gap: 10px;
 			justify-content: flex-start;
+			flex-direction: column;
 		}
 		&-viv {
 			background: #b1152d;
@@ -279,8 +288,8 @@
 			}
 		}
 		&-combinations {
-			width: 52px;
-			height: 52px;
+			width: 33px;
+			height: 33px;
 			background: #003f80;
 			margin: 0 8px;
 			border-radius: 50%;
@@ -290,7 +299,6 @@
 			cursor: pointer;
 		}
 		&-catalog {
-			margin: 55px 0 30px 0;
 			display: flex;
 			align-items: center;
 			justify-content: flex-start;
@@ -300,7 +308,7 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content: flex-start;
-			margin: 0 90px 0 0;
+			margin: 0 30px 0 0;
 			&:last-child {
 				margin: 0 0 0 0;
 			}
@@ -319,6 +327,7 @@
 			width: 100%;
 			align-items: center;
 			justify-content: space-between;
+			margin: 55px 0 0 0;
 		}
 		&-back {
 			min-width: 240px;

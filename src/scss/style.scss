@@ -104,6 +104,11 @@ h6 {
 		transform: translate(-50%, 0%);
 		top: 50px;
 		cursor: pointer;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 15px;
 	}
 	&__lang {
 		font-family: PTSerif;
