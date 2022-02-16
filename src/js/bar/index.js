@@ -43,13 +43,15 @@ $(".bar-block__filter-reset").on("click", () => {
 	$(".bar-block__filter-search input").val("");
 
 	let catalog = $(".bar-block__filter-catalog select option").eq(0).text();
-	let country = $(".bar-block__filter-country select option").eq(0).text();
+	let country = $(".bar-block__filter-country select option").eq(0).html();
 	let countryImg = $(".bar-block__filter-country .c_select option").eq(0).attr("data-icon");
 	let fortress = $(".bar-block__filter-fortress select option").eq(0).text();
 
 	$(".bar-block__filter-catalog .cart-select-placeholder").html(catalog);
-	$(".bar-block__filter-country .c_select-placeholder p").text(country);
-	$(".bar-block__filter-country .c_select-placeholder img").attr("src", `${countryImg}`);
+	$(".bar-block__filter-country .c_select-placeholder").html(`<p>${country}</p>`);
+	$(".bar-block__filter-country .c_select-placeholder").append(
+		`<img src="${countryImg}" alt='icons' />`
+	);
 	$(".bar-block__filter-fortress .cart-select-placeholder").html(fortress);
 });
 
@@ -64,7 +66,7 @@ $(() => {
 	$("select.c_select").each(function () {
 		var $this = $(this);
 
-		var html = '<div class="c_select"><div class="c_select-placeholder">';
+		var html = '<div class="c_select"><div class="c_select-placeholder"><p>';
 		html += $this.find("option:eq(0)").text();
 		html += "</p>";
 		html += '<img src="';

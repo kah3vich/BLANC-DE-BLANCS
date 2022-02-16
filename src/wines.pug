@@ -10,6 +10,9 @@
 
     .wines-block 
         .wines-block__containers 
+            button.wines-block__info-back(onclick="history.back();") 
+                img(src="./svg/wines/arrow.svg" alt="icons")
+                p Назад
             .wines-block__profile 
                 .wines-block__profile-new 
                     img(src="./img/wines/new.png" alt="img")
@@ -37,9 +40,7 @@
 
             .wines-block__info
                 .wines-block__info-add Новинка
-                .wines-block__info-title Красное вино 
-                    br
-                    | INCERMAN
+                .wines-block__info-title Красное вино INCERMAN
                 .wines-block__info-description Стилистика:  
                     span Данное вино подходит для мясных блюд, хорошо сочетается с гусиным мясом. Может вам понравиться, если вы любите нотки сладости.
                 .wines-block__info-wrappers 
@@ -65,9 +66,6 @@
                             img(src="./img/wines/year.png" alt="img")
                             p 1998
                 .wines-block__info-btns 
-                    button.wines-block__info-back(onclick="history.back();") 
-                        img(src="./svg/wines/arrow.svg" alt="icons")
-                        p Назад
                     button.wines-block__info-pay 
                         img(src="./svg/wines/baskets.svg" alt="icons")
                         p 290 руб

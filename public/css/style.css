@@ -198,6 +198,11 @@
 	        user-select : none;
 }
 
+*:focus {
+	outline : none;
+	border : none;
+}
+
 body {
 	background-color : #ffffff;
 	position : relative;
@@ -634,6 +639,17 @@ h6 {
 	letter-spacing : 0.1em;
 	color : #ffffff;
 	margin : 25px 0 0 0;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+}
+
+.footer__contact-btn:hover {
+	color : #003f80;
+	background : #ffffff;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
 }
 
 .footer__contact-maps {
@@ -957,6 +973,7 @@ h6 {
 	top : 50px;
 	right : 50px;
 	cursor : pointer;
+	z-index : 20;
 }
 
 .modelGalleryPhoto__block {
@@ -1427,6 +1444,17 @@ h6 {
 	cursor : pointer;
 }
 
+.indexSliders_2 .ind-slider__wrappers-items p {
+	font-family : Prata;
+	font-style : normal;
+	font-weight : normal;
+	font-size : 13px;
+	line-height : 18px;
+	letter-spacing : 0.1em;
+	color : #000000;
+	display : none;
+}
+
 .indexSliders_2 .ind-slider__wrappers-items img {
 	width : 100%;
 	height : 100%;
@@ -1576,11 +1604,24 @@ h6 {
 }
 
 .ind-advantage__table {
-	display : -ms-grid;
-	display :     grid;
-	grid-template-columns : repeat(auto-fill, minmax(376px, 1fr));
 	width : 100%;
-	justify-items : center;
+}
+
+.ind-advantage__table .swiper-slide {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+}
+
+.ind-advantage__table .swiper-button-next
+,
+.ind-advantage__table .swiper-button-prev
+,
+.ind-advantage__table .swiper-pagination {
+	display : none;
 }
 
 .ind-advantage__table-items {
@@ -1608,6 +1649,43 @@ h6 {
 	position : relative;
 }
 
+.ind-advantage__table-items:hover .ind-advantage__table-left {
+	-webkit-transform : scale(0.9);
+	    -ms-transform : scale(0.9);
+	        transform : scale(0.9);
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+	left : -7px;
+}
+
+.ind-advantage__table-items:hover .ind-advantage__table-right {
+	-webkit-transform : scale(0.9);
+	    -ms-transform : scale(0.9);
+	        transform : scale(0.9);
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+	right : -7px;
+}
+
+.ind-advantage__table-items:hover .ind-advantage__table-btn {
+	background : #ffffff;
+	color : #003f80;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+}
+
+.ind-advantage__table-items:hover .ind-advantage__table-icons {
+	-webkit-transform : scale(1.1);
+	    -ms-transform : scale(1.1);
+	        transform : scale(1.1);
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+}
+
 .ind-advantage__table-icons {
 	width : 280px;
 	height : 280px;
@@ -1622,6 +1700,9 @@ h6 {
 	-ms-flex-pack : center;
 	justify-content : center;
 	border-radius : 50%;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
 }
 
 .ind-advantage__table-text {
@@ -1633,6 +1714,9 @@ h6 {
 	line-height : 31px;
 	text-align : center;
 	color : #ffffff;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
 }
 
 .ind-advantage__table-btn {
@@ -1665,12 +1749,18 @@ h6 {
 	position : absolute;
 	bottom : 0;
 	left : 0;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
 }
 
 .ind-advantage__table-right {
 	position : absolute;
 	top : 0;
 	right : 0;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
 }
 
 .menu {
@@ -1926,6 +2016,29 @@ h6 {
 	        box-shadow : 0px 0px 8px rgba(0, 88, 180, 0.6);
 }
 
+.menu-block__items:hover .menu-block__items-price {
+	background : #003f80;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+}
+
+.menu-block__items:hover .menu-block__items-price p {
+	color : #ffffff;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+}
+
+.menu-block__items:hover .menu-block__items-photo img {
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+	-webkit-transform : scale(1.1);
+	    -ms-transform : scale(1.1);
+	        transform : scale(1.1);
+}
+
 .menu-block__items-text {
 	padding : 18px 12px;
 	width : 100%;
@@ -1962,6 +2075,9 @@ h6 {
 	height : 100%;
 	-o-object-fit : cover;
 	   object-fit : cover;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
 }
 
 .menu-block__items-price {
@@ -1979,6 +2095,9 @@ h6 {
 	border-radius : 39px;
 	padding : 10px;
 	width : 130px;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
 }
 
 .menu-block__items-price p {
@@ -1988,6 +2107,9 @@ h6 {
 	font-size : 18px;
 	line-height : 23px;
 	color : #003f80;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
 }
 
 .menu-block__items-veg {
@@ -2229,7 +2351,8 @@ h6 {
 
 .bar-block__filter-search input {
 	height : 40px;
-	outline : none;
+	/* outline: none; */
+	border : none;
 	font-family : TT Norms;
 	font-style : normal;
 	font-weight : 500;
@@ -2237,6 +2360,11 @@ h6 {
 	line-height : 45px;
 	color : #06417d;
 	width : 150px;
+}
+
+.bar-block__filter-search input:focus {
+	border : none;
+	outline : none;
 }
 
 .bar-block__filter-search input::-webkit-input-placeholder {
@@ -2867,7 +2995,8 @@ h6 {
 
 .wine-block__filter-search input {
 	height : 40px;
-	outline : none;
+	/* outline: none; */
+	border : none;
 	font-family : TT Norms;
 	font-style : normal;
 	font-weight : 500;
@@ -2875,6 +3004,11 @@ h6 {
 	line-height : 45px;
 	color : #06417d;
 	width : 150px;
+}
+
+.wine-block__filter-search input:focus {
+	border : none;
+	outline : none;
 }
 
 .wine-block__filter-search input::-webkit-input-placeholder {
@@ -3137,9 +3271,9 @@ h6 {
 	display : -webkit-box;
 	display : -ms-flexbox;
 	display : flex;
-	-webkit-box-align : start;
-	-ms-flex-align : start;
-	align-items : flex-start;
+	-webkit-box-align : revert;
+	-ms-flex-align : revert;
+	align-items : revert;
 	-webkit-box-pack : justify;
 	-ms-flex-pack : justify;
 	justify-content : space-between;
@@ -3310,7 +3444,7 @@ h6 {
 
 .wines-block__info {
 	width : 735px;
-	height : 100%;
+	height : unset;
 	background : #ffffff;
 	-webkit-box-shadow : 0 0 10px rgba(0, 88, 180, 0.28);
 	        box-shadow : 0 0 10px rgba(0, 88, 180, 0.28);
@@ -3599,28 +3733,30 @@ h6 {
 	-webkit-box-align : center;
 	-ms-flex-align : center;
 	align-items : center;
-	-webkit-box-pack : justify;
-	-ms-flex-pack : justify;
-	justify-content : space-between;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
 	margin : 55px 0 0 0;
 }
 
 .wines-block__info-back {
 	min-width : 240px;
-	border : 2px solid #003f80;
 	border-radius : 38.5px;
-	padding : 14px 30px;
+	padding : 14px 0;
 	display : -webkit-box;
 	display : -ms-flexbox;
 	display : flex;
 	-webkit-box-align : center;
 	-ms-flex-align : center;
 	align-items : center;
-	-webkit-box-pack : center;
-	-ms-flex-pack : center;
-	justify-content : center;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
 	cursor : pointer;
 	background : transparent;
+	position : absolute;
+	z-index : 5;
+	top : 185px;
 }
 
 .wines-block__info-back p {
@@ -3840,6 +3976,17 @@ h6 {
 	letter-spacing : 0.1em;
 	color : #003f80;
 	margin : 60px auto 35px auto;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+}
+
+.gallery-block__btn:hover {
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+	color : #ffffff;
+	background : #003f80;
 }
 
 .promotion {
@@ -4985,8 +5132,6 @@ h6 {
 .about-block__description-text {
 	width : 714px;
 	background : #ffffff;
-	-webkit-box-shadow : 0px 4px 4px rgba(0, 0, 0, 0.25);
-	        box-shadow : 0px 4px 4px rgba(0, 0, 0, 0.25);
 	padding : 35px;
 }
 

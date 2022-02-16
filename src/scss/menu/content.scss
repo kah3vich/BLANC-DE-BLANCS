@@ -162,6 +162,20 @@
 		position: relative;
 		justify-content: flex-start;
 		box-shadow: 0px 0px 8px rgba(0, 88, 180, 0.6);
+		&:hover {
+			& .menu-block__items-price {
+				background: #003f80;
+				transition: all 0.5s ease;
+				& p {
+					color: #ffffff;
+					transition: all 0.5s ease;
+				}
+			}
+			& .menu-block__items-photo img {
+				transition: all 0.5s ease;
+				transform: scale(1.1);
+			}
+		}
 		&-text {
 			padding: 18px 12px;
 			width: 100%;
@@ -187,6 +201,7 @@
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
+				transition: all 0.5s ease;
 			}
 		}
 		&-price {
@@ -198,6 +213,7 @@
 			border-radius: 39px;
 			padding: 10px;
 			width: 130px;
+			transition: all 0.5s ease;
 			& p {
 				font-family: PTSerif;
 				font-style: normal;
@@ -205,6 +221,7 @@
 				font-size: 18px;
 				line-height: 23px;
 				color: #003f80;
+				transition: all 0.5s ease;
 			}
 		}
 		&-veg {

@@ -98,7 +98,8 @@
 			}
 			& input {
 				height: 40px;
-				outline: none;
+				/* outline: none; */
+				border: none;
 				font-family: TT Norms;
 				font-style: normal;
 				font-weight: 500;
@@ -106,6 +107,10 @@
 				line-height: 45px;
 				color: #06417d;
 				width: 150px;
+				&:focus {
+					border: none;
+					outline: none;
+				}
 				&::placeholder {
 					font-family: TT Norms;
 					font-style: normal;

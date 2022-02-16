@@ -23,7 +23,7 @@
 		margin: 0 auto;
 		padding: 0 60px;
 		display: flex;
-		align-items: flex-start;
+		align-items: revert;
 		justify-content: space-between;
 		gap: 16px;
 	}
@@ -133,7 +133,7 @@
 	}
 	&__info {
 		width: 735px;
-		height: 100%;
+		height: unset;
 		background: #ffffff;
 		box-shadow: 0 0 10px rgb(0 88 180 / 28%);
 		padding: 30px 53px;
@@ -326,19 +326,21 @@
 			display: flex;
 			width: 100%;
 			align-items: center;
-			justify-content: space-between;
+			justify-content: flex-start;
 			margin: 55px 0 0 0;
 		}
 		&-back {
 			min-width: 240px;
-			border: 2px solid #003f80;
 			border-radius: 38.5px;
-			padding: 14px 30px;
+			padding: 14px 0;
 			display: flex;
 			align-items: center;
-			justify-content: center;
+			justify-content: flex-start;
 			cursor: pointer;
 			background: transparent;
+			position: absolute;
+			z-index: 5;
+			top: 185px;
 			& p {
 				font-family: TT Norms;
 				font-style: normal;

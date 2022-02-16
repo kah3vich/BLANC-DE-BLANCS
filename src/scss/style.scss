@@ -19,6 +19,10 @@ $bg: #fff;
 	box-sizing: border-box;
 	user-select: none;
 }
+*:focus {
+	outline: none;
+	border: none;
+}
 body {
 	background-color: $bg;
 	position: relative;
@@ -344,6 +348,12 @@ h6 {
 			letter-spacing: 0.1em;
 			color: #ffffff;
 			margin: 25px 0 0 0;
+			transition: all 0.5s ease;
+			&:hover {
+				color: #003f80;
+				background: #ffffff;
+				transition: all 0.5s ease;
+			}
 		}
 		&-maps {
 			display: flex;
@@ -563,6 +573,7 @@ h6 {
 		top: 50px;
 		right: 50px;
 		cursor: pointer;
+		z-index: 20;
 	}
 	&__block {
 		display: flex;

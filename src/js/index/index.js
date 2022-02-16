@@ -34,3 +34,17 @@ var indexSliders_2 = new Swiper(".indexSliders_2", {
 		crossFade: true,
 	},
 });
+
+var indexAdvantageTable = new Swiper(".indexAdvantageTable", {
+	navigation: {
+		nextEl: ".ind-advantage__table .swiper-controls .swiper-button-next",
+		prevEl: ".ind-advantage__table .swiper-controls .swiper-button-prev",
+	},
+	pagination: {
+		el: ".ind-advantage__table .swiper-controls .swiper-pagination",
+	},
+	// mousewheel: true,
+	keyboard: true,
+	slidesPerView: 3,
+	spaceBetween: 35,
+});
