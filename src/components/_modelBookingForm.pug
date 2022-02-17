@@ -1,0 +1,37 @@
+.modelBookingForm.display-n
+    .modelBookingForm__wrapper 
+        .modelBookingForm__close 
+            img(src="./svg/booking/close.svg" alt="icons")
+        .modelBookingForm__title Форма для бронирования
+        ul.modelBookingForm__date 
+            li.modelBookingForm__item
+                input(type="text" id="datepickerFormBooking" required)
+                label(for="datepickerFormBooking") *Дата
+            li.modelBookingForm__item
+                input(type="time" id="timeFormBooking" required)
+                label(for="timeFormBooking") *Время
+            li.modelBookingForm__item
+                input(type="number" id="countFormBooking" maxlength="2" required)
+                label(for="countFormBooking") *Кол-во гостей
+        ul.modelBookingForm__list
+            li.modelBookingForm__items 
+                input(type="text" id="nameFormBooking" required)
+                label(for="countFormBooking") *Имя
+            li.modelBookingForm__items 
+                input(type="text" id="surnameFormBooking" required)
+                label(for="countFormBooking") *Фамилия
+            li.modelBookingForm__items 
+                input(type="text" id="phoneFormBooking" required)
+                label(for="countFormBooking") *Телефон
+            li.modelBookingForm__items 
+                input(type="text" id="emailFormBooking" required)
+                label(for="countFormBooking") * e-mail
+            li.modelBookingForm__items 
+                textarea(type="text" id="textFormBooking")
+                label(for="countFormBooking") Ваш комментарий
+
+        .modelBookingForm__text 
+        .modelBookingForm__check-checkbox 
+            input(class="modelBookingForm__check-checkbox__input" type="checkbox" id="modelBookingForm" checked)
+            label(class="modelBookingForm__check-checkbox__label" for="modelBookingForm") Я принимаю условия и правила бронирования ресторана и даю свое согласие на обработку персональных данных.
+        button.modelBookingForm__btn(type="submit") Подтвердить
