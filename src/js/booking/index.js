@@ -105,9 +105,4 @@ $(".modelBookingForm__btn").on("click", () => {
 			$(`${num}`).closest("li").css("border", "2px solid rgba(0, 56, 128, 0.6)");
 		}
 	});
-	if ($(".modelBookingForm__check-checkbox input").attr("checked") !== "checked") {
-		$(".modelBookingForm__check-checkbox__label:before").css("border", "1px solid red");
-	} else {
-		$(".modelBookingForm__check-checkbox__label:before").css("border", "1px solid #000000");
-	}
 });
