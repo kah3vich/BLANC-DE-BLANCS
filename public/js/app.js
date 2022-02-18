@@ -25,6 +25,49 @@ $(function () {
     });
   });
 });
+$(".header__menu").on("click", function () {
+  $(".menus").removeClass("display-n");
+  $('body').css('overflow', 'hidden');
+  gsap.to($(".menus"), 0.5, {
+    delay: 0.3,
+    opacity: 1,
+    ease: "Expo.easeInOut"
+  });
+  gsap.to($(".menus__wrapper"), 2, {
+    delay: 0.3,
+    left: "0",
+    ease: "Expo.easeInOut"
+  });
+});
+$('.menus__close').on('click', function () {
+  gsap.to($(".menus"), 1, {
+    delay: 0.3,
+    opacity: 0,
+    ease: "Expo.easeInOut"
+  });
+  gsap.to($(".menus__wrapper"), 0.5, {
+    delay: 0.5,
+    left: "-100%",
+    ease: "Expo.easeInOut"
+  });
+  setTimeout(function () {
+    $(".menus").addClass("display-n");
+    $('body').css('overflow', 'visible');
+  }, 1400);
+});
+
+var _loop = function _loop(i) {
+  $(".menus__items:nth-child(".concat(i, ")")).hover(function () {
+    $(".menus__items:nth-child(".concat(i, ")")).addClass('hover__menu-items');
+  }, function () {
+    $(".menus__items:nth-child(".concat(i, ")")).removeClass('hover__menu-items');
+  });
+};
+
+for (var i = 1; i <= $('.menus__items').length; i++) {
+  _loop(i);
+}
+
 ;
 var indexHeader = new Swiper(".indexHeader", {
   navigation: {
@@ -204,8 +247,8 @@ $(function () {
   });
 });
 
-var _loop = function _loop(i) {
-  $(".gallery-block__items:nth-child(".concat(i, ")")).on("click", function () {
+var _loop2 = function _loop2(_i) {
+  $(".gallery-block__items:nth-child(".concat(_i, ")")).on("click", function () {
     $("body").css("overflow", "hidden");
     $(".modelGalleryPhoto").removeClass("display-n");
     var modelGalleryPhotos = new Swiper(".modelGalleryPhotos", {
@@ -215,13 +258,13 @@ var _loop = function _loop(i) {
       },
       slidesPerView: 1,
       spaceBetween: 0,
-      initialSlide: i - 1
+      initialSlide: _i - 1
     });
   });
 };
 
-for (var i = 1; i <= $(".gallery-block__items").length; i++) {
-  _loop(i);
+for (var _i = 1; _i <= $(".gallery-block__items").length; _i++) {
+  _loop2(_i);
 }
 
 $(".galleryClose").on("click", function () {
@@ -230,32 +273,32 @@ $(".galleryClose").on("click", function () {
 });
 ;
 
-var _loop2 = function _loop2(_i) {
-  $(".promotion-block__nav-items:nth-child(".concat(_i, ")")).on("click", function () {
+var _loop3 = function _loop3(_i2) {
+  $(".promotion-block__nav-items:nth-child(".concat(_i2, ")")).on("click", function () {
     $(".promotion-block__nav-items").removeClass("promotion-block__nav-active");
-    $(".promotion-block__nav-items:nth-child(".concat(_i, ")")).addClass("promotion-block__nav-active");
+    $(".promotion-block__nav-items:nth-child(".concat(_i2, ")")).addClass("promotion-block__nav-active");
     $(".promotion-block__list").addClass("display-n");
-    $(".promotion-block__list").eq(_i - 1).removeClass("display-n");
+    $(".promotion-block__list").eq(_i2 - 1).removeClass("display-n");
   });
 };
 
-for (var _i = 1; _i <= $(".promotion-block__nav-items").length; _i++) {
-  _loop2(_i);
+for (var _i2 = 1; _i2 <= $(".promotion-block__nav-items").length; _i2++) {
+  _loop3(_i2);
 }
 
 ;
 
-var _loop3 = function _loop3(_i2) {
-  $(".booking-block__nav-items:nth-child(".concat(_i2, ")")).on("click", function () {
+var _loop4 = function _loop4(_i3) {
+  $(".booking-block__nav-items:nth-child(".concat(_i3, ")")).on("click", function () {
     $(".booking-block__nav-items").removeClass("booking-block__nav-active");
-    $(".booking-block__nav-items:nth-child(".concat(_i2, ")")).addClass("booking-block__nav-active");
+    $(".booking-block__nav-items:nth-child(".concat(_i3, ")")).addClass("booking-block__nav-active");
     $(".booking-block__items").addClass("display-n");
-    $(".booking-block__items").eq(_i2 - 1).removeClass("display-n");
+    $(".booking-block__items").eq(_i3 - 1).removeClass("display-n");
   });
 };
 
-for (var _i2 = 1; _i2 <= $(".booking-block__nav-items").length; _i2++) {
-  _loop3(_i2);
+for (var _i3 = 1; _i3 <= $(".booking-block__nav-items").length; _i3++) {
+  _loop4(_i3);
 }
 
 $(".modelBookingPhoto__close").on("click", function () {
@@ -267,12 +310,12 @@ $(".modelBookingForm__close").on("click", function () {
   $("body").css("overflow", "visible");
 });
 
-for (var _i3 = 1; _i3 <= $(".booking-block__items-block").length; _i3++) {
-  $(".booking-block__items-block:nth-child(".concat(_i3, ") .booking-block__items-title h3,\n\t\t.booking-block__items-block:nth-child(").concat(_i3, ") .booking-block__items-photo img")).on("click", function () {
+for (var _i4 = 1; _i4 <= $(".booking-block__items-block").length; _i4++) {
+  $(".booking-block__items-block:nth-child(".concat(_i4, ") .booking-block__items-title h3,\n\t\t.booking-block__items-block:nth-child(").concat(_i4, ") .booking-block__items-photo img")).on("click", function () {
     $(".modelBookingPhoto").removeClass("display-n");
     $("body").css("overflow", "hidden");
   });
-  $(".booking-block__items-block:nth-child(".concat(_i3, ") .booking-block__items-btn")).on("click", function () {
+  $(".booking-block__items-block:nth-child(".concat(_i4, ") .booking-block__items-btn")).on("click", function () {
     $(".modelBookingForm").removeClass("display-n");
     $("body").css("overflow", "hidden");
   });

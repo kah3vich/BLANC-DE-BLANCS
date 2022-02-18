@@ -38,3 +38,45 @@ $(() => {
 			});
 	});
 });
+
+$(".header__menu").on("click", () => {
+	$(".menus").removeClass("display-n");
+	$('body').css('overflow', 'hidden')
+	gsap.to($(".menus"), 0.5, {
+		delay: 0.3,
+		opacity: 1,
+		ease: "Expo.easeInOut",
+	});
+	gsap.to($(".menus__wrapper"), 2, {
+		delay: 0.3,
+		left: "0",
+		ease: "Expo.easeInOut",
+	});
+});
+
+$('.menus__close').on('click', () => {
+	gsap.to($(".menus"), 1, {
+		delay: 0.3,
+		opacity: 0,
+		ease: "Expo.easeInOut",
+	});
+	gsap.to($(".menus__wrapper"), 0.5, {
+		delay: 0.5,
+		left: "-100%",
+		ease: "Expo.easeInOut",
+	});
+	setTimeout(() => {
+		$(".menus").addClass("display-n");
+		$('body').css('overflow', 'visible')
+	}, 1400);
+})
+
+for (let i = 1; i <= $('.menus__items').length; i++) {
+	$(`.menus__items:nth-child(${i})`).hover(() => {
+		$(`.menus__items:nth-child(${i})`).addClass('hover__menu-items')
+	}, () => {
+		$(`.menus__items:nth-child(${i})`).removeClass('hover__menu-items')
+	})
+}
+
+
