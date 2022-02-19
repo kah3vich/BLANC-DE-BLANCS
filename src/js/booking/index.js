@@ -85,6 +85,7 @@ $.datepicker.setDefaults($.datepicker.regional["ru"]);
 
 $(() => {
 	$("#datepickerFormBooking").datepicker();
+	$("#datepickerFormBasket").datepicker();
 });
 
 const numbers = [

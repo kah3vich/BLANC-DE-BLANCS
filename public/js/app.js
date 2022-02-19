@@ -344,6 +344,7 @@ $.datepicker.regional["ru"] = {
 $.datepicker.setDefaults($.datepicker.regional["ru"]);
 $(function () {
   $("#datepickerFormBooking").datepicker();
+  $("#datepickerFormBasket").datepicker();
 });
 var numbers = ["#datepickerFormBooking", "#timeFormBooking", "#countFormBooking", "#nameFormBooking", "#surnameFormBooking", "#phoneFormBooking", "#emailFormBooking"];
 $(".modelBookingForm__btn").on("click", function () {
@@ -369,9 +370,219 @@ var sliderDish = new Swiper(".sliderDish", {
 ;
 window.addEventListener("scroll", function () {
   if (pageYOffset >= 100) {
-    $('.header__logo img').eq(1).css('display', 'none');
+    $(".header__logo img").eq(1).css("display", "none");
   } else if (pageYOffset <= 100) {
-    $('.header__logo img').eq(1).css('display', 'block');
+    $(".header__logo img").eq(1).css("display", "block");
   }
 });
+var elementBasketCount = 5;
+var activeBasketIndex = 0;
+
+var _loop5 = function _loop5(_i5) {
+  $("#btnBasketPath_".concat(_i5)).on("click", function () {
+    changeSlideBasket(_i5 - 1);
+  });
+};
+
+for (var _i5 = 1; _i5 <= $(".basket-block__path-i").length; _i5++) {
+  _loop5(_i5);
+}
+
+$(".basket-block__arrows-p").on("click", function () {
+  changeSlideBasket("prev");
+});
+$(".basket-block__arrows-n").on("click", function () {
+  changeSlideBasket("next");
+});
+
+function closeBasketElement() {
+  $(".basket-block__lists").addClass("display-n");
+  $(".basket-block__empty").addClass("display-n");
+  $(".basket-block__bon").addClass("display-n");
+  $(".basket-block__form").addClass("display-n");
+  $(".basket-block__confirmation").addClass("display-n");
+  $(".basket-block__payment").addClass("display-n");
+}
+
+function lineBasketPath() {
+  for (var _i6 = 1; _i6 <= $(".basket-block__path-i").length; _i6++) {
+    $(".basket-block__path-i").removeClass("basket-block__path-a");
+  }
+
+  for (var _i7 = 1; _i7 <= $(".basket-block__path-l").length; _i7++) {
+    $(".basket-block__path-l").removeClass("basket-block__path-a");
+  }
+}
+
+function changeSlideBasket(id) {
+  if (id === "next") {
+    activeBasketIndex++;
+
+    if (activeBasketIndex === elementBasketCount) {
+      activeBasketIndex = 0;
+    }
+  } else if (id === "prev") {
+    activeBasketIndex--;
+
+    if (activeBasketIndex < 0) {
+      activeBasketIndex = elementBasketCount - 1;
+    }
+  }
+
+  if (activeBasketIndex == 0) {
+    closeBasketElement();
+    $(".basket-block__lists").removeClass("display-n");
+    lineBasketPath();
+    $(".basket-block__path-l").eq(0).addClass("basket-block__path-a");
+    $(".basket-block__path-i").eq(0).addClass("basket-block__path-a");
+  }
+
+  if (activeBasketIndex == 1) {
+    closeBasketElement();
+    $(".basket-block__form").removeClass("display-n");
+    lineBasketPath();
+
+    for (var _i8 = 0; _i8 <= 1; _i8++) {
+      $(".basket-block__path-l").eq(_i8).addClass("basket-block__path-a");
+      $(".basket-block__path-i").eq(_i8).addClass("basket-block__path-a");
+    }
+  }
+
+  if (activeBasketIndex == 2) {
+    closeBasketElement();
+    $(".basket-block__confirmation").removeClass("display-n");
+    lineBasketPath();
+
+    for (var _i9 = 0; _i9 <= 2; _i9++) {
+      $(".basket-block__path-l").eq(_i9).addClass("basket-block__path-a");
+      $(".basket-block__path-i").eq(_i9).addClass("basket-block__path-a");
+    }
+  }
+
+  if (activeBasketIndex == 3) {
+    closeBasketElement();
+    $(".basket-block__payment").removeClass("display-n");
+    lineBasketPath();
+
+    for (var _i10 = 0; _i10 <= 3; _i10++) {
+      $(".basket-block__path-l").eq(_i10).addClass("basket-block__path-a");
+      $(".basket-block__path-i").eq(_i10).addClass("basket-block__path-a");
+    }
+  }
+
+  if (activeBasketIndex == 4) {
+    closeBasketElement();
+    $(".basket-block__bon").removeClass("display-n");
+    lineBasketPath();
+
+    for (var _i11 = 0; _i11 <= 4; _i11++) {
+      $(".basket-block__path-l").eq(_i11).addClass("basket-block__path-a");
+      $(".basket-block__path-i").eq(_i11).addClass("basket-block__path-a");
+    }
+
+    $(".basket-block__path-l").eq(5).addClass("basket-block__path-a");
+  }
+
+  if (id == 0) {
+    activeBasketIndex = 0;
+    closeBasketElement();
+    $(".basket-block__lists").removeClass("display-n");
+    lineBasketPath();
+    $(".basket-block__path-l").eq(0).addClass("basket-block__path-a");
+    $(".basket-block__path-i").eq(0).addClass("basket-block__path-a");
+  }
+
+  if (id == 1) {
+    activeBasketIndex = 1;
+    closeBasketElement();
+    $(".basket-block__form").removeClass("display-n");
+    lineBasketPath();
+
+    for (var _i12 = 0; _i12 <= 1; _i12++) {
+      $(".basket-block__path-l").eq(_i12).addClass("basket-block__path-a");
+      $(".basket-block__path-i").eq(_i12).addClass("basket-block__path-a");
+    }
+  }
+
+  if (id == 2) {
+    activeBasketIndex = 2;
+    closeBasketElement();
+    $(".basket-block__confirmation").removeClass("display-n");
+    lineBasketPath();
+
+    for (var _i13 = 0; _i13 <= 2; _i13++) {
+      $(".basket-block__path-l").eq(_i13).addClass("basket-block__path-a");
+      $(".basket-block__path-i").eq(_i13).addClass("basket-block__path-a");
+    }
+  }
+
+  if (id == 3) {
+    activeBasketIndex = 3;
+    closeBasketElement();
+    $(".basket-block__payment").removeClass("display-n");
+    lineBasketPath();
+
+    for (var _i14 = 0; _i14 <= 3; _i14++) {
+      $(".basket-block__path-l").eq(_i14).addClass("basket-block__path-a");
+      $(".basket-block__path-i").eq(_i14).addClass("basket-block__path-a");
+    }
+  }
+
+  if (id == 4) {
+    activeBasketIndex = 4;
+    closeBasketElement();
+    $(".basket-block__bon").removeClass("display-n");
+    lineBasketPath();
+
+    for (var _i15 = 0; _i15 <= 4; _i15++) {
+      $(".basket-block__path-l").eq(_i15).addClass("basket-block__path-a");
+      $(".basket-block__path-i").eq(_i15).addClass("basket-block__path-a");
+    }
+
+    $(".basket-block__path-l").eq(5).addClass("basket-block__path-a");
+  }
+}
+
+var _loop6 = function _loop6(_i16) {
+  $(".basket-block__form-s:nth-child(".concat(_i16, ")")).on("click", function () {
+    $(".basket-block__form-s").removeClass("basket-block__form-s_a");
+    $(".basket-block__form-s").eq(_i16 - 1).addClass("basket-block__form-s_a");
+
+    if ($(".basket-block__form-s:nth-child(2)").hasClass("basket-block__form-s_a")) {
+      $(".basket-block__form-date").removeClass("display-n");
+    } else {
+      $(".basket-block__form-date").addClass("display-n");
+    }
+  });
+};
+
+for (var _i16 = 1; _i16 <= $(".basket-block__form-s").length; _i16++) {
+  _loop6(_i16);
+}
+
+var _loop7 = function _loop7(_i17) {
+  $(".basket-block__form-d:nth-child(".concat(_i17, ")")).on("click", function () {
+    $(".basket-block__form-d").removeClass("basket-block__form-d_a");
+    $(".basket-block__form-d").eq(_i17 - 1).addClass("basket-block__form-d_a");
+
+    if ($(".basket-block__form-d:nth-child(2)").hasClass("basket-block__form-d_a")) {
+      $(".basket-block__form-street").addClass("display-n");
+      $(".basket-block__form-address").addClass("display-n");
+      $(".basket-block__form-text").addClass("display-n");
+      $(".basket-block__form-title-d").addClass("display-n");
+      $(".basket-block__form-texts").removeClass("display-n");
+    } else {
+      $(".basket-block__form-street").removeClass("display-n");
+      $(".basket-block__form-address").removeClass("display-n");
+      $(".basket-block__form-texts").addClass("display-n");
+      $(".basket-block__form-text").removeClass("display-n");
+      $(".basket-block__form-title-d").removeClass("display-n");
+    }
+  });
+};
+
+for (var _i17 = 1; _i17 <= $(".basket-block__form-d").length; _i17++) {
+  _loop7(_i17);
+}
+
 ;

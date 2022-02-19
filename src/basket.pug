@@ -14,27 +14,27 @@
             .basket-block__paths 
                 .basket-block__path 
                     .basket-block__path-l.basket-block__path-a
-                    .basket-block__path-i.basket-block__path-a
+                    .basket-block__path-i#btnBasketPath_1.basket-block__path-a
                         .basket-block__path-c 
                         p Ваши товары
                     .basket-block__path-l 
-                    .basket-block__path-i 
+                    .basket-block__path-i#btnBasketPath_2 
                         .basket-block__path-c 
                         p Оформление
                     .basket-block__path-l 
-                    .basket-block__path-i 
+                    .basket-block__path-i#btnBasketPath_3 
                         .basket-block__path-c 
                         p Подтверждение заказа
                     .basket-block__path-l 
-                    .basket-block__path-i 
+                    .basket-block__path-i#btnBasketPath_4 
                         .basket-block__path-c 
                         p Оплата
                     .basket-block__path-l 
-                    .basket-block__path-i 
+                    .basket-block__path-i#btnBasketPath_5 
                         .basket-block__path-c 
                         p Bon appétit!
                     .basket-block__path-l 
-            .basket-block__lists.display-n
+            .basket-block__lists
                 .basket-block__rec 
                     .basket-block__rec-t Рекомендации к
                         br
@@ -155,11 +155,59 @@
                 button.basket-block__bon-b 
                     p Ок
 
-            .basket-block__form 
+            .basket-block__form.display-n
                 .basket-block__form-profile 
                     .basket-block__form-title Оформление заказа
                     .basket-block__form-title Заказчик:
+                    .basket-block__form-name 
+                        input(type="text" id="basketName")
+                        label(for="basketName") *Имя
+                    .basket-block__form-surname 
+                        input(type="text" id="basketSurname")
+                        label(for="basketSurname") *Фамилия
+                    .basket-block__form-phone 
+                        input(type="text" id="basketPhone")
+                        label(for="basketPhone") *Телефон
+                    .basket-block__form-title Способ доставки:
+                    .basket-block__form-deliverys
+                        button.basket-block__form-s.basket-block__form-s_a Сейчас
+                        button.basket-block__form-s Ко времени
+                    .basket-block__form-date.display-n
+                        p С
+                        .basket-block__form-times
+                            input(type="time" value="17:00")
+                        p До
+                        .basket-block__form-times
+                            input(type="time" value="21:00")
+                        .basket-block__form-dates
+                            input(type="text" id="datepickerFormBasket" placeholder="Дата")
                 .basket-block__form-delivery
+                    .basket-block__form-btns 
+                        button.basket-block__form-d.basket-block__form-d_a Доставка
+                        button.basket-block__form-d Самовывоз
+                    .basket-block__form-title.basket-block__form-title-d Адрес доставки:
+                    .basket-block__form-street 
+                        input(type="text" id="basketStreet")
+                        label(for="basketStreet") *Улица
+                    .basket-block__form-address 
+                        .basket-block__form-kv 
+                            input(type="text" id="basketKv")
+                            label(for="basketKv") *Квартира
+                        .basket-block__form-pd 
+                            input(type="text" id="basketPd")
+                            label(for="basketPd") *Подъезд
+                        .basket-block__form-code 
+                            input(type="text" id="basketCode")
+                            label(for="basketCode") Код двери
+                        .basket-block__form-floor 
+                            input(type="text" id="basketFloor")
+                            label(for="basketFloor") Этаж
+                        p Сумма минимального заказа: 1000 руб.
+                    .basket-block__form-title Комментарий:
+                    .basket-block__form-text 
+                        textarea(placeholder='Введите комментарий к заказу')
+                    .basket-block__form-texts.display-n
+                        textarea(placeholder='Введите комментарий к заказу')
 
             .basket-block__confirmation.display-n
                 .basket-block__confirmation-list 
@@ -243,5 +291,7 @@
                     img(src="./svg/basket/arrow-next.svg" alt="icons")
 
 @@include('components/_footers.pug')
+
+@@include('components/_menus.pug')
 
 @@include('components/_script.pug')
