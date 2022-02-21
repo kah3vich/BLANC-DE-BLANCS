@@ -88,7 +88,30 @@ var indexSliders_1 = new Swiper(".indexSliders_1", {
   // spaceBetween: 10,
   slidesPerView: 7,
   // freeMode: true,
-  watchSlidesProgress: true
+  watchSlidesProgress: true,
+  breakpoints: {
+    1200: {
+      slidesPerView: 7
+    },
+    1050: {
+      slidesPerView: 6
+    },
+    900: {
+      slidesPerView: 5
+    },
+    750: {
+      slidesPerView: 4
+    },
+    650: {
+      slidesPerView: 3
+    },
+    500: {
+      slidesPerView: 2
+    },
+    0: {
+      slidesPerView: 1
+    }
+  }
 });
 var indexSliders_2 = new Swiper(".indexSliders_2", {
   // spaceBetween: 10,
@@ -115,7 +138,19 @@ var indexAdvantageTable = new Swiper(".indexAdvantageTable", {
   // mousewheel: true,
   keyboard: true,
   slidesPerView: 3,
-  spaceBetween: 35
+  spaceBetween: 35,
+  breakpoints: {
+    1050: {
+      slidesPerView: 3
+    },
+    550: {
+      slidesPerView: 2
+    },
+    0: {
+      slidesPerView: 2,
+      spaceBetween: 15
+    }
+  }
 });
 ;
 $("#btn-menu").on("click", function () {
