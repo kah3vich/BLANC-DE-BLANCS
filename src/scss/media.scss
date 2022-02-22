@@ -139,6 +139,37 @@
 	.ind-header__inst {
 		display: none;
 	}
+	.ind-header__media {
+		width: 130px;
+		position: absolute;
+		right: 20px;
+		z-index: 2;
+		bottom: 28%;
+		transform: translate(0%, -28%);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&-text {
+			font-family: TT Norms;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 10px;
+			line-height: 12px;
+			text-decoration-line: underline;
+			color: #ffffff;
+		}
+		&-icons {
+			width: 42px;
+			height: 42px;
+			background: #003f80;
+			border: 2px solid #ffffff;
+			box-sizing: border-box;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
 	.indexSliders_2 .ind-slider__wrappers {
 		grid-template-columns: repeat(2, 1fr) !important;
 		grid-template-rows: unset !important;
@@ -353,7 +384,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		height: 60%;
+		height: 50%;
 		z-index: -5;
 	}
 	.ind-advantage__table-btn {
