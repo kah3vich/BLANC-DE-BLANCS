@@ -156,6 +156,18 @@ var indexAdvantageTable = new Swiper(".indexAdvantageTable", {
 $("#btn-menu").on("click", function () {
   $(".menu-block__list").toggleClass("menu-block__list-active");
 });
+$(function () {
+  if (window.innerWidth <= 750) {
+    $(".menu-block__title-filter").on("click", function () {
+      $(".menu-block__list").css("display", "flex");
+      $(".menu-block__list").addClass("menu-block__list-active");
+      $(".menu-block__list-arrow img").css("transform", "rotate(180deg)");
+    });
+    $("#btn-menu").on("click", function () {
+      $(".menu-block__list").css("display", "none");
+    });
+  }
+});
 ;
 $(function () {
   $("select.cart-select").each(function () {
@@ -229,6 +241,19 @@ $(function () {
       $next.find(".c_select-placeholder").trigger("click");
     });
   });
+});
+$(function () {
+  if (window.innerWidth <= 1200) {
+    $(".bar-block__title-filter").on("click", function () {
+      if ($(".bar-block__title-filter").hasClass("bar-block__title-filter-a")) {
+        $(".bar-block__filter").css("display", "none");
+        $(".bar-block__title-filter").removeClass("bar-block__title-filter-a");
+      } else {
+        $(".bar-block__filter").css("display", "flex");
+        $(".bar-block__title-filter").addClass("bar-block__title-filter-a");
+      }
+    });
+  }
 });
 ;
 $(".wine-block__filter-reset").on("click", function () {

@@ -36,12 +36,26 @@
 	}
 	&__title {
 		margin: 0 0 65px 0;
-		font-family: Prata;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 64px;
-		line-height: 25px;
-		color: #021245;
+		& p {
+			font-family: Prata;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 64px;
+			line-height: 60px;
+			color: #021245;
+		}
+		&-filter {
+			width: 53px;
+			height: 53px;
+			background: #ffffff;
+			border: 2px solid #003f80;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			border-radius: 50%;
+			display: none;
+		}
 	}
 	&__filter {
 		display: flex;
@@ -143,6 +157,7 @@
 		padding: 20px 15px;
 		position: relative;
 		cursor: pointer;
+		height: max-content;
 		overflow: hidden;
 		&:hover {
 			& .bar-block__items-price {

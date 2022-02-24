@@ -112,3 +112,17 @@ $(() => {
 			});
 	});
 });
+
+$(() => {
+	if (window.innerWidth <= 1200) {
+		$(".bar-block__title-filter").on("click", () => {
+			if ($(".bar-block__title-filter").hasClass("bar-block__title-filter-a")) {
+				$(".bar-block__filter").css("display", "none");
+				$(".bar-block__title-filter").removeClass("bar-block__title-filter-a");
+			} else {
+				$(".bar-block__filter").css("display", "flex");
+				$(".bar-block__title-filter").addClass("bar-block__title-filter-a");
+			}
+		});
+	}
+});

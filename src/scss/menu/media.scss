@@ -1,0 +1,121 @@
+@media (max-width: 1200px) {
+	.menu-block__containers {
+		padding: 0 20px;
+	}
+}
+@media (max-width: 750px) {
+	.menu-block__list {
+		display: none;
+		border-radius: 0;
+		right: 0;
+		top: 0;
+		z-index: 112;
+		width: 100%;
+		max-width: 100%;
+		height: 100vh;
+		padding: 15px 15px 0 15px;
+	}
+	.menu-block__title-filter {
+		display: flex;
+	}
+	.menu-block__title p {
+		font-size: 35px;
+	}
+	.menu-block__items {
+		flex-direction: column-reverse;
+		border-radius: 10px;
+		margin: 0 0 65px 0;
+		height: max-content;
+		min-width: 171px;
+	}
+	.menu-block__items-veg {
+		top: 210px;
+	}
+	.menu-block__items-new {
+		top: 210px;
+	}
+	.menu-block__items-price {
+		background: #fff;
+		position: absolute;
+		bottom: -60px;
+		left: 50%;
+		transform: translate(-50%, 0%);
+	}
+	.menu-block__items-photo {
+		border-radius: 10px 10px 0 0;
+	}
+	.menu-block__items-text h3 {
+		width: 100%;
+		font-family: Prata;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 16px;
+		text-align: center;
+		letter-spacing: 0.1em;
+		color: #003f80;
+	}
+	.menu-block__wrapper {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 16px;
+	}
+	.menu-block__item-title {
+		font-family: TT Norms;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 30px;
+		color: #003f80;
+		padding: 20px 0;
+		width: 100%;
+		text-align: center;
+	}
+	.menu-block__item-photo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.menu-block__item {
+		border-radius: 10px;
+	}
+	.menu-block__item-photo img {
+		width: 90%;
+		height: 90%;
+	}
+}
+@media (max-width: 550px) {
+	.menu-block__items-photo {
+		height: 190px;
+	}
+	.menu-block__items-veg {
+		width: 26px;
+		top: 150px;
+		height: 26px;
+	}
+	.menu-block__items-veg img {
+		max-width: 18px;
+		max-height: 18px;
+	}
+	.menu-block__items-new {
+		width: 26px;
+		top: 150px;
+		height: 26px;
+	}
+	.menu-block__items-new img {
+		max-width: 18px;
+		max-height: 18px;
+	}
+	.menu-block__title p {
+		font-family: Prata;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 26px;
+		line-height: 25px;
+		color: #003f80;
+	}
+	.menu-block__item-title {
+		padding: 20px 10px;
+	}
+}
