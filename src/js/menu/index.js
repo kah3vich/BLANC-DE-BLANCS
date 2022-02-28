@@ -13,4 +13,12 @@ $(() => {
 			$(".menu-block__list").css("display", "none");
 		});
 	}
+
+	// for (let i = 0; i <= $(".menu-block__items").length; i++) {
+	$(".menu-block__items").not(".menu-block__items-v").hide();
+	// }
+});
+
+$(".menu-block__btn").on("click", () => {
+	$(".menu-block__items").not(".menu-block__items-v").show();
 });
