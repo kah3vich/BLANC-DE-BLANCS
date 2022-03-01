@@ -626,8 +626,13 @@ h6 {
 	outline: 0;
 	z-index: 1000000;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	&__wrappers {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 50px 0;
+	}
 	&__wrapper {
 		width: 1070px;
 		padding: 35px 55px 55px 55px;
@@ -637,6 +642,7 @@ h6 {
 		align-items: flex-start;
 		position: relative;
 		justify-content: flex-start;
+		margin: auto;
 	}
 	&__photo {
 		display: grid;
@@ -709,6 +715,13 @@ h6 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	&__wrappers {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 50px 0;
+	}
 	&__wrapper {
 		padding: 25px 45px;
 		background: #ffffff;
@@ -717,6 +730,7 @@ h6 {
 		align-items: flex-start;
 		position: relative;
 		justify-content: flex-start;
+		margin: auto;
 	}
 	&__close {
 		position: absolute;
@@ -753,7 +767,6 @@ h6 {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		gap: 12px;
 		margin: 55px 0 0 0;
 	}
 	&__item {
@@ -764,6 +777,10 @@ h6 {
 		align-items: center;
 		justify-content: center;
 		position: relative;
+		margin: 0 12px 0 0;
+		&:last-child {
+			margin: 0;
+		}
 		& label {
 			width: 115px;
 			position: absolute;
@@ -803,7 +820,6 @@ h6 {
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-start;
-		gap: 36px;
 		margin: 35px 0 0 0;
 		width: 100%;
 	}
@@ -817,6 +833,10 @@ h6 {
 		position: relative;
 		width: 100%;
 		height: 32px;
+		margin: 0 0 36px 0;
+		&:last-child {
+			margin: 0;
+		}
 		& input {
 			width: 90%;
 		}
@@ -940,11 +960,10 @@ h6 {
 		left: -100%;
 		background: #fff;
 		padding: 30px 56px 35px 56px;
-		display: flex;
+		display: grid;
 		height: 100%;
-		flex-direction: column;
-		align-items: center;
-		justify-content: flex-start;
+		grid-template-columns: repeat(1, 1fr);
+		justify-items: center;
 		gap: 30px;
 	}
 	&__close {
@@ -979,7 +998,7 @@ h6 {
 			font-size: 24px;
 			line-height: 33px;
 			text-align: center;
-			color: #003F80;
+			color: #003f80;
 		}
 	}
 	&__list {

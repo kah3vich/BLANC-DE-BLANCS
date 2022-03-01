@@ -31,3 +31,17 @@ $(() => {
 		$(".wine-block__items").not(".wine-block__items-v").show();
 	});
 });
+
+$(() => {
+	if (window.innerWidth <= 1200) {
+		$(".wine-block__title-filter").on("click", () => {
+			if ($(".wine-block__title-filter").hasClass("wine-block__title-filter-a")) {
+				$(".wine-block__filter").css("display", "none");
+				$(".wine-block__title-filter").removeClass("wine-block__title-filter-a");
+			} else {
+				$(".wine-block__filter").css("display", "flex");
+				$(".wine-block__title-filter").addClass("wine-block__title-filter-a");
+			}
+		});
+	}
+});

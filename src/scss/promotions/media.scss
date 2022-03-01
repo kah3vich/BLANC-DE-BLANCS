@@ -1,0 +1,45 @@
+@media (max-width: 1200px) {
+	.promotions-block__containers {
+		padding: 0 20px;
+	}
+}
+@media (max-width: 1100px) {
+	.promotions-block__containers {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+	.promotions-block__photo {
+		width: 100%;
+	}
+	.promotions-block__info {
+		width: 100%;
+		margin: 35px 0 0 0;
+	}
+}
+@media (max-width: 630px) {
+	.promotions-block__info-btns {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+	.promotions-block__info-back {
+		margin: 35px 0 0 0;
+	}
+	.promotions-block__info-title {
+		font-family: TTNorms;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 35px;
+		line-height: 40px;
+		color: #021245;
+	}
+	.promotions-block__info {
+		min-height: 620px;
+		box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+		background: #ffffff;
+		padding: 65px 27px 90px 27px;
+	}
+}

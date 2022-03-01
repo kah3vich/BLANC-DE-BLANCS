@@ -285,6 +285,19 @@ $(function () {
     $(".wine-block__items").not(".wine-block__items-v").show();
   });
 });
+$(function () {
+  if (window.innerWidth <= 1200) {
+    $(".wine-block__title-filter").on("click", function () {
+      if ($(".wine-block__title-filter").hasClass("wine-block__title-filter-a")) {
+        $(".wine-block__filter").css("display", "none");
+        $(".wine-block__title-filter").removeClass("wine-block__title-filter-a");
+      } else {
+        $(".wine-block__filter").css("display", "flex");
+        $(".wine-block__title-filter").addClass("wine-block__title-filter-a");
+      }
+    });
+  }
+});
 ; // $(".wine-block__filter-reset").on("click", () => {
 // 	$(".wine-block__filter-search input").val("");
 // 	let catalog = $(".wine-block__filter-catalog select option").eq(0).text();

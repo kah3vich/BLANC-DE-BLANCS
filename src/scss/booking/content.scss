@@ -58,6 +58,12 @@
 			background: #003f80;
 			color: #ffffff;
 		}
+		&-w {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 0 0 auto;
+		}
 	}
 	&__wrapper {
 		display: flex;
@@ -407,6 +413,8 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 50px;
+		padding: 10px 0;
+		align-items: flex-start;
 		width: 100%;
 		grid-template-areas:
 			"booking_1 booking_2"

@@ -1,0 +1,192 @@
+@media (max-width: 1200px) {
+	.promotion-block__containers {
+		padding: 0 20px;
+	}
+}
+
+// .ind-catalog__content-item {
+// 	display: grid;
+// 	grid-template-columns: repeat(1, 1fr);
+// 	justify-items: center;
+// }
+// .ind-catalog__content-item-add {
+// 	grid-area: 2 / 1;
+// 	margin: 25px 0 0 0;
+// }
+// .ind-catalog__content-item {
+// 	align-items: stretch;
+// 	height: unset;
+// }
+// .shop__block-slider-star {
+// 	height: 14px;
+// }
+// .shop__block-slider-item {
+// 	display: grid;
+// 	grid-template-columns: repeat(1, 1fr);
+// }
+// .shop__block-slider-add {
+// 	grid-area: 3 / 1;
+// }
+// .shop-select-placeholder {
+// 	font-family: TT Norms;
+// 	font-style: normal;
+// 	font-weight: 500;
+// 	width: 93%;
+// 	font-size: 20px;
+// 	line-height: 42px;
+// 	color: #747474;
+// }
+// .rec__slider-item-controls {
+// 	justify-content: flex-start;
+// }
+// .rec__slider-item-controls-link {
+// 	margin: 0 0 0 35px;
+// }
+// .rec__slider-item-review {
+// 	max-width: 100%;
+// }
+// .rec__slider-item-review-type {
+// 	height: 100%;
+// 	padding-top: 4px;
+// 	width: 100%;
+// 	padding-bottom: 4px;
+// 	margin: 0 15px 0 0;
+// }
+// .rec__slider-item-review-star {
+// 	padding: 10px;
+// 	margin: 2px 0 0 0;
+// }
+// .rec__slider-item-review-count {
+// 	font-style: normal;
+// 	font-weight: 500;
+// 	font-size: 13px;
+// 	line-height: 19px;
+// 	color: #e83b32;
+// 	padding: 0 0 0 15px;
+// 	width: 100%;
+// }
+// .rec__slider-item-controls-add {
+// 	margin: 0;
+// }
+// .shop-select-placeholder {
+// 	font-family: TT Norms;
+// 	font-style: normal;
+// 	font-weight: 500;
+// 	width: 93%;
+// 	font-size: 20px;
+// 	line-height: 25px;
+// 	color: #747474;
+// }
+// .modern-page-next {
+// 	display: flex !important;
+// 	align-items: center;
+// 	justify-content: center;
+// 	padding: 0 !important;
+// 	margin-top: 0;
+// 	margin-left: 0;
+// 	margin-right: 0;
+// 	margin-bottom: 0;
+// 	margin: 0 0 0 10px;
+// }
+// .modern-page-next svg {
+// 	margin-top: 0;
+// 	margin-left: 0;
+// 	margin-right: 0;
+// 	margin-bottom: 0;
+// }
+// .modern-page-prev {
+// 	display: flex !important;
+// 	align-items: center;
+// 	justify-content: center;
+// 	padding: 0 !important;
+// 	margin-top: 0;
+// 	margin-left: 0;
+// 	margin-right: 0;
+// 	margin-bottom: 0;
+// 	margin: 0 0 0 10px;
+// }
+// .modern-page-prev svg {
+// 	margin-top: 0;
+// 	margin-left: 0;
+// 	margin-right: 0;
+// 	margin-bottom: 0;
+// }
+// .ind-catalog__content-item-title {
+// 	margin: 19px 0 0 0;
+// 	font-family: TT Norms;
+// 	font-style: normal;
+// 	font-weight: 500;
+// 	height: 38px;
+// 	font-size: 20px;
+// 	overflow: hidden;
+// 	line-height: 28px;
+// 	text-align: center;
+// 	text-overflow: ellipsis;
+// 	width: 100%;
+// 	color: #000;
+// 	white-space: nowrap;
+// }
+// .ind-catalog__content-item-img-button {
+// 	white-space: nowrap;
+// 	text-overflow: ellipsis;
+// 	overflow: hidden;
+// 	width: 100%;
+// 	display: block;
+// 	padding: 12px;
+// }
+// .custom1 .modern-page-navigation {
+// 	margin: 35px 0 0 0;
+// }
+
+// .shop-select-element {
+// 	width: 100%;
+// 	background: 0 0;
+// 	border: none;
+// 	margin: 0 0 5px 0;
+// 	text-align: left;
+// 	cursor: pointer;
+// 	font-family: TT Norms;
+// 	font-style: normal;
+// 	font-weight: 500;
+// 	font-size: 20px;
+// 	line-height: 30px;
+// 	color: #747474;
+// 	position: relative;
+// }
+// .shop-select-element::after {
+// 	content: "";
+// 	width: 100%;
+// 	position: absolute;
+// 	bottom: 0px;
+// 	left: 0;
+// 	height: 1px;
+// 	border-top: 1px solid #747474;
+// }
+// .shop-select-placeholder {
+// 	white-space: nowrap;
+// 	text-overflow: ellipsis;
+// 	overflow: hidden;
+// }
+// .shop__block-slider .swiper-pagination {
+// 	bottom: 70px;
+// }
+// @media (max-width: 900px) {
+// 	.shop-select-placeholder {
+// 		font-family: TT Norms;
+// 		font-style: normal;
+// 		font-weight: 500;
+// 		width: 80%;
+// 		font-size: 20px;
+// 		line-height: 25px;
+// 		color: #747474;
+// 	}
+// 	.rec__slider-item-controls-add {
+// 		margin: 0 auto;
+// 	}
+// 	.rec__slider .swiper-pagination {
+// 		display: none;
+// 	}
+// 	.header__block-burger {
+// 		top: auto;
+// 	}
+// }

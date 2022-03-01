@@ -193,7 +193,8 @@
 		width: 100%;
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-		gap: 15px;
+		gap: 55px 15px;
+		justify-items: center;
 	}
 	&__btn {
 		margin: 70px auto 80px auto;
@@ -218,7 +219,7 @@
 		}
 	}
 	&__items {
-		background: #ffffff;
+		background: transparent;
 		display: flex;
 		cursor: pointer;
 		flex-direction: column;
@@ -226,12 +227,19 @@
 		justify-content: flex-start;
 		width: 290px;
 		position: relative;
+		&:hover {
+			& .menu-block__items-photo img {
+				transition: all 0.5s ease;
+				transform: scale(1.1);
+			}
+		}
 		&-photo {
 			width: 100%;
 			height: 266px;
 			overflow: hidden;
 			border-radius: 10px;
 			& img {
+				transition: all 0.5s ease;
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
