@@ -76,10 +76,12 @@
 			&-p {
 				width: 539px;
 				background: #003f80;
-				display: flex;
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
 				align-items: center;
 				justify-content: center;
-				gap: 20px;
+				align-content: center;
+				justify-items: center;
 			}
 			&-d {
 				font-family: TT Norms;
@@ -119,10 +121,10 @@
 				bottom: 30px;
 			}
 			&-l {
-				display: flex;
-				flex-direction: column;
-				align-items: flex-start;
-				justify-content: flex-start;
+				display: grid;
+				grid-template-columns: repeat(1, 1fr);
+				align-content: flex-start;
+				justify-items: flex-start;
 				gap: 12px;
 				margin: 45px 0 0 0;
 				& p {
