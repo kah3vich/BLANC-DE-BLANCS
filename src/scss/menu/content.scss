@@ -39,9 +39,9 @@
 		border-radius: 36px;
 		gap: 12px;
 		cursor: pointer;
-		position: fixed;
+		position: absolute;
 		right: 25px;
-		top: 180px;
+		top: 210px;
 		z-index: 12;
 		&-active {
 			width: 100%;
@@ -82,7 +82,7 @@
 				object-fit: contain;
 			}
 			& h3 {
-				font-family: TT Norms;
+				font-family: TTNorms;
 				font-style: normal;
 				font-weight: normal;
 				font-size: 16px;
@@ -118,7 +118,7 @@
 				transition: all 0.5s ease;
 			}
 			& h3 {
-				font-family: TT Norms;
+				font-family: TTNorms;
 				font-style: normal;
 				font-weight: normal;
 				font-size: 24px;
@@ -133,13 +133,12 @@
 			padding: 9px 18px;
 			background: #003f80;
 			border-radius: 39px;
-			font-family: PT Sans;
 			font-style: normal;
 			font-weight: normal;
 			font-size: 11px;
 			line-height: 15px;
 			color: #ffffff;
-			font-family: TT Norms;
+			font-family: TTNorms;
 			margin: 0 0 0 20px;
 			display: none;
 			transition: all 0.5s ease;
@@ -165,8 +164,8 @@
 			font-family: Prata;
 			font-style: normal;
 			font-weight: normal;
-			font-size: 64px;
-			line-height: 65px;
+			font-size: 44px;
+			line-height: 25px;
 			color: #021245;
 		}
 		&-filter {
@@ -309,7 +308,7 @@
 		justify-content: flex-start;
 		box-shadow: 0px 0px 8px rgba(0, 88, 180, 0.6);
 		&-title {
-			font-family: TT Norms;
+			font-family: TTNorms;
 			font-style: normal;
 			font-weight: normal;
 			font-size: 22px;

@@ -317,6 +317,15 @@ $(function () {
 // 		$(".wine-block__items").not(".wine-block__items-v").show();
 // 	});
 // });
+// setInterval(function () {
+// 	$(".item:not(.verygood)").each(function () {
+// 		$(this).addClass("verygood");
+// 		// chto to delaem
+// 	});
+// }, 100);
+// .basket-items-list-table .basket-items-list-table-actv
+// basket-item-block-properties basket-item-property-custom (2) basket-item-property-custom-name
+// basket-item-property-custom-value
 
 ;
 $(function () {
@@ -664,4 +673,16 @@ for (var _i17 = 1; _i17 <= $(".basket-block__form-d").length; _i17++) {
   _loop7(_i17);
 }
 
+;
+var businessClientSlider = new Swiper(".businessClientSlider", {
+  navigation: {
+    nextEl: ".business-block__client-w .swiper-controls .swiper-button-next",
+    prevEl: ".business-block__client-w .swiper-controls .swiper-button-prev"
+  },
+  pagination: {
+    el: ".business-block__client-w .swiper-controls .swiper-pagination"
+  },
+  keyboard: true,
+  slidesPerView: 7
+});
 ;

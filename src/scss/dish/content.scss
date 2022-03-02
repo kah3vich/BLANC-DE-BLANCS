@@ -16,7 +16,7 @@
 .dish-block {
 	width: 100%;
 	position: relative;
-	padding: 270px 0 55px 0;
+	padding: 230px 0 55px 0;
 	& .swiper-slide {
 		padding: 10px 0;
 	}
@@ -81,9 +81,10 @@
 		max-width: 1440px;
 		padding: 0 60px;
 		margin: 0 auto;
+		display: none;
 	}
 	&__title {
-		font-family: TT Norms;
+		font-family: TTNorms;
 		font-style: normal;
 		font-weight: normal;
 		font-size: 64px;
@@ -115,7 +116,7 @@
 			margin: auto 0;
 		}
 		& p {
-			font-family: PT Serif;
+			font-family: PTSerif;
 			font-style: normal;
 			font-weight: normal;
 			font-size: 24px;
@@ -137,7 +138,7 @@
 		justify-content: flex-start;
 		& p {
 			margin: 0 0 0 10px;
-			font-family: PT Serif;
+			font-family: PTSerif;
 			font-style: normal;
 			font-weight: normal;
 			font-size: 24px;
@@ -165,7 +166,7 @@
 		background: transparent;
 		& p {
 			margin: 0 0 0 10px;
-			font-family: TT Norms;
+			font-family: TTNorms;
 			font-style: normal;
 			font-weight: normal;
 			font-size: 24px;
@@ -182,7 +183,7 @@
 		padding: 6px 35px;
 		border-radius: 38.5px;
 		& p {
-			font-family: PT Serif;
+			font-family: PTSerif;
 			font-style: normal;
 			font-weight: normal;
 			font-size: 24px;
@@ -192,7 +193,7 @@
 		}
 	}
 	&__description {
-		font-family: PT Serif;
+		font-family: PTSerif;
 		font-style: normal;
 		font-weight: normal;
 		font-size: 24px;
@@ -200,7 +201,7 @@
 		text-align: justify;
 		color: #021245;
 		& span {
-			font-family: TT Norms;
+			font-family: TTNorms;
 			font-weight: bold;
 		}
 	}
@@ -238,7 +239,7 @@
 			border-radius: 5px;
 			padding: 15px 10px;
 			& p {
-				font-family: PT Serif;
+				font-family: PTSerif;
 				font-style: normal;
 				font-weight: normal;
 				font-size: 24px;

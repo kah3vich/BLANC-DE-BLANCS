@@ -1,204 +1,204 @@
 @media (max-width: 1400px) {
-    .basket-block__form {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
-    .basket-block__form-delivery {
-        margin: 45px 0 0 0;
-    }
-    .basket-block__form-profile,
-    .basket-block__form-delivery {
-        width: 100%;
-    }
+	.basket-block__form {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+	.basket-block__form-delivery {
+		margin: 45px 0 0 0;
+	}
+	.basket-block__form-profile,
+	.basket-block__form-delivery {
+		width: 100%;
+	}
 }
 @media (max-width: 1330px) {
-    .basket-block__confirmation {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
-    .basket-block__confirmation-list,
-    .basket-block__confirmation-info {
-        width: 100%;
-    }
-    .basket-block__confirmation-info {
-        margin: 45px 0 0 0;
-    }
-    .basket-block__confirmation-table {
-        width: 500px;
-    }
+	.basket-block__confirmation {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+	.basket-block__confirmation-list,
+	.basket-block__confirmation-info {
+		width: 100%;
+	}
+	.basket-block__confirmation-info {
+		margin: 45px 0 0 0;
+	}
+	.basket-block__confirmation-table {
+		width: 500px;
+	}
 }
 @media (max-width: 1200px) {
-    .basket-block__containers {
-        padding: 0 20px;
-    }
+	.basket-block__containers {
+		padding: 0 20px;
+	}
 }
 @media (max-width: 750px) {
-    .basket-block__form-address {
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
-    .basket-block__form-s {
-        padding: 8px 30px;
-        border: 3px solid #003f80;
-        border-radius: 38.5px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        font-family: TT Norms;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 21px;
-        line-height: 30px;
-    }
-    .basket-block__form {
-        padding: 45px 15px;
-    }
-    .basket-block__confirmation {
-        padding: 45px 15px;
-    }
-    .basket-block__bon {
-        padding: 55px 20px;
-    }
-    .basket-block__form-deliverys {
-        gap: 15px;
-    }
-    .basket-block__payment {
-        background: #ffffff;
-        padding: 52px 20px;
-        box-shadow: 0px 0px 10px rgb(0 88 180 / 28%);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
+	.basket-block__form-address {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+	.basket-block__form-s {
+		padding: 8px 30px;
+		border: 3px solid #003f80;
+		border-radius: 38.5px;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		font-family: TTNorms;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 21px;
+		line-height: 30px;
+	}
+	.basket-block__form {
+		padding: 45px 15px;
+	}
+	.basket-block__confirmation {
+		padding: 45px 15px;
+	}
+	.basket-block__bon {
+		padding: 55px 20px;
+	}
+	.basket-block__form-deliverys {
+		gap: 15px;
+	}
+	.basket-block__payment {
+		background: #ffffff;
+		padding: 52px 20px;
+		box-shadow: 0px 0px 10px rgb(0 88 180 / 28%);
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
 }
 @media (max-width: 630px) {
-    .basket-block__confirmation-t {
-        width: 135px;
-        font-family: TT Norms;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 17px;
-        line-height: 20px;
-        color: #003f80;
-    }
-    .basket-block__confirmation-s {
-        font-family: TT Norms;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 17px;
-        line-height: 20px;
-        color: #003f80;
-    }
+	.basket-block__confirmation-t {
+		width: 135px;
+		font-family: TTNorms;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		line-height: 20px;
+		color: #003f80;
+	}
+	.basket-block__confirmation-s {
+		font-family: TTNorms;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		line-height: 20px;
+		color: #003f80;
+	}
 }
 @media (max-width: 600px) {
-    .basket-block__confirmation-table {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .basket-block__confirmation-items:nth-child(even) {
-        padding: 0 0 0 30px;
-    }
-    .basket-block__confirmation-line {
-        width: 100%;
-    }
-    .basket-block__confirmation-table {
-        width: 100%;
-    }
+	.basket-block__confirmation-table {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.basket-block__confirmation-items:nth-child(even) {
+		padding: 0 0 0 30px;
+	}
+	.basket-block__confirmation-line {
+		width: 100%;
+	}
+	.basket-block__confirmation-table {
+		width: 100%;
+	}
 }
 @media (max-width: 550px) {
-    .basket-block__confirmation-p {
-        display: none;
-    }
-    .basket-block__confirmation-promotion {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 25px;
-    }
-    .basket-block__confirmation-info .basket-block__confirmation-titles {
-        margin: 50px 0 0 0;
-        font-family: TT Norms;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 27px;
-        line-height: 25px;
-        color: #003f80;
-    }
-    .basket-block__confirmation-titles {
-        margin: 23px 0 0 0;
-        font-family: TT Norms;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 27px;
-        line-height: 25px;
-        color: #003f80;
-    }
-    .basket-block__confirmation-title {
-        font-family: TT Norms;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 28px;
-        line-height: 40px;
-        color: #021245;
-    }
-    .basket-block__confirmation-c {
-        font-family: PT Serif;
-        width: 20px;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 20px;
-        color: #000000;
-    }
-    .basket-block__confirmation-t {
-        width: 115px;
-        font-family: TT Norms;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 17px;
-        line-height: 20px;
-        color: #003f80;
-    }
-    .basket-block__payment-title {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 35px;
-    }
-    .basket-block__payment-description {
-        font-family: TT Norms;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 19px;
-        line-height: 33px;
-        text-align: left;
-        color: #000000;
-        width: 90%;
-        margin: 40px 0 0 0;
-    }
-    .basket-block__bon h3 {
-        font-family: TT Norms;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 50px;
-        line-height: 60px;
-        color: #003f80;
-    }
-    .basket-block__bon p {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 32px;
-        line-height: 40px;
-        font-family: TT Norms;
-        text-align: center;
-    }
+	.basket-block__confirmation-p {
+		display: none;
+	}
+	.basket-block__confirmation-promotion {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 25px;
+	}
+	.basket-block__confirmation-info .basket-block__confirmation-titles {
+		margin: 50px 0 0 0;
+		font-family: TTNorms;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 27px;
+		line-height: 25px;
+		color: #003f80;
+	}
+	.basket-block__confirmation-titles {
+		margin: 23px 0 0 0;
+		font-family: TTNorms;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 27px;
+		line-height: 25px;
+		color: #003f80;
+	}
+	.basket-block__confirmation-title {
+		font-family: TTNorms;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 28px;
+		line-height: 40px;
+		color: #021245;
+	}
+	.basket-block__confirmation-c {
+		font-family: PTSerif;
+		width: 20px;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 20px;
+		color: #000000;
+	}
+	.basket-block__confirmation-t {
+		width: 115px;
+		font-family: TTNorms;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		line-height: 20px;
+		color: #003f80;
+	}
+	.basket-block__payment-title {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 35px;
+	}
+	.basket-block__payment-description {
+		font-family: TTNorms;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 19px;
+		line-height: 33px;
+		text-align: left;
+		color: #000000;
+		width: 90%;
+		margin: 40px 0 0 0;
+	}
+	.basket-block__bon h3 {
+		font-family: TTNorms;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 50px;
+		line-height: 60px;
+		color: #003f80;
+	}
+	.basket-block__bon p {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		line-height: 40px;
+		font-family: TTNorms;
+		text-align: center;
+	}
 }
