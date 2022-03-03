@@ -1727,6 +1727,7 @@ h6 {
 	line-height : 95px;
 	letter-spacing : 0.09em;
 	color : #ffffff;
+	width : 90%;
 }
 
 .ind-header__slider-text {
@@ -1735,6 +1736,7 @@ h6 {
 	font-family : TTNorms;
 	font-style : normal;
 	font-weight : normal;
+	width : 90%;
 	font-size : 22px;
 	line-height : 26px;
 	letter-spacing : 0.09em;
@@ -2051,6 +2053,10 @@ h6 {
 	cursor : pointer;
 }
 
+.indexSliders_2 .ind-slider__wrappers-items:nth-child(1)::after {
+	height : 95%;
+}
+
 .indexSliders_2 .ind-slider__wrappers-items:hover::after {
 	opacity : 1;
 	-webkit-transition : all 0.5s ease;
@@ -2341,6 +2347,7 @@ h6 {
 	font-family : Prata;
 	font-style : normal;
 	font-weight : normal;
+	width : 90%;
 	font-size : 23px;
 	line-height : 31px;
 	text-align : center;
@@ -11280,9 +11287,9 @@ h6 {
 	}
 }
 
-@media (max-height: 670px) {
+@media (max-height: 780px) {
 	.menus__wrapper {
-		height : 670px;
+		height : 840px;
 		overflow : auto;
 	}
 }

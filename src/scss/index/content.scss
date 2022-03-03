@@ -79,6 +79,7 @@
 			line-height: 95px;
 			letter-spacing: 0.09em;
 			color: #ffffff;
+			width: 90%;
 		}
 		&-text {
 			margin: 17px 0 53px 0;
@@ -86,6 +87,7 @@
 			font-family: TTNorms;
 			font-style: normal;
 			font-weight: normal;
+			width: 90%;
 			font-size: 22px;
 			line-height: 26px;
 			letter-spacing: 0.09em;
@@ -331,6 +333,11 @@
 			overflow: hidden;
 			position: relative;
 			cursor: pointer;
+			&:nth-child(1) {
+				&::after {
+					height: 95%;
+				}
+			}
 			&:hover {
 				&::after {
 					opacity: 1;
@@ -516,6 +523,7 @@
 			font-family: Prata;
 			font-style: normal;
 			font-weight: normal;
+			width: 90%;
 			font-size: 23px;
 			line-height: 31px;
 			text-align: center;
