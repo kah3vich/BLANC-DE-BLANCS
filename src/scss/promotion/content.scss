@@ -28,8 +28,8 @@
 		font-family: Prata;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 56px;
-		line-height: 71px;
+		font-size: 44px;
+		line-height: 45px;
 		color: #021245;
 	}
 	&__nav {
@@ -63,15 +63,15 @@
 	&__list {
 		width: 100%;
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(415px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
 		gap: 35px 23px;
 		padding: 10px;
 		&-items {
-			display: flex;
 			width: 100%;
 			align-items: revert;
-			justify-content: space-between;
 			gap: 30px;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
 			position: relative;
 			&-p {
 				width: 539px;
@@ -96,21 +96,21 @@
 				width: 750px;
 				background: #ffffff;
 				box-shadow: 0px 0px 10px rgb(0 88 180 / 28%);
-				padding: 35px 50px;
+				padding: 35px 99px 60px 55px;
 				& h3 {
-					font-family: TTNorms;
+					font-family: Prata;
 					font-style: normal;
 					font-weight: normal;
-					font-size: 48px;
+					font-size: 36px;
 					line-height: 50px;
 					color: #021245;
 				}
 				& p {
-					margin-top: 45px;
+					margin: 31px 0 0 0;
 					font-family: PTSerif;
 					font-style: normal;
 					font-weight: normal;
-					font-size: 24px;
+					font-size: 18px;
 					line-height: 30px;
 					color: #000000;
 				}
@@ -132,8 +132,9 @@
 					font-family: PTSerif;
 					font-style: normal;
 					font-weight: normal;
-					font-size: 24px;
+					font-size: 18px;
 					line-height: 30px;
+					color: #000000;
 					text-align: justify;
 					color: #000000;
 					padding: 0 0 0 40px;
@@ -141,8 +142,7 @@
 					&::after {
 						content: "";
 						position: absolute;
-						top: 50%;
-						transform: translate(0%, -50%);
+						top: 7px;
 						left: 0;
 						width: 19px;
 						height: 19px;
@@ -155,9 +155,10 @@
 					font-family: PTSerif;
 					font-style: normal;
 					font-weight: normal;
-					font-size: 24px;
+					font-size: 18px;
 					line-height: 30px;
 					text-align: justify;
+					text-decoration-line: underline;
 					color: #000000;
 					padding: 0 0 0 40px;
 					position: relative;
@@ -280,7 +281,7 @@
 			font-style: normal;
 			font-weight: normal;
 			font-size: 24px;
-			line-height: 20px;
+			line-height: 25px;
 			display: flex;
 			align-items: center;
 			color: #003f80;

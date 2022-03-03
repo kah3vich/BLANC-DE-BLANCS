@@ -16,8 +16,7 @@ $bg: #fff;
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-	box-sizing: border-box;
-	user-select: none;
+	user-select: auto;
 }
 *:focus {
 	outline: none;
@@ -1033,6 +1032,21 @@ h6 {
 		transition: all 0.5s ease;
 		opacity: 1;
 	}
+}
+
+.cart-select-css .cart-select-block {
+	bottom: auto;
+	top: calc(100% + 8px) !important;
+	position: absolute;
+	left: 0;
+	z-index: 5;
+}
+.c_select .c_select-block {
+	bottom: auto;
+	top: calc(100% + 8px) !important;
+	position: absolute;
+	left: 0;
+	z-index: 5;
 }
 
 //! --------------------------------------------------------------------

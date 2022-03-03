@@ -40,22 +40,26 @@
 	}
 	&__title {
 		margin: 0 0 90px 0;
-		font-family: Prata;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 64px;
-		line-height: 25px;
-		color: #021245;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		justify-content: space-between;
+		& p {
+			font-family: Prata;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 44px;
+			line-height: 40px;
+			color: #021245;
+		}
 	}
 	&__titles {
-		font-family: TTNorms;
+		font-family: PTSans;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 50px;
-		line-height: 25px;
-		text-align: center;
+		font-size: 30px;
+		line-height: 35px;
 		color: #021245;
-		width: 100%;
 	}
 	&__list {
 		background: #ffffff;
@@ -65,7 +69,6 @@
 		grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
 		gap: 55px 170px;
 		width: 100%;
-		margin: 70px 0 0 0;
 	}
 	&__items {
 		width: 300px;
@@ -108,14 +111,13 @@
 		}
 	}
 	&__add {
-		font-family: PT Sans;
+		font-family: PTSans;
 		font-style: normal;
 		font-weight: normal;
 		font-size: 50px;
-		line-height: 25px;
-		text-align: left;
+		line-height: 50px;
 		color: #021245;
-		margin: 70px 0 90px 0;
+		margin: 60px 0 70px 0;
 	}
 	&__banner {
 		width: 100%;
