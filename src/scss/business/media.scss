@@ -1,14 +1,4 @@
 @media (max-width: 1440px) {
-	.business-block__titles {
-		font-family: TTNorms;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 50px;
-		line-height: 60px;
-		text-align: center;
-		color: #021245;
-		width: 100%;
-	}
 	.business-block__add {
 		font-family: PTSans;
 		font-style: normal;
@@ -29,6 +19,13 @@
 		color: #021245;
 	}
 }
+@media (max-width: 1430px) {
+	.business-block__client-w .swiper-slide {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
 @media (max-width: 1200px) {
 	.business-block__containers {
 		padding: 0 20px;
@@ -40,5 +37,20 @@
 	}
 	.business-block__list {
 		padding: 60px 20px;
+	}
+	.business-block__title {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 35px;
+	}
+	.business-block__add {
+		font-family: PTSans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 33px;
+		line-height: 50px;
+		text-align: left;
+		color: #021245;
+		margin: 70px 0 90px 0;
 	}
 }

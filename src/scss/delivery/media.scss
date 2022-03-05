@@ -1,15 +1,18 @@
 @media (max-width: 1200px) {
-    .delivery-block__containers {
-        padding: 0 20px;
-    }
+	.delivery-block__containers {
+		padding: 0 20px;
+	}
 }
 @media (max-width: 550px) {
-    .delivery-block__list {
-        margin: 55px 0 0 0;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-        width: 100%;
-        justify-content: center;
-        gap: 15px;
-    }
+	.delivery-block__list {
+		margin: 55px 0 0 0;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+		width: 100%;
+		justify-content: center;
+		gap: 15px;
+	}
+	.delivery-block__title {
+		margin: 0 10px 0 0;
+	}
 }
