@@ -6277,7 +6277,7 @@ h6 {
 	font-style : normal;
 	font-weight : normal;
 	font-size : 34px;
-	line-height : 25px;
+	line-height : 35px;
 	color : #021245;
 	margin : 47px 0 35px 0;
 }
@@ -6436,7 +6436,7 @@ h6 {
 
 .dish-block__description {
 	overflow : hidden;
-	max-height : 152px;
+	max-height : 60px;
 	font-family : PTSerif;
 	font-style : normal;
 	font-weight : normal;
@@ -8806,6 +8806,10 @@ h6 {
 		-ms-flex-pack : center;
 		justify-content : center;
 	}
+
+	.business-block__list {
+		justify-items : center;
+	}
 }
 
 @media (max-width: 1420px) {
@@ -10693,7 +10697,12 @@ h6 {
 	}
 
 	.about-block__title {
+		font-family : Prata;
+		font-style : normal;
+		font-weight : normal;
 		font-size : 35px;
+		line-height : 40px;
+		color : #021245;
 	}
 
 	.basket-block__confirmation-table {
@@ -11123,6 +11132,14 @@ h6 {
 		justify-content : center;
 		position : relative;
 		margin : 25px 0 55px 0;
+	}
+
+	.basket-block__rec-i {
+		width : 100%;
+	}
+
+	.basket-block__rec-p {
+		width : 100%;
 	}
 
 	.basket-block__form-address p {
