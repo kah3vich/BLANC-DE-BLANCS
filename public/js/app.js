@@ -162,9 +162,11 @@ $(function () {
       $(".menu-block__list").css("display", "flex");
       $(".menu-block__list").addClass("menu-block__list-active");
       $(".menu-block__list-arrow img").css("transform", "rotate(180deg)");
+      $("body").css("overflow", "hidden");
     });
     $("#btn-menu").on("click", function () {
       $(".menu-block__list").css("display", "none");
+      $("body").css("overflow", "visible");
     });
   } // for (let i = 0; i <= $(".menu-block__items").length; i++) {
 
@@ -291,11 +293,9 @@ $(function () {
       if ($(".wine-block__title-filter").hasClass("wine-block__title-filter-a")) {
         $(".wine-block__filter").css("display", "none");
         $(".wine-block__title-filter").removeClass("wine-block__title-filter-a");
-        $("body").css("overflow", "visible");
       } else {
         $(".wine-block__filter").css("display", "flex");
         $(".wine-block__title-filter").addClass("wine-block__title-filter-a");
-        $("body").css("overflow", "hidden");
       }
     });
   }

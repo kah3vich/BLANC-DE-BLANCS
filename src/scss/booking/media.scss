@@ -165,12 +165,32 @@
 		align-items: flex-start;
 		justify-content: flex-start;
 	}
-	.booking-block__items-block:nth-child(1) .booking-block__items-photo,
-	.booking-block__items-block:nth-child(2) .booking-block__items-photo {
-		height: 230px;
+	.booking-block__items-block:nth-child(1) .booking-block__items-photo img:nth-child(1) {
+		max-height: 250px;
 	}
-	.booking-block__items-block:nth-child(3) .booking-block__items-photo {
-		height: 350px;
+	.booking-block__items-block:nth-child(1) .booking-block__items-photo img:nth-child(2) {
+		max-height: 125px;
+	}
+	.booking-block__items-block:nth-child(1) .booking-block__items-photo img:nth-child(3) {
+		max-height: 125px;
+	}
+	.booking-block__items-block:nth-child(2) .booking-block__items-photo img:nth-child(1) {
+		max-height: 250px;
+	}
+	.booking-block__items-block:nth-child(2) .booking-block__items-photo img:nth-child(2) {
+		max-height: 125px;
+	}
+	.booking-block__items-block:nth-child(2) .booking-block__items-photo img:nth-child(3) {
+		max-height: 125px;
+	}
+	.booking-block__items-block:nth-child(3) .booking-block__items-photo img:nth-child(1) {
+		max-height: 250px;
+	}
+	.booking-block__items-block:nth-child(3) .booking-block__items-photo img:nth-child(2) {
+		max-height: 125px;
+	}
+	.booking-block__items-block:nth-child(3) .booking-block__items-photo img:nth-child(3) {
+		max-height: 125px;
 	}
 	.modelBookingForm__wrapper {
 		width: 90%;

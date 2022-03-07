@@ -8,9 +8,11 @@ $(() => {
 			$(".menu-block__list").css("display", "flex");
 			$(".menu-block__list").addClass("menu-block__list-active");
 			$(".menu-block__list-arrow img").css("transform", "rotate(180deg)");
+			$("body").css("overflow", "hidden");
 		});
 		$("#btn-menu").on("click", () => {
 			$(".menu-block__list").css("display", "none");
+			$("body").css("overflow", "visible");
 		});
 	}
 

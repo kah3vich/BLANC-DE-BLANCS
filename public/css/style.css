@@ -5589,7 +5589,6 @@ h6 {
 	height : 100%;
 	-o-object-fit : contain;
 	   object-fit : contain;
-	margin : 0 0 40px 0;
 }
 
 .booking-block__items p {
@@ -5952,14 +5951,40 @@ h6 {
 	grid-template-areas : "booking_1 booking_2" "booking_3 booking_3";
 }
 
-.booking-block__items-block:nth-child(1) .booking-block__items-photo
-,
-.booking-block__items-block:nth-child(2) .booking-block__items-photo {
-	height : 500px;
+.booking-block__items-block:nth-child(1) .booking-block__items-photo img:nth-child(1) {
+	max-height : 500px;
 }
 
-.booking-block__items-block:nth-child(3) .booking-block__items-photo {
-	height : 700px;
+.booking-block__items-block:nth-child(1) .booking-block__items-photo img:nth-child(2) {
+	max-height : 250px;
+}
+
+.booking-block__items-block:nth-child(1) .booking-block__items-photo img:nth-child(3) {
+	max-height : 250px;
+}
+
+.booking-block__items-block:nth-child(2) .booking-block__items-photo img:nth-child(1) {
+	max-height : 500px;
+}
+
+.booking-block__items-block:nth-child(2) .booking-block__items-photo img:nth-child(2) {
+	max-height : 250px;
+}
+
+.booking-block__items-block:nth-child(2) .booking-block__items-photo img:nth-child(3) {
+	max-height : 250px;
+}
+
+.booking-block__items-block:nth-child(3) .booking-block__items-photo img:nth-child(1) {
+	max-height : 500px;
+}
+
+.booking-block__items-block:nth-child(3) .booking-block__items-photo img:nth-child(2) {
+	max-height : 250px;
+}
+
+.booking-block__items-block:nth-child(3) .booking-block__items-photo img:nth-child(3) {
+	max-height : 250px;
 }
 
 .booking-block__items-radio {
@@ -11064,14 +11089,40 @@ h6 {
 		justify-content : flex-start;
 	}
 
-	.booking-block__items-block:nth-child(1) .booking-block__items-photo
-	,
-	.booking-block__items-block:nth-child(2) .booking-block__items-photo {
-		height : 230px;
+	.booking-block__items-block:nth-child(1) .booking-block__items-photo img:nth-child(1) {
+		max-height : 250px;
 	}
 
-	.booking-block__items-block:nth-child(3) .booking-block__items-photo {
-		height : 350px;
+	.booking-block__items-block:nth-child(1) .booking-block__items-photo img:nth-child(2) {
+		max-height : 125px;
+	}
+
+	.booking-block__items-block:nth-child(1) .booking-block__items-photo img:nth-child(3) {
+		max-height : 125px;
+	}
+
+	.booking-block__items-block:nth-child(2) .booking-block__items-photo img:nth-child(1) {
+		max-height : 250px;
+	}
+
+	.booking-block__items-block:nth-child(2) .booking-block__items-photo img:nth-child(2) {
+		max-height : 125px;
+	}
+
+	.booking-block__items-block:nth-child(2) .booking-block__items-photo img:nth-child(3) {
+		max-height : 125px;
+	}
+
+	.booking-block__items-block:nth-child(3) .booking-block__items-photo img:nth-child(1) {
+		max-height : 250px;
+	}
+
+	.booking-block__items-block:nth-child(3) .booking-block__items-photo img:nth-child(2) {
+		max-height : 125px;
+	}
+
+	.booking-block__items-block:nth-child(3) .booking-block__items-photo img:nth-child(3) {
+		max-height : 125px;
 	}
 
 	.modelBookingForm__wrapper {
