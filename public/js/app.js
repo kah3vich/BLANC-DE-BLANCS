@@ -291,9 +291,11 @@ $(function () {
       if ($(".wine-block__title-filter").hasClass("wine-block__title-filter-a")) {
         $(".wine-block__filter").css("display", "none");
         $(".wine-block__title-filter").removeClass("wine-block__title-filter-a");
+        $("body").css("overflow", "visible");
       } else {
         $(".wine-block__filter").css("display", "flex");
         $(".wine-block__title-filter").addClass("wine-block__title-filter-a");
+        $("body").css("overflow", "hidden");
       }
     });
   }

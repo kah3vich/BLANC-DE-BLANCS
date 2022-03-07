@@ -720,6 +720,7 @@
 			width: 100%;
 			border-radius: 16px;
 			display: flex;
+			padding: 5px 0;
 			align-items: center;
 			justify-content: center;
 			position: relative;
@@ -741,10 +742,10 @@
 				font-style: normal;
 				font-weight: normal;
 				font-size: 24px;
-				line-height: 70px;
+				line-height: 30px;
 				color: #021245;
 				position: absolute;
-				top: -55px;
+				top: -35px;
 				left: 15px;
 			}
 		}
@@ -753,6 +754,7 @@
 			background: rgba(255, 255, 255, 0.4);
 			border: 2px solid rgba(0, 56, 128, 0.6);
 			width: 100%;
+			padding: 5px 0;
 			border-radius: 16px;
 			display: flex;
 			align-items: center;
@@ -776,10 +778,10 @@
 				font-style: normal;
 				font-weight: normal;
 				font-size: 24px;
-				line-height: 70px;
+				line-height: 30px;
 				color: #021245;
 				position: absolute;
-				top: -55px;
+				top: -35px;
 				left: 15px;
 			}
 		}
@@ -788,6 +790,7 @@
 			background: rgba(255, 255, 255, 0.4);
 			border: 2px solid rgba(0, 56, 128, 0.6);
 			width: 100%;
+			padding: 5px 0;
 			border-radius: 16px;
 			display: flex;
 			align-items: center;
@@ -811,10 +814,10 @@
 				font-style: normal;
 				font-weight: normal;
 				font-size: 24px;
-				line-height: 70px;
+				line-height: 30px;
 				color: #021245;
 				position: absolute;
-				top: -55px;
+				top: -35px;
 				left: 15px;
 			}
 		}
@@ -828,6 +831,7 @@
 			padding: 8px 55px;
 			border: 3px solid #003f80;
 			border-radius: 38.5px;
+			padding: 5px 0;
 			background: transparent;
 			text-align: center;
 			display: flex;
@@ -861,6 +865,7 @@
 			}
 		}
 		&-dates {
+			padding: 5px 0;
 			width: 182px;
 			height: 47px;
 			border: 2px solid rgba(0, 56, 128, 0.6);
@@ -881,6 +886,7 @@
 		}
 		&-times {
 			width: 118px;
+			padding: 5px 0;
 			height: 47px;
 			border: 2px solid rgba(0, 56, 128, 0.6);
 			border-radius: 15px;
@@ -916,6 +922,7 @@
 			background: #fff;
 			border-radius: 38.5px;
 			padding: 12px 14px;
+			padding: 5px 0;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -935,6 +942,7 @@
 			background: rgba(255, 255, 255, 0.4);
 			border: 2px solid rgba(0, 56, 128, 0.6);
 			width: 100%;
+			padding: 5px 0;
 			border-radius: 16px;
 			display: flex;
 			align-items: center;
@@ -958,10 +966,10 @@
 				font-style: normal;
 				font-weight: normal;
 				font-size: 24px;
-				line-height: 70px;
+				line-height: 30px;
 				color: #021245;
 				position: absolute;
-				top: -55px;
+				top: -35px;
 				left: 15px;
 			}
 		}
@@ -970,6 +978,7 @@
 			align-items: center;
 			justify-content: space-between;
 			width: 100%;
+			padding: 5px 0;
 			gap: 23px;
 			position: relative;
 			margin: 30px 0 50px 0;
@@ -986,6 +995,7 @@
 		}
 		&-kv {
 			height: 46px;
+			padding: 5px 0;
 			background: rgba(255, 255, 255, 0.4);
 			border: 2px solid rgba(0, 56, 128, 0.6);
 			width: 100%;
@@ -1012,15 +1022,16 @@
 				font-style: normal;
 				font-weight: normal;
 				font-size: 24px;
-				line-height: 70px;
+				line-height: 30px;
 				color: #021245;
 				position: absolute;
-				top: -55px;
+				top: -35px;
 				left: 5px;
 			}
 		}
 		&-pd {
 			height: 46px;
+			padding: 5px 0;
 			background: rgba(255, 255, 255, 0.4);
 			border: 2px solid rgba(0, 56, 128, 0.6);
 			width: 100%;
@@ -1047,15 +1058,16 @@
 				font-style: normal;
 				font-weight: normal;
 				font-size: 24px;
-				line-height: 70px;
+				line-height: 30px;
 				color: #021245;
 				position: absolute;
-				top: -55px;
+				top: -35px;
 				left: 5px;
 			}
 		}
 		&-code {
 			height: 46px;
+			padding: 5px 0;
 			background: rgba(255, 255, 255, 0.4);
 			border: 2px solid rgba(0, 56, 128, 0.6);
 			width: 100%;
@@ -1082,15 +1094,16 @@
 				font-style: normal;
 				font-weight: normal;
 				font-size: 24px;
-				line-height: 70px;
+				line-height: 30px;
 				color: #021245;
 				position: absolute;
-				top: -55px;
+				top: -35px;
 				left: 5px;
 			}
 		}
 		&-floor {
 			height: 46px;
+			padding: 5px 0;
 			background: rgba(255, 255, 255, 0.4);
 			border: 2px solid rgba(0, 56, 128, 0.6);
 			width: 100%;
@@ -1117,16 +1130,17 @@
 				font-style: normal;
 				font-weight: normal;
 				font-size: 24px;
-				line-height: 70px;
+				line-height: 30px;
 				color: #021245;
 				position: absolute;
-				top: -55px;
+				top: -35px;
 				left: 5px;
 			}
 		}
 		&-text {
 			margin: 20px 0 0 0;
 			height: 96px;
+			padding: 5px 0;
 			width: 100%;
 			background: rgba(255, 255, 255, 0.4);
 			border: 2px solid rgba(0, 56, 128, 0.6);
@@ -1152,6 +1166,7 @@
 		&-texts {
 			margin: 20px 0 0 0;
 			height: 230px;
+			padding: 5px 0;
 			width: 100%;
 			background: rgba(255, 255, 255, 0.4);
 			border: 2px solid rgba(0, 56, 128, 0.6);

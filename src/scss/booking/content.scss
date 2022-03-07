@@ -428,6 +428,14 @@
 	}
 }
 
+.booking-block__items-block:nth-child(1) .booking-block__items-photo,
+.booking-block__items-block:nth-child(2) .booking-block__items-photo {
+	height: 500px;
+}
+.booking-block__items-block:nth-child(3) .booking-block__items-photo {
+	height: 700px;
+}
+
 .booking-block__items-radio {
 	position: relative;
 	margin: 0 15px 0 0;

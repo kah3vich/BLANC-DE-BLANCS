@@ -165,8 +165,18 @@
 		align-items: flex-start;
 		justify-content: flex-start;
 	}
+	.booking-block__items-block:nth-child(1) .booking-block__items-photo,
+	.booking-block__items-block:nth-child(2) .booking-block__items-photo {
+		height: 230px;
+	}
+	.booking-block__items-block:nth-child(3) .booking-block__items-photo {
+		height: 350px;
+	}
 	.modelBookingForm__wrapper {
 		width: 90%;
+	}
+	.booking-block__items img {
+		margin: 0;
 	}
 	.modelBookingForm__wrapper {
 		padding: 25px 25px;

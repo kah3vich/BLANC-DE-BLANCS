@@ -1338,6 +1338,7 @@ h6 {
 .modelBookingForm__item:nth-child(1) {
 	width : 164px;
 	height : 35px;
+	padding : 5px 0;
 }
 
 .modelBookingForm__item:nth-child(1) input {
@@ -1347,6 +1348,7 @@ h6 {
 .modelBookingForm__item:nth-child(2) {
 	width : 100px;
 	height : 35px;
+	padding : 5px 0;
 }
 
 .modelBookingForm__item:nth-child(2) input {
@@ -1356,6 +1358,7 @@ h6 {
 .modelBookingForm__item:nth-child(3) {
 	width : 100px;
 	height : 35px;
+	padding : 5px 0;
 }
 
 .modelBookingForm__item:nth-child(3) input {
@@ -1396,6 +1399,7 @@ h6 {
 	position : relative;
 	width : 100%;
 	height : 32px;
+	padding : 5px 0;
 	margin : 0 0 36px 0;
 }
 
@@ -5948,6 +5952,16 @@ h6 {
 	grid-template-areas : "booking_1 booking_2" "booking_3 booking_3";
 }
 
+.booking-block__items-block:nth-child(1) .booking-block__items-photo
+,
+.booking-block__items-block:nth-child(2) .booking-block__items-photo {
+	height : 500px;
+}
+
+.booking-block__items-block:nth-child(3) .booking-block__items-photo {
+	height : 700px;
+}
+
 .booking-block__items-radio {
 	position : relative;
 	margin : 0 15px 0 0;
@@ -8031,6 +8045,7 @@ h6 {
 	display : -webkit-box;
 	display : -ms-flexbox;
 	display : flex;
+	padding : 5px 0;
 	-webkit-box-align : center;
 	-ms-flex-align : center;
 	align-items : center;
@@ -8059,10 +8074,10 @@ h6 {
 	font-style : normal;
 	font-weight : normal;
 	font-size : 24px;
-	line-height : 70px;
+	line-height : 30px;
 	color : #021245;
 	position : absolute;
-	top : -55px;
+	top : -35px;
 	left : 15px;
 }
 
@@ -8071,6 +8086,7 @@ h6 {
 	background : rgba(255, 255, 255, 0.4);
 	border : 2px solid rgba(0, 56, 128, 0.6);
 	width : 100%;
+	padding : 5px 0;
 	border-radius : 16px;
 	display : -webkit-box;
 	display : -ms-flexbox;
@@ -8103,10 +8119,10 @@ h6 {
 	font-style : normal;
 	font-weight : normal;
 	font-size : 24px;
-	line-height : 70px;
+	line-height : 30px;
 	color : #021245;
 	position : absolute;
-	top : -55px;
+	top : -35px;
 	left : 15px;
 }
 
@@ -8115,6 +8131,7 @@ h6 {
 	background : rgba(255, 255, 255, 0.4);
 	border : 2px solid rgba(0, 56, 128, 0.6);
 	width : 100%;
+	padding : 5px 0;
 	border-radius : 16px;
 	display : -webkit-box;
 	display : -ms-flexbox;
@@ -8147,10 +8164,10 @@ h6 {
 	font-style : normal;
 	font-weight : normal;
 	font-size : 24px;
-	line-height : 70px;
+	line-height : 30px;
 	color : #021245;
 	position : absolute;
-	top : -55px;
+	top : -35px;
 	left : 15px;
 }
 
@@ -8171,6 +8188,7 @@ h6 {
 	padding : 8px 55px;
 	border : 3px solid #003f80;
 	border-radius : 38.5px;
+	padding : 5px 0;
 	background : transparent;
 	text-align : center;
 	display : -webkit-box;
@@ -8220,6 +8238,7 @@ h6 {
 }
 
 .basket-block__form-dates {
+	padding : 5px 0;
 	width : 182px;
 	height : 47px;
 	border : 2px solid rgba(0, 56, 128, 0.6);
@@ -8248,6 +8267,7 @@ h6 {
 
 .basket-block__form-times {
 	width : 118px;
+	padding : 5px 0;
 	height : 47px;
 	border : 2px solid rgba(0, 56, 128, 0.6);
 	border-radius : 15px;
@@ -8308,6 +8328,7 @@ h6 {
 	background : #ffffff;
 	border-radius : 38.5px;
 	padding : 12px 14px;
+	padding : 5px 0;
 	display : -webkit-box;
 	display : -ms-flexbox;
 	display : flex;
@@ -8335,6 +8356,7 @@ h6 {
 	background : rgba(255, 255, 255, 0.4);
 	border : 2px solid rgba(0, 56, 128, 0.6);
 	width : 100%;
+	padding : 5px 0;
 	border-radius : 16px;
 	display : -webkit-box;
 	display : -ms-flexbox;
@@ -8367,10 +8389,10 @@ h6 {
 	font-style : normal;
 	font-weight : normal;
 	font-size : 24px;
-	line-height : 70px;
+	line-height : 30px;
 	color : #021245;
 	position : absolute;
-	top : -55px;
+	top : -35px;
 	left : 15px;
 }
 
@@ -8385,6 +8407,7 @@ h6 {
 	-ms-flex-pack : justify;
 	justify-content : space-between;
 	width : 100%;
+	padding : 5px 0;
 	gap : 23px;
 	position : relative;
 	margin : 30px 0 50px 0;
@@ -8403,6 +8426,7 @@ h6 {
 
 .basket-block__form-kv {
 	height : 46px;
+	padding : 5px 0;
 	background : rgba(255, 255, 255, 0.4);
 	border : 2px solid rgba(0, 56, 128, 0.6);
 	width : 100%;
@@ -8438,15 +8462,16 @@ h6 {
 	font-style : normal;
 	font-weight : normal;
 	font-size : 24px;
-	line-height : 70px;
+	line-height : 30px;
 	color : #021245;
 	position : absolute;
-	top : -55px;
+	top : -35px;
 	left : 5px;
 }
 
 .basket-block__form-pd {
 	height : 46px;
+	padding : 5px 0;
 	background : rgba(255, 255, 255, 0.4);
 	border : 2px solid rgba(0, 56, 128, 0.6);
 	width : 100%;
@@ -8482,15 +8507,16 @@ h6 {
 	font-style : normal;
 	font-weight : normal;
 	font-size : 24px;
-	line-height : 70px;
+	line-height : 30px;
 	color : #021245;
 	position : absolute;
-	top : -55px;
+	top : -35px;
 	left : 5px;
 }
 
 .basket-block__form-code {
 	height : 46px;
+	padding : 5px 0;
 	background : rgba(255, 255, 255, 0.4);
 	border : 2px solid rgba(0, 56, 128, 0.6);
 	width : 100%;
@@ -8526,15 +8552,16 @@ h6 {
 	font-style : normal;
 	font-weight : normal;
 	font-size : 24px;
-	line-height : 70px;
+	line-height : 30px;
 	color : #021245;
 	position : absolute;
-	top : -55px;
+	top : -35px;
 	left : 5px;
 }
 
 .basket-block__form-floor {
 	height : 46px;
+	padding : 5px 0;
 	background : rgba(255, 255, 255, 0.4);
 	border : 2px solid rgba(0, 56, 128, 0.6);
 	width : 100%;
@@ -8570,16 +8597,17 @@ h6 {
 	font-style : normal;
 	font-weight : normal;
 	font-size : 24px;
-	line-height : 70px;
+	line-height : 30px;
 	color : #021245;
 	position : absolute;
-	top : -55px;
+	top : -35px;
 	left : 5px;
 }
 
 .basket-block__form-text {
 	margin : 20px 0 0 0;
 	height : 96px;
+	padding : 5px 0;
 	width : 100%;
 	background : rgba(255, 255, 255, 0.4);
 	border : 2px solid rgba(0, 56, 128, 0.6);
@@ -8650,6 +8678,7 @@ h6 {
 .basket-block__form-texts {
 	margin : 20px 0 0 0;
 	height : 230px;
+	padding : 5px 0;
 	width : 100%;
 	background : rgba(255, 255, 255, 0.4);
 	border : 2px solid rgba(0, 56, 128, 0.6);
@@ -11035,8 +11064,22 @@ h6 {
 		justify-content : flex-start;
 	}
 
+	.booking-block__items-block:nth-child(1) .booking-block__items-photo
+	,
+	.booking-block__items-block:nth-child(2) .booking-block__items-photo {
+		height : 230px;
+	}
+
+	.booking-block__items-block:nth-child(3) .booking-block__items-photo {
+		height : 350px;
+	}
+
 	.modelBookingForm__wrapper {
 		width : 90%;
+	}
+
+	.booking-block__items img {
+		margin : 0;
 	}
 
 	.modelBookingForm__wrapper {
@@ -11109,6 +11152,10 @@ h6 {
 
 	.delivery-block__title {
 		margin : 0 10px 0 0;
+	}
+
+	.delivery-block__items-add {
+		margin : 16px 0 30px 0;
 	}
 
 	.basket-block__confirmation-p {
