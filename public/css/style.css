@@ -489,7 +489,7 @@ h6 {
 	font-size : 16px;
 	line-height : 45px;
 	color : #ffffff;
-	margin : 0 auto 0 0;
+	margin : 0 auto 0 30px;
 }
 
 .header__order p {
@@ -644,13 +644,14 @@ h6 {
 }
 
 .footer__contact-info p {
-	font-family : TTNorms;
+	width : 340px;
+	font-family : "TT Norms";
 	font-style : normal;
-	font-weight : bold;
-	font-size : 21px;
-	line-height : 25px;
+	font-weight : 700;
+	font-size : 18px;
+	line-height : 23px;
 	letter-spacing : 0.09em;
-	color : #ffffff;
+	color : #FFFFFF;
 	margin : 44px 0 0 0;
 }
 
@@ -726,7 +727,7 @@ h6 {
 	font-size : 21px;
 	line-height : 25px;
 	letter-spacing : 0.09em;
-	text-transform : uppercase;
+	text-transform : lowercase;
 	color : #ffffff;
 }
 
@@ -1718,6 +1719,9 @@ h6 {
 	position : relative;
 	width : 100vw;
 	height : 100vh;
+	background : -o-linear-gradient(top, #06417d 0%, rgba(6, 65, 125, 0) 50%);
+	background : -webkit-gradient(linear, left top, left bottom, from(#06417d), color-stop(50%, rgba(6, 65, 125, 0)));
+	background :    linear-gradient(180deg, #06417d 0%, rgba(6, 65, 125, 0) 50%);
 }
 
 .ind-header__slider-bg {
@@ -1778,7 +1782,7 @@ h6 {
 	line-height : 95px;
 	letter-spacing : 0.09em;
 	color : #ffffff;
-	width : 90%;
+	width : 100%;
 }
 
 .ind-header__slider-text {
@@ -1812,7 +1816,7 @@ h6 {
 	background : #003f80;
 	border : 2px solid #ffffff;
 	border-radius : 27px;
-	padding : 14px 50px;
+	padding : 14px 65px;
 	text-align : center;
 	cursor : pointer;
 	font-family : Prata;
@@ -2299,9 +2303,16 @@ h6 {
 	display : -webkit-box;
 	display : -ms-flexbox;
 	display : flex;
+	height : unset !important;
 	-webkit-box-pack : center;
 	-ms-flex-pack : center;
 	justify-content : center;
+}
+
+.ind-advantage__table .swiper-wrapper {
+	-webkit-box-align : stretch;
+	-ms-flex-align : stretch;
+	align-items : stretch;
 }
 
 .ind-advantage__table .swiper-button-next
@@ -2316,9 +2327,7 @@ h6 {
 	width : 376px;
 	background : #003f80;
 	border-radius : 20px;
-	height : -webkit-max-content;
-	height :    -moz-max-content;
-	height :         max-content;
+	height : unset;
 	overflow : hidden;
 	display : -webkit-box;
 	display : -ms-flexbox;
@@ -2330,9 +2339,9 @@ h6 {
 	-webkit-box-direction : normal;
 	-ms-flex-direction : column;
 	    flex-direction : column;
-	-webkit-box-pack : start;
-	-ms-flex-pack : start;
-	justify-content : flex-start;
+	-webkit-box-pack : justify;
+	-ms-flex-pack : justify;
+	justify-content : space-between;
 	padding : 45px 0 27px 0;
 	position : relative;
 }

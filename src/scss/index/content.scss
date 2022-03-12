@@ -33,6 +33,7 @@
 			position: relative;
 			width: 100vw;
 			height: 100vh;
+			background: linear-gradient(180deg, #06417d 0%, rgba(6, 65, 125, 0) 50%);
 		}
 		&-bg {
 			width: 100%;
@@ -79,7 +80,7 @@
 			line-height: 95px;
 			letter-spacing: 0.09em;
 			color: #ffffff;
-			width: 90%;
+			width: 100%;
 		}
 		&-text {
 			margin: 17px 0 53px 0;
@@ -108,7 +109,7 @@
 			background: #003f80;
 			border: 2px solid #ffffff;
 			border-radius: 27px;
-			padding: 14px 50px;
+			padding: 14px 65px;
 			text-align: center;
 			cursor: pointer;
 			font-family: Prata;
@@ -467,7 +468,11 @@
 		width: 100%;
 		& .swiper-slide {
 			display: flex;
+			height: unset !important;
 			justify-content: center;
+		}
+		& .swiper-wrapper {
+			align-items: stretch;
 		}
 		& .swiper-button-next,
 		.swiper-button-prev,
@@ -478,12 +483,12 @@
 			width: 376px;
 			background: #003f80;
 			border-radius: 20px;
-			height: max-content;
+			height: unset;
 			overflow: hidden;
 			display: flex;
 			align-items: center;
 			flex-direction: column;
-			justify-content: flex-start;
+			justify-content: space-between;
 			padding: 45px 0 27px 0;
 			position: relative;
 			&:hover {

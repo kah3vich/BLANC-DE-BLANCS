@@ -18,6 +18,7 @@ var indexSliders_1 = new Swiper(".indexSliders_1", {
 	// spaceBetween: 10,
 	slidesPerView: 7,
 	// freeMode: true,
+	loop: true,
 	watchSlidesProgress: true,
 	breakpoints: {
 		1200: {
