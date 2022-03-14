@@ -46,6 +46,7 @@ var indexSliders_1 = new Swiper(".indexSliders_1", {
 });
 var indexSliders_2 = new Swiper(".indexSliders_2", {
 	// spaceBetween: 10,
+	loop: true,
 	navigation: {
 		nextEl: ".ind-slider__wrapper .swiper-controls .swiper-button-next",
 		prevEl: ".ind-slider__wrapper .swiper-controls .swiper-button-prev",

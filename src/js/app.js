@@ -1,5 +1,6 @@
 @@include("./header/index.js");
 @@include("./index/index.js");
+@@include("./about/index.js");
 @@include("./menu/index.js");
 @@include("./bar/index.js");
 @@include("./wine/index.js");

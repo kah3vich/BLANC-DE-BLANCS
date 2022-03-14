@@ -164,7 +164,7 @@
 		top: 275px;
 		left: 50%;
 		transform: translate(-50%, 0%);
-		padding: 11px 20px;
+		padding: 11px 10px;
 	}
 	.wine-block__items-price p {
 		font-family: TTNorms;
@@ -183,5 +183,10 @@
 		width: 100%;
 		height: 300px;
 		overflow: hidden;
+	}
+	.wine-block__items-price p {
+		margin: 8px 0 0 0;
+		font-size: 12px;
+		line-height: 15px;
 	}
 }

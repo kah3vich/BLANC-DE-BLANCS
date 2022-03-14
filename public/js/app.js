@@ -116,6 +116,7 @@ var indexSliders_1 = new Swiper(".indexSliders_1", {
 });
 var indexSliders_2 = new Swiper(".indexSliders_2", {
   // spaceBetween: 10,
+  loop: true,
   navigation: {
     nextEl: ".ind-slider__wrapper .swiper-controls .swiper-button-next",
     prevEl: ".ind-slider__wrapper .swiper-controls .swiper-button-prev"
@@ -152,6 +153,20 @@ var indexAdvantageTable = new Swiper(".indexAdvantageTable", {
       spaceBetween: 15
     }
   }
+});
+;
+var aboutSlider = new Swiper(".aboutSlider", {
+  navigation: {
+    nextEl: ".about-block__slider .swiper-controls .swiper-button-next",
+    prevEl: ".about-block__slider .swiper-controls .swiper-button-prev"
+  },
+  slidesPerView: 1,
+  keyboard: true,
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true
+  },
+  loop: true
 });
 ;
 $("#btn-menu").on("click", function () {
