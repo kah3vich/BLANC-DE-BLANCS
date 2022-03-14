@@ -85,3 +85,75 @@ var indexAdvantageTable = new Swiper(".indexAdvantageTable", {
 		},
 	},
 });
+
+const checkModelFormIndexDisabled = () => {
+	$('.modelIndexForm__btn').attr('disabled', 'disabled')
+}
+
+const checkModelFormIndexNoDisabled = () => {
+	$('.modelIndexForm__btn').removeAttr('disabled')
+}
+
+
+const checkModelFormIndex = () => {
+	if ($('.modelIndexForm__name input').val() == '') {
+		$('.modelIndexForm__name').css('border', '1px solid red')
+		checkModelFormIndexDisabled()
+	} else {
+		$('.modelIndexForm__name').css('border', '1px solid #003F80')
+		checkModelFormIndexNoDisabled()
+	}
+	if ($('.modelIndexForm__email input').val() == '') {
+		$('.modelIndexForm__email').css('border', '1px solid red')
+		checkModelFormIndexDisabled()
+	} else {
+		$('.modelIndexForm__email').css('border', '1px solid #003F80')
+		checkModelFormIndexNoDisabled()
+	}
+	if ($('.modelIndexForm__phone input').val() == '') {
+		$('.modelIndexForm__phone').css('border', '1px solid red')
+		checkModelFormIndexDisabled()
+	} else {
+		$('.modelIndexForm__phone').css('border', '1px solid #003F80')
+		checkModelFormIndexNoDisabled()
+	}
+	if ($('.modelIndexForm__message textarea').val() == '') {
+		$('.modelIndexForm__message').css('border', '1px solid red')
+		checkModelFormIndexDisabled()
+	} else {
+		$('.modelIndexForm__message').css('border', '1px solid #003F80')
+		checkModelFormIndexNoDisabled()
+	}
+}
+
+
+$(() => {
+	$('.modelIndexForm__block input').on('keyup', () => {
+		checkModelFormIndex()
+	})
+	$('.modelIndexForm__block textarea').on('keyup', () => {
+		checkModelFormIndex()
+	})
+})
+
+$('.footer__contact-btn').on('click', () => {
+	$('.modelIndexForm').removeClass('display-n')
+	$('body').css('overflow', 'hidden')
+})
+
+$('.modelIndexForm__btn').on('click', (e) => {
+	e.preventDefault()
+	$('.modelIndexThx').removeClass('display-n')
+	$('.modelIndexForm').addClass('display-n')
+	$('body').css('overflow', 'hidden')
+})
+
+$('.modelIndexThx__close').on('click', () => {
+	$('.modelIndexThx').addClass('display-n')
+	$('.modelIndexForm').removeClass('display-n')
+})
+
+$('.modelIndexForm__close').on('click', () => {
+	$('.modelIndexForm').addClass('display-n')
+	$('body').css('overflow', 'visible')
+})

@@ -1,0 +1,17 @@
+.modelIndexForm.display-n
+        .modelIndexForm__wrapper
+            .modelIndexForm__block
+                .modelIndexForm__close
+                    img(src="./svg/index/close_model.svg", alt="icons")
+                .modelIndexForm__title Расскажите о ваших впечатлениях от посещения Blanc de Blancs
+                .modelIndexForm__line 
+                label.modelIndexForm__name(for="indexModelName")
+                    input(type="text" placeholder='Ваше имя *' id='indexModelName')
+                label.modelIndexForm__phone(for="indexModelPhone")
+                    input(type="text" placeholder='Телефон *' id='indexModelPhone')
+                label.modelIndexForm__email(for="indexModelEmail")
+                    input(type="text" placeholder='E-mail *' id='indexModelEmail')
+                .modelIndexForm__message
+                    textarea(placeholder='Сообщение *')
+                button(type="submit" disabled="disabled").modelIndexForm__btn 
+                    p Отправить

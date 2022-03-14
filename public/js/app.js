@@ -154,7 +154,75 @@ var indexAdvantageTable = new Swiper(".indexAdvantageTable", {
     }
   }
 });
-;
+
+var checkModelFormIndexDisabled = function checkModelFormIndexDisabled() {
+  $('.modelIndexForm__btn').attr('disabled', 'disabled');
+};
+
+var checkModelFormIndexNoDisabled = function checkModelFormIndexNoDisabled() {
+  $('.modelIndexForm__btn').removeAttr('disabled');
+};
+
+var checkModelFormIndex = function checkModelFormIndex() {
+  if ($('.modelIndexForm__name input').val() == '') {
+    $('.modelIndexForm__name').css('border', '1px solid red');
+    checkModelFormIndexDisabled();
+  } else {
+    $('.modelIndexForm__name').css('border', '1px solid #003F80');
+    checkModelFormIndexNoDisabled();
+  }
+
+  if ($('.modelIndexForm__email input').val() == '') {
+    $('.modelIndexForm__email').css('border', '1px solid red');
+    checkModelFormIndexDisabled();
+  } else {
+    $('.modelIndexForm__email').css('border', '1px solid #003F80');
+    checkModelFormIndexNoDisabled();
+  }
+
+  if ($('.modelIndexForm__phone input').val() == '') {
+    $('.modelIndexForm__phone').css('border', '1px solid red');
+    checkModelFormIndexDisabled();
+  } else {
+    $('.modelIndexForm__phone').css('border', '1px solid #003F80');
+    checkModelFormIndexNoDisabled();
+  }
+
+  if ($('.modelIndexForm__message textarea').val() == '') {
+    $('.modelIndexForm__message').css('border', '1px solid red');
+    checkModelFormIndexDisabled();
+  } else {
+    $('.modelIndexForm__message').css('border', '1px solid #003F80');
+    checkModelFormIndexNoDisabled();
+  }
+};
+
+$(function () {
+  $('.modelIndexForm__block input').on('keyup', function () {
+    checkModelFormIndex();
+  });
+  $('.modelIndexForm__block textarea').on('keyup', function () {
+    checkModelFormIndex();
+  });
+});
+$('.footer__contact-btn').on('click', function () {
+  $('.modelIndexForm').removeClass('display-n');
+  $('body').css('overflow', 'hidden');
+});
+$('.modelIndexForm__btn').on('click', function (e) {
+  e.preventDefault();
+  $('.modelIndexThx').removeClass('display-n');
+  $('.modelIndexForm').addClass('display-n');
+  $('body').css('overflow', 'hidden');
+});
+$('.modelIndexThx__close').on('click', function () {
+  $('.modelIndexThx').addClass('display-n');
+  $('.modelIndexForm').removeClass('display-n');
+});
+$('.modelIndexForm__close').on('click', function () {
+  $('.modelIndexForm').addClass('display-n');
+  $('body').css('overflow', 'visible');
+});
 var aboutSlider = new Swiper(".aboutSlider", {
   navigation: {
     nextEl: ".about-block__slider .swiper-controls .swiper-button-next",
