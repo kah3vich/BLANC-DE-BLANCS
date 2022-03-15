@@ -5464,7 +5464,7 @@ h6 {
 	width : 100%;
 	display : -ms-grid;
 	display :     grid;
-	grid-template-columns : repeat(auto-fill, minmax(360px, 1fr));
+	grid-template-columns : repeat(auto-fill, minmax(415px, 1fr));
 	gap : 35px 23px;
 	padding : 10px;
 }
@@ -5612,22 +5612,19 @@ h6 {
 
 .promotion-block__items {
 	width : 100%;
-	height : -webkit-max-content;
-	height :    -moz-max-content;
-	height :         max-content;
 	display : -webkit-box;
 	display : -ms-flexbox;
 	display : flex;
 	-webkit-box-orient : vertical;
-	-webkit-box-direction : normal;
-	-ms-flex-direction : column;
-	    flex-direction : column;
+	-webkit-box-direction : reverse;
+	-ms-flex-direction : column-reverse;
+	    flex-direction : column-reverse;
 	-webkit-box-align : start;
 	-ms-flex-align : start;
 	align-items : flex-start;
-	-webkit-box-pack : start;
-	-ms-flex-pack : start;
-	justify-content : flex-start;
+	-webkit-box-pack : end;
+	-ms-flex-pack : end;
+	justify-content : flex-end;
 	background : #ffffff;
 	-webkit-box-shadow : 0px 4px 4px rgba(0, 0, 0, 0.25);
 	        box-shadow : 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -5635,7 +5632,7 @@ h6 {
 }
 
 .promotion-block__photo {
-	height : 375px;
+	height : 177px;
 	width : 100%;
 	overflow : hidden;
 }
@@ -5661,7 +5658,7 @@ h6 {
 	-ms-flex-pack : center;
 	justify-content : center;
 	position : absolute;
-	bottom : 20px;
+	top : 20px;
 	right : 20px;
 }
 
@@ -5753,16 +5750,16 @@ h6 {
 }
 
 .promotion-block__titles {
-	padding : 20px 16px;
+	padding : 25px 30px;
 	background : #ffffff;
 	width : 100%;
 }
 
-.promotion-block__titles p {
-	font-family : TTNorms;
+.promotion-block__titles h3 {
+	font-family : PTSans;
 	font-style : normal;
-	font-weight : normal;
-	font-size : 24px;
+	font-weight : 700;
+	font-size : 20px;
 	line-height : 25px;
 	display : -webkit-box;
 	display : -ms-flexbox;
@@ -5770,7 +5767,32 @@ h6 {
 	-webkit-box-align : center;
 	-ms-flex-align : center;
 	align-items : center;
-	color : #003f80;
+	color : #003F80;
+	width : 100%;
+}
+
+.promotion-block__titles p {
+	font-family : PTSans;
+	font-style : normal;
+	font-weight : 400;
+	font-size : 16px;
+	line-height : 32px;
+	margin : 13px 0 0 0;
+	width : 100%;
+	color : #000000;
+}
+
+.promotion-block__titles button {
+	font-family : PTSans;
+	font-style : normal;
+	font-weight : 400;
+	font-size : 13px;
+	line-height : 32px;
+	-webkit-text-decoration-line : underline;
+	        text-decoration-line : underline;
+	color : #000000;
+	background : transparent;
+	cursor : pointer;
 }
 
 .promotions {
@@ -11213,8 +11235,8 @@ h6 {
 		width : 100%;
 		max-width : 100%;
 		position : fixed;
-		height : 100vh;
-		padding : 15px 15px 0 15px;
+		height : 100%;
+		padding : 15px 15px 20px 15px;
 	}
 
 	.menu-block__title-filter {
@@ -12817,6 +12839,17 @@ h6 {
 		-webkit-transition : all 0.5s ease;
 		     -o-transition : all 0.5s ease;
 		        transition : all 0.5s ease;
+	}
+
+	.ind-advantage__title {
+		margin : 35px 0 60px 0;
+		font-family : Prata;
+		font-style : normal;
+		font-weight : normal;
+		font-size : 35px;
+		line-height : 45px;
+		text-align : center;
+		color : #003f80;
 	}
 
 	.footer__block-table {
