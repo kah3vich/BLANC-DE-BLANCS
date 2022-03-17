@@ -176,18 +176,20 @@
 		width: 100%;
 		cursor: pointer;
 		& img {
-			width: 100%;
 			height: 100%;
 			object-fit: contain;
 		}
 		& p {
-			margin: 20px 0 0 0;
+			margin: 45px 0 0 0;
 			font-family: DMSans;
 			font-style: normal;
 			font-weight: normal;
 			font-size: 23px;
 			line-height: 32px;
 			color: #333333;
+			&:last-child {
+				margin: 20px 0 0 0;
+			}
 		}
 		&-block {
 			width: 100%;
@@ -523,3 +525,4 @@
 .booking-block__items-radio__input:checked + .booking-block__items-radio__label:after {
 	opacity: 1;
 }
+

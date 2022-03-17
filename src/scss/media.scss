@@ -365,7 +365,7 @@
 		font-size: 18px;
 		line-height: 25px;
 		text-align: center;
-		color: #ffffff;
+		color: #003f80;
 		transition: all 0.5s ease;
 	}
 	.ind-advantage__table-icons {
@@ -426,7 +426,7 @@
 		font-size: 15px;
 		line-height: 25px;
 		text-align: center;
-		color: #ffffff;
+		color: #003f80;
 		transition: all 0.5s ease;
 	}
 	.ind-advantage__title {
@@ -449,6 +449,21 @@
 		& a {
 			margin: 10px;
 		}
+	}
+	.ind-advantage__table-text {
+		margin: 17px 0 11px 0;
+		font-family: Prata;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 25px;
+		text-align: center;
+		color: #003f80;
+		transition: all 0.5s ease;
+	}
+	.ind-advantage__table-icons {
+		width: 125px;
+		height: 125px;
 	}
 	.header__menu {
 		left: 20px;
