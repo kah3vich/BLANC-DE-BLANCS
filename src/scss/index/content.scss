@@ -509,8 +509,12 @@
 					transform: scale(1.1);
 					transition: all 0.5s ease;
 				}
+				& .ind-advantage__table-text {
+					color: #fff;
+				}
 				transform: scale(1.1);
 				transition: all 0.5s ease;
+				background: #003F80;
 			}
 		}
 		&-icons {

@@ -26,6 +26,17 @@
 		gap: 35px;
 	}
 }
+@media (max-width: 750px) {
+	.wines-block__info-btns {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+	.wines-block__info-volume {
+		margin: 0 0 30px 0;
+	}
+}
 @media (max-width: 600px) {
 	.wines-block__profile-fortress,
 	.wines-block__profile-volume {

@@ -324,4 +324,31 @@
 		font-family: TTNorms;
 		text-align: center;
 	}
+	.basket-block__form-s {
+		padding: 8px 30px;
+		border: 3px solid #003f80;
+		border-radius: 38.5px;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		font-family: TTNorms;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.basket-block__form-d {
+		font-size: 19px;
+	}
+	.basket-block__bon h3 {
+		font-family: TTNorms;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		line-height: 40px;
+		color: #003f80;
+		text-align: center;
+	}
 }

@@ -1,0 +1,60 @@
+@@include('components/_head.pug', {
+    "title": "Галерея",
+})
+
+@@include('components/_header.pug')
+
+.catering 
+    .catering-block
+        .catering-block__containers
+            .catering-block__header
+                .catering-block__header-title Кейтеринг
+                .catering-block__header-text Мы оказываем услуги кейтеринга и обслуживаем частные и корпоративные выездные мероприятия – новоселья, дни рождения, свадьбы, презентации, деловые конференции, корпоративы. Заказ можно сформировать из блюд нашего банкетного меню, дополнив его своими пожеланиями. При необходимости мероприятие сопровождает наш повар и официанты. 
+            .catering-block__header-box
+
+    .catering-description
+        .catering-description__containers
+            .catering-description__photo
+                img(src="./img/catering/dec-1.png" alt="img")
+                img(src="./img/catering/dec-2.png" alt="img")
+                img(src="./img/catering/dec-3.png" alt="img")
+            .catering-description__text
+                h3 Заголовок текст
+                p Мы предоставляем фуршетные столики, скатерти, всю необходимую посуду – бокалы, сервировочную посуду, столовые приборы. По желанию заказчика можем организовать праздничный декор и цветы. 
+
+    .catering-reserve
+        .catering-reserve__containers
+            .catering-reserve__wrapper
+                .catering-reserve__wrapper-info
+                    .catering-reserve__wrapper-add текст
+                    .catering-reserve__wrapper-title Текст про кейтеринг 
+                    a(href="#").catering-reserve__wrapper-btn 
+                        p Заказать
+                .catering-reserve__wrapper-time
+                    .catering-reserve__wrapper-block
+                        a(href="tel:+74956659242").catering-reserve__wrapper-p +7 (495) 665-92-42
+                        .catering-reserve__wrapper-h Часы работы
+                        .catering-reserve__wrapper-n 10:00 - 23:00
+
+    .catering-descriptions
+        .catering-descriptions__containers
+            .catering-descriptions__photo
+                img(src="./img/catering/dec-4.png" alt="img")
+                img(src="./img/catering/dec-5.png" alt="img")
+                img(src="./img/catering/dec-6.png" alt="img")
+            .catering-descriptions__text
+                h3 Заголовок текст
+                p Если вам нужны проектор, радиомикрофоны, музыкальное оборудование и прочая техника, мы возьмём это на себя и доставим технику на ваше мероприятие. С полным списком нашего оборудования можно ознакомиться здесь
+                    br
+                    br
+                    br
+                    | Позвоните нам по телефону 
+                    a(href="tel:+74956659242") +7 (495) 665-92-42
+                    |, и мы ответим на все ваши вопросы об услуге.
+
+
+@@include('components/_footers.pug')
+
+@@include('components/_menus.pug')
+
+@@include('components/_script.pug')

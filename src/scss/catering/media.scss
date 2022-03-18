@@ -1,0 +1,118 @@
+@media (max-width: 1300px) {
+	.catering-block::before {
+		width: 100%;
+	}
+}
+@media (max-width: 1250px) {
+	.catering-description__containers {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	.catering-description__text {
+		margin: 55px 0 0 0;
+	}
+	.catering-descriptions__containers {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	.catering-descriptions__text {
+		margin: 55px 0 0 0;
+	}
+	.catering-reserve__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+	.catering-reserve__wrapper-info {
+		width: 100%;
+	}
+	.catering-reserve__wrapper-time {
+		width: 100%;
+	}
+}
+@media (max-width: 1200px) {
+	.catering-description__containers {
+		padding: 0 20px;
+	}
+	.catering-descriptions__containers {
+		padding: 0 20px;
+	}
+	.catering-reserve__containers {
+		padding: 0 20px;
+	}
+	.catering-block__containers {
+		padding: 0 20px;
+	}
+}
+@media (max-width: 750px) {
+	.catering-description__text {
+		width: 100%;
+	}
+	.catering-descriptions__text {
+		width: 100%;
+	}
+	.catering-block__header {
+		width: 100%;
+	}
+	.catering-reserve__wrapper-time {
+		padding: 25px;
+	}
+	.catering-reserve__wrapper-block {
+		position: relative;
+		z-index: 3;
+		background: #ffffff;
+		display: grid;
+		height: 100%;
+		padding: 20px 10px 20px 30px;
+	}
+	.catering-reserve__wrapper-info {
+		padding: 40px 30px;
+	}
+	.catering-description__photo {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		height: 100%;
+		width: 100%;
+		& img {
+			position: static !important;
+			top: auto !important;
+			left: auto !important;
+			bottom: auto !important;
+			right: auto !important;
+			transform: none !important;
+			width: 100% !important;
+			margin: 0 0 15px 0;
+			&:last-child {
+				margin: 0 0 0 0;
+			}
+		}
+	}
+	.catering-descriptions__photo {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		height: 100%;
+		width: 100%;
+		& img {
+			position: static !important;
+			top: auto !important;
+			left: auto !important;
+			bottom: auto !important;
+			right: auto !important;
+			transform: none !important;
+			width: 100% !important;
+			margin: 0 0 15px 0;
+			&:last-child {
+				margin: 0 0 0 0;
+			}
+		}
+	}
+}
