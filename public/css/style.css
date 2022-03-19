@@ -373,6 +373,22 @@ h6 {
 	gap : 15px;
 }
 
+.header__logo-b .header__logo-blue {
+	display : block;
+}
+
+.header__logo-b .header__logo-white {
+	display : none;
+}
+
+.header__logo-w .header__logo-blue {
+	display : none;
+}
+
+.header__logo-w .header__logo-white {
+	display : block;
+}
+
 .header__lang {
 	font-family : PTSerif;
 	font-style : normal;
@@ -552,6 +568,8 @@ h6 {
 
 .footer__wrapper {
 	width : 100%;
+	-webkit-filter : drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.13));
+	        filter : drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.13));
 	position : relative;
 }
 
@@ -927,14 +945,14 @@ h6 {
 }
 
 .js-select-lang.lang-select-item-active .lang-select-block {
-	padding : 20px;
+	padding : 10px;
 	border-radius : 30px;
 	height : auto;
 	-webkit-box-sizing : content-box;
 	        box-sizing : content-box;
 	background : white;
-	width : 100px;
-	left : -40px;
+	width : 51px;
+	left : -15px;
 }
 
 .js-select-lang .lang-select-wrapper {
@@ -952,7 +970,6 @@ h6 {
 	-ms-flex-pack : start;
 	justify-content : flex-start;
 	height : 120px;
-	overflow-y : auto;
 }
 
 .js-select-lang .lang-select-wrapper::-webkit-scrollbar {
@@ -978,7 +995,7 @@ h6 {
 	color : #000000;
 	border : none;
 	margin : 0 0 5px 0;
-	text-align : left;
+	text-align : center;
 	cursor : pointer;
 }
 
@@ -7568,21 +7585,23 @@ h6 {
 
 .dish-block__photo-type {
 	position : absolute;
-	top : 0;
-	left : 0;
-	width : 0;
-	height : 0;
-	border-top : 125px solid #009c30;
-	border-right : 125px solid transparent;
+	top : 25px;
+	left : 25px;
+	width : 65px;
+	height : 65px;
+	border-radius : 50%;
+	background : #009c30;
 }
 
 .dish-block__photo-icons {
-	margin : 8px 0 0 8px;
-	width : unset !important;
-	height : unset !important;
 	position : absolute;
-	top : -125px;
-	left : 0;
+	top : 50%;
+	left : 50%;
+	-webkit-transform : translate(-50%, -50%);
+	    -ms-transform : translate(-50%, -50%);
+	        transform : translate(-50%, -50%);
+	width : 80% !important;
+	height : unset !important;
 }
 
 .dish-block__photo-add {
@@ -7971,6 +7990,10 @@ h6 {
 	height : 100%;
 	-o-object-fit : cover;
 	   object-fit : cover;
+}
+
+.business-block__banner svg {
+	width : 100%;
 }
 
 .business-block__infos {
@@ -10469,6 +10492,34 @@ h6 {
 
 	.header__basket {
 		left : 27%;
+	}
+}
+
+@media (min-width: 1900px) {
+	.header__order {
+		right : 29%;
+	}
+
+	.header__basket {
+		left : 29%;
+	}
+}
+
+@media (min-width: 2000px) {
+	.header__order {
+		right : 31%;
+	}
+
+	.header__basket {
+		left : 31%;
+	}
+
+	.header__btns {
+		position : absolute;
+		max-width : 2000px;
+		padding : 0 60px;
+		width : 100%;
+		top : 67px;
 	}
 }
 

@@ -41,7 +41,7 @@ $(() => {
 
 $(".header__menu").on("click", () => {
 	$(".menus").removeClass("display-n");
-	$('body').css('overflow', 'hidden')
+	// $('body').css('overflow', 'hidden')
 	gsap.to($(".menus"), 0.5, {
 		delay: 0.3,
 		opacity: 1,
@@ -67,7 +67,7 @@ $('.menus__close').on('click', () => {
 	});
 	setTimeout(() => {
 		$(".menus").addClass("display-n");
-		$('body').css('overflow', 'visible')
+		// $('body').css('overflow', 'visible')
 	}, 1400);
 })
 

@@ -26,8 +26,8 @@ $(function () {
   });
 });
 $(".header__menu").on("click", function () {
-  $(".menus").removeClass("display-n");
-  $('body').css('overflow', 'hidden');
+  $(".menus").removeClass("display-n"); // $('body').css('overflow', 'hidden')
+
   gsap.to($(".menus"), 0.5, {
     delay: 0.3,
     opacity: 1,
@@ -51,8 +51,7 @@ $('.menus__close').on('click', function () {
     ease: "Expo.easeInOut"
   });
   setTimeout(function () {
-    $(".menus").addClass("display-n");
-    $('body').css('overflow', 'visible');
+    $(".menus").addClass("display-n"); // $('body').css('overflow', 'visible')
   }, 1400);
 });
 

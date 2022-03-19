@@ -261,20 +261,20 @@
 		}
 		&-type {
 			position: absolute;
-			top: 0;
-			left: 0;
-			width: 0;
-			height: 0;
-			border-top: 125px solid #009c30;
-			border-right: 125px solid transparent;
+			top: 25px;
+			left: 25px;
+			width: 65px;
+			height: 65px;
+			border-radius: 50%;
+			background: #009c30;
 		}
 		&-icons {
-			margin: 8px 0 0 8px;
-			width: unset !important;
-			height: unset !important;
 			position: absolute;
-			top: -125px;
-			left: 0;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 80% !important;
+			height: unset !important;
 		}
 		&-add {
 			position: absolute;

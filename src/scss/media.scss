@@ -31,6 +31,31 @@
 	}
 }
 
+@media (min-width: 1900px) {
+	.header__order {
+		right: 29%;
+	}
+	.header__basket {
+		left: 29%;
+	}
+}
+
+@media (min-width: 2000px) {
+	.header__order {
+		right: 31%;
+	}
+	.header__basket {
+		left: 31%;
+	}
+	.header__btns {
+		position: absolute;
+		max-width: 2000px;
+		padding: 0 60px;
+		width: 100%;
+		top: 67px;
+	}
+}
+
 @media (max-width: 1200px) {
 	.footer__block-wrapper {
 		padding: 0 20px;
