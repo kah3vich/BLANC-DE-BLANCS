@@ -128,22 +128,25 @@
 	&__list {
 		display: flex;
 		align-items: center;
-		justify-content: space-around;
+		justify-content: flex-start;
 		width: 100%;
 		margin: 20px 0 20px 0;
 	}
 	&__items {
 		display: flex;
 		align-items: center;
-		justify-content: flex-start;
+		justify-content: center;
+		flex-direction: column;
+		margin: 0 0 0 40px;
 		& p {
-			margin: 0 0 0 10px;
 			font-family: PTSerif;
 			font-style: normal;
 			font-weight: normal;
 			font-size: 18px;
 			line-height: 30px;
 			color: #021245;
+			margin: 12px 0 0 0;
+			text-align: center;
 		}
 	}
 	&__btns {

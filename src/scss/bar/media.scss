@@ -209,7 +209,7 @@
 		}
 	}
 	.bar-block__items-price p {
-		margin: 10px 0 0 0;
+		margin: 0 0 0 0;
 		font-family: TTNorms;
 		width: max-content;
 		font-style: normal;
@@ -232,5 +232,8 @@
 		left: 50%;
 		transform: translate(-50%, 0%);
 		padding: 12px 10px;
+	}
+	.bar-block__items {
+		width: 100%;
 	}
 }

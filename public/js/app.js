@@ -791,3 +791,23 @@ var businessClientSlider = new Swiper(".businessClientSlider", {
   }
 });
 ;
+
+var _loop8 = function _loop8(_i18) {
+  $(".event-block__questions-items:nth-child(".concat(_i18, ")")).on("click", function () {
+    if ($(".event-block__questions-items:nth-child(".concat(_i18, ")")).hasClass("ind-question__content-i-a")) {
+      $(".event-block__questions-items:nth-child(".concat(_i18, ")")).removeClass("ind-question__content-i-a");
+      $(".event-block__questions-items:nth-child(".concat(_i18, ") img")).css("transform", "rotate(0deg)");
+      $(".event-block__questions-items:nth-child(".concat(_i18, ") .event-block__questions-text")).addClass("question-hide");
+    } else {
+      $(".event-block__questions-items:nth-child(".concat(_i18, ")")).addClass("ind-question__content-i-a");
+      $(".event-block__questions-items:nth-child(".concat(_i18, ") img")).css("transform", "rotate(45deg)");
+      $(".event-block__questions-items:nth-child(".concat(_i18, ") .event-block__questions-text")).removeClass("question-hide");
+    }
+  });
+};
+
+for (var _i18 = 1; _i18 <= $(".event-block__questions-items").length; _i18++) {
+  _loop8(_i18);
+}
+
+;

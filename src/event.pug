@@ -1,0 +1,111 @@
+@@include('components/_head.pug', {
+    "title": "Галерея",
+})
+
+@@include('components/_header.pug')
+
+.event 
+    img(class="event__bg" src="./img/bg-left.png" alt="img")
+    img(class="event__bg" src="./img/bg-right.png" alt="img")
+    img(class="event__bg" src="./img/bg-right.png" alt="img")
+
+    .event-block 
+        .event-block__containers
+            .event-block__type
+                .event-block__type-title Частные мероприятия
+                ul.event-block__type-list
+                    li.event-block__type-items 
+                        .event-block__type-circle
+                            img(src="./svg/event/type-1.svg" alt="icons")
+                        .event-block__type-text
+                            p У нас 2 зала: на 20 и 35 человек.
+                    li.event-block__type-items 
+                        .event-block__type-circle
+                            img(src="./svg/event/type-2.svg" alt="icons")
+                        .event-block__type-text
+                            p Можем организовать фуршет до 70 человек.
+                    li.event-block__type-items 
+                        .event-block__type-circle
+                            img(src="./svg/event/type-3.svg" alt="icons")
+                        .event-block__type-text
+                            p Готовы предложить развлекательную программу.
+                    li.event-block__type-items 
+                        .event-block__type-circle
+                            img(src="./svg/event/type-4.svg" alt="icons")
+                        .event-block__type-text
+                            p Для гостей есть охраняемая парковка.
+
+            ul.event-block__description 
+                li.event-block__description-i
+                    .event-block__description-p
+                        img(src="./img/event/photo.png" alt="photo")
+                    .event-block__description-t
+                        h3 Два зала в вашем распоряжении
+                        p Будем рады предоставить вам оба зала или по отдельности для проведения деловых или частных мероприятий. Большой зал вмещает 35 человек, здесь есть барная стойка и импровизированная сцена. Малый зал вмещает 20 человек и отлично подойдёт для бизнес-завтраков и тематических встреч. 
+                li.event-block__description-i
+                    .event-block__description-p
+                        img(src="./img/event/photo.png" alt="photo")
+                    .event-block__description-t
+                        h3 Воспользуйтесь банкетным меню 
+                        p Вы можете воспользоваться банкетным меню и обсудить с нашим шеф-поваром свои предпочтения. При бронировании зала с депозитом мы разрешаем частично принести свои алкогольные напитки. 
+
+                .event-block__add
+                    .event-block__add-i
+                        .event-block__add-t
+                            p Наша команда понимает, как важны в жизни торжественные моменты – хочется провести их безупречно. Мы очень внимательно относимся к каждой мелочи в организации праздника, стараемся учесть все ваши пожелания и готовы предложить дополнительные услуги, которые помогут сделать праздник ярким и запоминающимся.   
+                        .event-block__add-p
+                            img(src="./img/event/photo.png" alt="photo")
+
+                .event-block__questions
+                    .event-block__questions-title Вопросы и ответы
+                    ul.event-block__questions-list
+                        li.event-block__questions-items
+                            .event-block__questions-nav
+                                .event-block__questions-t
+                                    h2 Можно ли пригласить ведущего, диджея или музыкантов?
+                                .event-block__questions-b
+                                    img(src="./svg/event/plus.svg" alt="icons")
+                            .event-block__questions-text.question-hide
+                                p Вы можете пригласить на мероприятие своего ведущего, диджея, музыкантов или обратиться к нам, и мы предложим вам варианты. Оба зала оснащены всем необходимым оборудованием, диджею нужно будет привезти с собой только пульт, а музыкантам – свои инструменты. Со списком нашего оборудования можно ознакомиться здесь.
+                        li.event-block__questions-items
+                            .event-block__questions-nav
+                                .event-block__questions-t
+                                    h2 Можно ли оформить зал?
+                                .event-block__questions-b
+                                    img(src="./svg/event/plus.svg" alt="icons")
+                            .event-block__questions-text.question-hide
+                                p Да, залы можно задекорировать и оформить цветами. Мы пригласим профессиональных декораторов, согласуем с вами стилистику или предоставим готовые решения на выбор и поможем создать праздничную атмосферу.  
+                        li.event-block__questions-items
+                            .event-block__questions-nav
+                                .event-block__questions-t
+                                    h2 Есть ли у вас караоке?
+                                .event-block__questions-b
+                                    img(src="./svg/event/plus.svg" alt="icons")
+                            .event-block__questions-text.question-hide
+                                p Мы готовы предложить вам решение с учётом того оборудования, которое у нас есть. Детали можно обсудить с менеджером.
+                        li.event-block__questions-items
+                            .event-block__questions-nav
+                                .event-block__questions-t
+                                    h2 Можете предоставить фотографа? 
+                                .event-block__questions-b
+                                    img(src="./svg/event/plus.svg" alt="icons")
+                            .event-block__questions-text.question-hide
+                                p Да, в нашей команде есть ивент-фотографы. Они умеют поймать и запечатлеть самые яркие моменты вашего события так, чтобы не мешать гостям. Вы получите живые непосредственные снимки.  
+                        li.event-block__questions-items
+                            .event-block__questions-nav
+                                .event-block__questions-t
+                                    h2 Какие ещё развлечения можно организовать? 
+                                .event-block__questions-b
+                                    img(src="./svg/event/plus.svg" alt="icons")
+                            .event-block__questions-text.question-hide
+                                p Некоторые гости дополняют торжество тематическими мастер-классами – например, это может быть мастер-класс по рисунку акварелью или винная дегустация. Мы охотно соберём для вас винный сет, расскажем про сортовой состав вин, региональные особенности, дадим гастрономические рекомендации.
+
+
+
+
+
+@@include('components/_footers.pug')
+
+@@include('components/_menus.pug')
+
+@@include('components/_script.pug')

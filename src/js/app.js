@@ -11,3 +11,4 @@
 @@include("./dish/index.js");
 @@include("./basket/index.js");
 @@include("./business/index.js");
+@@include("./event/index.js");

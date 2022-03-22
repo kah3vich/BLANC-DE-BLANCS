@@ -189,4 +189,43 @@
 		font-size: 12px;
 		line-height: 15px;
 	}
+	.wine-block__items {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		position: relative;
+		width: 100%;
+		cursor: pointer;
+	}
+	.wine-block__items-price p {
+		margin: 0 0 0 0;
+		font-size: 10px;
+		line-height: 15px;
+	}
+	.wine-block__items-price h5 {
+		font-family: TTNorms;
+		width: max-content;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 10px;
+		line-height: 14px;
+		text-align: center;
+		letter-spacing: 0.1em;
+		color: #ffffff;
+		margin: 5px 0 0 0;
+	}
+	.wine-block__items-price {
+		background: #06417d;
+		border: 3px solid #ffffff;
+		border-radius: 31px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 275px;
+		left: 50%;
+		transform: translate(-50%, 0%);
+		padding: 9px 12px;
+	}
 }

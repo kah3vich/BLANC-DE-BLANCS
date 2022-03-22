@@ -233,14 +233,15 @@
 			border: 3px solid #ffffff;
 			border-radius: 31px;
 			display: flex;
-			width: 100%;
+			width: max-content;
 			align-items: center;
 			justify-content: center;
+			flex-direction: column-reverse;
 			position: absolute;
 			top: 373px;
 			left: 50%;
 			transform: translate(-50%, 0%);
-			padding: 16px 15px;
+			padding: 10px 30px;
 			flex-wrap: wrap;
 			& h5 {
 				font-family: TTNorms;
@@ -252,6 +253,7 @@
 				text-align: center;
 				letter-spacing: 0.1em;
 				color: #ffffff;
+				margin: 5px 0 0 0;
 			}
 			& p {
 				font-family: TTNorms;

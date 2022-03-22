@@ -539,12 +539,12 @@ h6 {
 }
 .js-select-lang.lang-select-item-active .lang-select-block {
 	padding: 10px;
-    border-radius: 30px;
-    height: auto;
-    box-sizing: content-box;
-    background: white;
-    width: 51px;
-    left: -15px;
+	border-radius: 30px;
+	height: auto;
+	box-sizing: content-box;
+	background: white;
+	width: 51px;
+	left: -15px;
 }
 .js-select-lang .lang-select-wrapper {
 	display: flex;
@@ -1326,6 +1326,13 @@ h6 {
 	z-index: 5;
 }
 
+.question-hide {
+	transition: all 0.5s ease;
+	height: 0;
+	overflow: hidden;
+	margin: 0 0 0 0 !important;
+}
+
 //! --------------------------------------------------------------------
 //! Подключение файлов -------------------------------------------------
 //! --------------------------------------------------------------------
@@ -1345,6 +1352,7 @@ h6 {
 @import "business/style";
 @import "basket/style";
 @import "catering/style";
+@import "event/style";
 
 @import "media";
 

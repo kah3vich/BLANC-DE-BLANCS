@@ -33,3 +33,5 @@
 # Basket: [click me](https://kah3vich.github.io/BLANC-DE-BLANCS/public/basket.html)
 
 # Catering: [click me](https://kah3vich.github.io/BLANC-DE-BLANCS/public/catering.html)
+
+# Event: [click me](https://kah3vich.github.io/BLANC-DE-BLANCS/public/event.html)
