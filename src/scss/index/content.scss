@@ -33,7 +33,11 @@
 			position: relative;
 			width: 100vw;
 			height: 100vh;
-			background: linear-gradient(180deg, #06417d 0%, rgba(6, 65, 125, 0) 50%);
+			background: radial-gradient(
+				67.66% 66.98% at 50% 50%,
+				rgba(0, 63, 128, 0) 0%,
+				rgba(0, 63, 128, 0.12) 100%
+			);
 		}
 		&-bg {
 			width: 100%;
@@ -487,7 +491,7 @@
 		}
 		&-items {
 			width: 376px;
-			background: #FEFBEC;
+			background: #fefbec;
 			border-radius: 20px;
 			height: unset;
 			overflow: hidden;
@@ -503,7 +507,7 @@
 					background: #fff;
 					color: #003f80;
 					transition: all 0.5s ease;
-					border: 2px solid #003F80;
+					border: 2px solid #003f80;
 				}
 				& .ind-advantage__table-icons {
 					transform: scale(1.1);
@@ -514,7 +518,7 @@
 				}
 				transform: scale(1.1);
 				transition: all 0.5s ease;
-				background: #003F80;
+				background: #003f80;
 			}
 		}
 		&-icons {
@@ -526,7 +530,7 @@
 			justify-content: center;
 			border-radius: 50%;
 			transition: all 0.5s ease;
-			border: 4px solid #003F80;
+			border: 4px solid #003f80;
 		}
 		&-text {
 			margin: 27px 0 35px 0;
@@ -537,7 +541,7 @@
 			font-size: 23px;
 			line-height: 31px;
 			text-align: center;
-			color: #003F80;
+			color: #003f80;
 			transition: all 0.5s ease;
 		}
 		&-btn {
