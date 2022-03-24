@@ -1,8 +1,10 @@
 window.addEventListener("scroll", function () {
 	if (pageYOffset >= 100) {
-		$(".header__logo img").eq(1).css("display", "none");
+		$(".header__logo img").eq(1).addClass('opacity')
+		$(".header__logo img").eq(2).addClass('opacity')
 	} else if (pageYOffset <= 100) {
-		$(".header__logo img").eq(1).css("display", "block");
+		$(".header__logo img").eq(1).removeClass('opacity')
+		$(".header__logo img").eq(2).removeClass('opacity')
 	}
 });
 
