@@ -12,17 +12,17 @@
 	}
 }
 @media (max-width: 1200px) {
-	.wine-block__title-filter {
-		display: flex;
-		background: #ffffff;
-		border: 2px solid #003f80;
-		align-items: center;
-		justify-content: center;
-		cursor: pointer;
-		border-radius: 50%;
-		width: 53px;
-		height: 53px;
-	}
+	// .wine-block__title-filter {
+	// 	display: flex;
+	// 	background: #ffffff;
+	// 	border: 2px solid #003f80;
+	// 	align-items: center;
+	// 	justify-content: center;
+	// 	cursor: pointer;
+	// 	border-radius: 50%;
+	// 	width: 53px;
+	// 	height: 53px;
+	// }
 	.wine-block__title {
 		width: 100%;
 		display: flex;
@@ -30,7 +30,7 @@
 		justify-content: space-between;
 	}
 	.wine-block__filter-search {
-		width: 465px;
+		width: 100%;
 		padding: 8px 30px;
 		background: #ffffff;
 		border: 2px solid #003f80;
@@ -40,57 +40,56 @@
 		top: auto;
 		right: auto;
 	}
-	.wine-block__filter {
-		display: none;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: flex-start;
-		flex-wrap: nowrap;
-		width: 290px;
-		padding: 10px;
-		position: absolute;
-		right: 20px;
-		z-index: 3;
-		margin: 0;
-		top: 65px;
-		background: #fff;
-		border-radius: 30px;
-		box-shadow: 0px 0px 10px rgb(0 88 180 / 28%);
-	}
-	.wine-block__wrappers {
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: flex-start;
-		flex-wrap: nowrap;
-		width: 100%;
-	}
+	// .wine-block__filter {
+	// 	flex-direction: column;
+	// 	align-items: flex-start;
+	// 	justify-content: flex-start;
+	// 	flex-wrap: nowrap;
+	// 	width: 290px;
+	// 	padding: 10px;
+	// 	position: absolute;
+	// 	right: 20px;
+	// 	z-index: 3;
+	// 	margin: 0;
+	// 	top: 65px;
+	// 	background: #fff;
+	// 	border-radius: 30px;
+	// 	box-shadow: 0px 0px 10px rgb(0 88 180 / 28%);
+	// }
+	// .wine-block__wrappers {
+	// 	flex-direction: column;
+	// 	align-items: flex-start;
+	// 	justify-content: flex-start;
+	// 	flex-wrap: nowrap;
+	// 	width: 100%;
+	// }
 	.wine-block__containers {
 		position: relative;
 	}
-	.wine-block__filter-search {
-		width: 100%;
-	}
-	.wine-block__filter-catalog .cart-select-css,
-	.wine-block__filter-type .c_select,
-	.wine-block__filter-country .c_select,
-	.wine-block__filter-volume .cart-select-css,
-	.wine-block__filter-add .cart-select-css {
-		width: 100%;
-		margin: 0 0 25px 0;
-	}
-	.wine-block__filter-catalog,
-	.wine-block__filter-type,
-	.wine-block__filter-country,
-	.wine-block__filter-volume,
-	.wine-block__filter-add {
-		width: 100%;
-	}
-	.wine-block__filter-reset {
-		margin: 15px auto 0 auto;
-	}
-	.wine-block__filter-add {
-		margin: 0;
-	}
+	// .wine-block__filter-search {
+	// 	width: 100%;
+	// }
+	// .wine-block__filter-catalog .cart-select-css,
+	// .wine-block__filter-type .c_select,
+	// .wine-block__filter-country .c_select,
+	// .wine-block__filter-volume .cart-select-css,
+	// .wine-block__filter-add .cart-select-css {
+	// 	width: 100%;
+	// 	margin: 0 0 25px 0;
+	// }
+	// .wine-block__filter-catalog,
+	// .wine-block__filter-type,
+	// .wine-block__filter-country,
+	// .wine-block__filter-volume,
+	// .wine-block__filter-add {
+	// 	width: 100%;
+	// }
+	// .wine-block__filter-reset {
+	// 	margin: 15px auto 0 auto;
+	// }
+	// .wine-block__filter-add {
+	// 	margin: 0;
+	// }
 	.wine-block__containers {
 		padding: 0 20px;
 	}
@@ -227,5 +226,11 @@
 		left: 50%;
 		transform: translate(-50%, 0%);
 		padding: 9px 12px;
+	}
+	.wine-block {
+		padding: 210px 0 0 0;
+	}
+	.wine-block__title {
+		margin: 0 0 30px 0;
 	}
 }

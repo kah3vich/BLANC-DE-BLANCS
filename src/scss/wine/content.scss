@@ -64,33 +64,92 @@
 			line-height: 45px;
 			color: #003f80;
 		}
-		&-reset {
-			display: flex;
-			align-items: center;
-			flex-direction: column;
-			cursor: pointer;
-			justify-content: flex-start;
-			& p {
-				font-family: TTNorms;
-				font-style: normal;
-				font-weight: normal;
-				font-size: 16px;
-				line-height: 22px;
-				text-decoration-line: underline;
-				color: #003f80;
-				margin: 7px 0 0 0;
+		// &-reset {
+		// 	display: flex;
+		// 	align-items: center;
+		// 	flex-direction: column;
+		// 	cursor: pointer;
+		// 	justify-content: flex-start;
+		// 	& p {
+		// 		font-family: TTNorms;
+		// 		font-style: normal;
+		// 		font-weight: normal;
+		// 		font-size: 16px;
+		// 		line-height: 22px;
+		// 		text-decoration-line: underline;
+		// 		color: #003f80;
+		// 		margin: 7px 0 0 0;
+		// 	}
+		// }
+		// &-catalog {
+		// 	& .cart-select-css {
+		// 		width: 240px;
+		// 	}
+		// }
+		// &-type {
+		// 	& .cart-select-css {
+		// 		width: 240px;
+		// 	}
+		// }
+		// &-country {
+		// 	& .cart-select-css {
+		// 		width: 240px;
+		// 	}
+		// }
+		// &-volume {
+		// 	& .cart-select-css {
+		// 		width: 240px;
+		// 	}
+		// }
+		// &-add {
+		// 	& .cart-select-css {
+		// 		width: 240px;
+		// 	}
+		// }
+		&-block {
+			overflow: hidden;
+			width: 100%;
+			height: 100%;
+			padding: 10px;
+			position: absolute;
+			top: 135px;
+			left: 0;
+			height: 460px;
+			z-index: 3;
+			background: #ffffff;
+			border: 2px solid #003f80;
+			border-radius: 30px;
+		}
+		&-wrapper {
+			width: 100%;
+			overflow: auto;
+			height: 100%;
+			padding: 10px;
+			&::-webkit-scrollbar {
+				width: 27px;
+			}
+
+			&::-webkit-scrollbar-track {
+				-webkit-box-shadow: inset 0 0 10px 10px gray;
+				box-shadow: inset 0 0 10px 10px gray;
+				border: solid 12px transparent;
+				margin: 0 10px 0 0;
+			}
+
+			&::-webkit-scrollbar-thumb {
+				-webkit-box-shadow: inset 0 0 10px 10px #003f80;
+				box-shadow: inset 0 0 10px 10px #003f80;
+				border: solid 10px transparent;
 			}
 		}
 		&-search {
-			width: 465px;
+			width: 100%;
 			padding: 8px 30px;
 			background: #ffffff;
 			border: 2px solid #003f80;
 			box-sizing: border-box;
 			border-radius: 30px;
-			position: absolute;
-			top: -30px;
-			right: 0;
+			position: relative;
 			&-btn {
 				background: url("../svg/wine/search.svg") no-repeat;
 				position: absolute;
@@ -128,30 +187,41 @@
 				}
 			}
 		}
+		&-line {
+			width: 100%;
+			height: 2px;
+			margin: 12px 0;
+			border-top: 2px solid #003f80;
+		}
 		&-catalog {
-			& .cart-select-css {
-				width: 240px;
-			}
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+			gap: 20px;
 		}
 		&-type {
-			& .cart-select-css {
-				width: 240px;
-			}
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+			gap: 20px;
 		}
 		&-country {
-			& .cart-select-css {
-				width: 240px;
-			}
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+			gap: 20px;
 		}
 		&-volume {
-			& .cart-select-css {
-				width: 240px;
-			}
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+			gap: 20px;
 		}
-		&-add {
-			& .cart-select-css {
-				width: 240px;
-			}
+		&-product {
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+			gap: 20px;
 		}
 	}
 	&__wrappers {
@@ -283,4 +353,118 @@
 		color: #003f80;
 		margin: 60px auto 0 auto;
 	}
+}
+
+.wine-block__filter-catalog-c,
+.wine-block__filter-type-c,
+.wine-block__filter-country-c,
+.wine-block__filter-volume-c,
+.wine-block__filter-product-c {
+	position: relative;
+	min-width: 270px;
+	padding: 10px 0 10px 50px;
+	background: #ffffff;
+	border: 2px solid #06417d;
+	border-radius: 31px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	transition: all 0.5s ease;
+	&__i {
+		margin: 0 8px 0 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		max-width: 32px;
+		max-height: 32px;
+	}
+	&__t {
+		font-family: TTNorms;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 28px;
+		color: #06417d;
+		transition: all 0.5s ease;
+	}
+	&__a {
+		background: #06417d;
+		border: 2px solid #ffffff;
+		& .wine-block__filter-catalog-c__t,
+		.wine-block__filter-type-c__t,
+		.wine-block__filter-country-c__t,
+		.wine-block__filter-volume-c__t,
+		.wine-block__filter-product-c__t {
+			color: #fff;
+		}
+	}
+}
+
+.wine-block__filter-catalog-c__input,
+.wine-block__filter-type-c__input,
+.wine-block__filter-country-c__input,
+.wine-block__filter-volume-c__input,
+.wine-block__filter-product-c__input {
+	appearance: none;
+	position: absolute;
+}
+
+.wine-block__filter-catalog-c__label,
+.wine-block__filter-type-c__label,
+.wine-block__filter-country-c__label,
+.wine-block__filter-volume-c__label,
+.wine-block__filter-product-c__label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+}
+
+.wine-block__filter-catalog-c__label:before,
+.wine-block__filter-type-c__label:before,
+.wine-block__filter-country-c__label:before,
+.wine-block__filter-volume-c__label:before,
+.wine-block__filter-product-c__label:before {
+	content: "";
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: #c4c4c4;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(0%, -50%);
+	left: 15px;
+	z-index: 1;
+	transition: background 0.1s linear, border 0.1s linear;
+}
+
+.wine-block__filter-catalog-c__label:after,
+.wine-block__filter-type-c__label:after,
+.wine-block__filter-country-c__label:after,
+.wine-block__filter-volume-c__label:after,
+.wine-block__filter-product-c__label:after {
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #ffffff;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	transform: translate(0%, -50%);
+	left: 21px;
+	z-index: 2;
+	transition: opacity 0.1s linear;
+}
+
+.wine-block__filter-catalog-c__input:checked + .wine-block__filter-catalog-c__label:after,
+.wine-block__filter-type-c__input:checked + .wine-block__filter-type-c__label:after,
+.wine-block__filter-country-c__input:checked + .wine-block__filter-country-c__label:after,
+.wine-block__filter-volume-c__input:checked + .wine-block__filter-volume-c__label:after,
+.wine-block__filter-product-c__input:checked + .wine-block__filter-product-c__label:after {
+	opacity: 1;
 }
