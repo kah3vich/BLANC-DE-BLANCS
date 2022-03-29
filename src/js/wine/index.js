@@ -56,9 +56,9 @@ $(() => {
 // 	}
 // });
 
-const filter = ["catalog", "type", "country", "volume", "product"];
+const filter__wine = ["catalog", "type", "country", "volume", "product"];
 
-filter.map((item) => {
+filter__wine.map((item) => {
 	for (let i = 1; i <= $(`.wine-block__filter-${item}-c`).length; i++) {
 		$(`#wine_${item}_${i}`).change(function () {
 			if (this.checked) {

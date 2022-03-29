@@ -17,44 +17,179 @@
             .bar-block__filter 
                 h3 Найди свой напиток:
                 .bar-block__wrappers 
-                    .bar-block__filter-catalog 
-                        select(class="cart-select" name="cart" style="display: none")
-                            option Все категории
-                            option(value="default" selected="") Новые
-                            option(value="price_desc") Цена уменьшение
-                            option(value="price_desc") Цена уменьшение
-                            option(value="price_desc") Цена уменьшение
-                            option(value="price_desc") Цена уменьшение
-                            option(value="price_desc") Цена уменьшение
-                            option(value="price_desc") Цена уменьшение
-                            option(value="price_desc") Цена уменьшение
-                    .bar-block__filter-country
-                        select(class="c_select" name="sort" style="display: none")
-                            option(data-icon="./img/bar/flag.png" value="default" selected="") Италия
-                            option(data-icon="./img/bar/flag.png" value="element_2") 1талия
-                            option(data-icon="./img/bar/flag.png" value="element_3") Италия
-                            option(data-icon="./img/bar/flag.png" value="element_4") Италия
-                            option(data-icon="./img/bar/flag.png" value="element_5") Италия
-                            option(data-icon="./img/bar/flag.png" value="element_6") Италия
-                            option(data-icon="./img/bar/flag.png" value="element_7") Италия
-                            option(data-icon="./img/bar/flag.png" value="element_8") Италия
-                    .bar-block__filter-fortress
-                        select(class="cart-select" name="cart" style="display: none")
-                            option Крепость 14%
-                            option(value="default" selected="") Новые
-                            option(value="price_desc") Цена уменьшение
-                            option(value="price_desc") Цена уменьшение
-                            option(value="price_desc") Цена уменьшение
-                            option(value="price_desc") Цена уменьшение
-                            option(value="price_desc") Цена уменьшение
-                            option(value="price_desc") Цена уменьшение
-                            option(value="price_desc") Цена уменьшение
                     .bar-block__filter-search 
                         input(type="text" placeholder="Найти напиток" value='')
                         button.bar-block__filter-search-btn
-                    .bar-block__filter-reset
-                        img(src="./svg/bar/close.svg" alt="close")
-                        p Сбросить
+                    .bar-block__filter-block.display-n
+                        .bar-block__filter-wrapper 
+                            .bar-block__filter-catalog
+                                .bar-block__filter-catalog-c
+                                    input(class="bar-block__filter-catalog-c__input" type="checkbox" id="bar_catalog_1")
+                                    label(class="bar-block__filter-catalog-c__label" for="bar_catalog_1")
+                                    .bar-block__filter-catalog-c__t Италия
+                                .bar-block__filter-catalog-c
+                                    input(class="bar-block__filter-catalog-c__input" type="checkbox" id="bar_catalog_2")
+                                    label(class="bar-block__filter-catalog-c__label" for="bar_catalog_2")
+                                    .bar-block__filter-catalog-c__t Италия
+                                .bar-block__filter-catalog-c
+                                    input(class="bar-block__filter-catalog-c__input" type="checkbox" id="bar_catalog_3")
+                                    label(class="bar-block__filter-catalog-c__label" for="bar_catalog_3")
+                                    .bar-block__filter-catalog-c__t Италия
+                                .bar-block__filter-catalog-c
+                                    input(class="bar-block__filter-catalog-c__input" type="checkbox" id="bar_catalog_4")
+                                    label(class="bar-block__filter-catalog-c__label" for="bar_catalog_4")
+                                    .bar-block__filter-catalog-c__t Италия
+                                .bar-block__filter-catalog-c
+                                    input(class="bar-block__filter-catalog-c__input" type="checkbox" id="bar_catalog_5")
+                                    label(class="bar-block__filter-catalog-c__label" for="bar_catalog_5")
+                                    .bar-block__filter-catalog-c__t Италия
+                            .bar-block__filter-line
+                            .bar-block__filter-type
+                                .bar-block__filter-type-c
+                                    input(class="bar-block__filter-type-c__input" type="checkbox" id="bar_type_1")
+                                    label(class="bar-block__filter-type-c__label" for="bar_type_1")
+                                    .bar-block__filter-type-c__i 
+                                        img(src="./img/bar/flag.png" alt="icons")
+                                    .bar-block__filter-type-c__t Италия
+                                .bar-block__filter-type-c
+                                    input(class="bar-block__filter-type-c__input" type="checkbox" id="bar_type_2")
+                                    label(class="bar-block__filter-type-c__label" for="bar_type_2")
+                                    .bar-block__filter-type-c__i 
+                                        img(src="./img/bar/flag.png" alt="icons")
+                                    .bar-block__filter-type-c__t Италия
+                                .bar-block__filter-type-c
+                                    input(class="bar-block__filter-type-c__input" type="checkbox" id="bar_type_3")
+                                    label(class="bar-block__filter-type-c__label" for="bar_type_3")
+                                    .bar-block__filter-type-c__i 
+                                        img(src="./img/bar/flag.png" alt="icons")
+                                    .bar-block__filter-type-c__t Италия
+                                .bar-block__filter-type-c
+                                    input(class="bar-block__filter-type-c__input" type="checkbox" id="bar_type_4")
+                                    label(class="bar-block__filter-type-c__label" for="bar_type_4")
+                                    .bar-block__filter-type-c__i 
+                                        img(src="./img/bar/flag.png" alt="icons")
+                                    .bar-block__filter-type-c__t Италия
+                                .bar-block__filter-type-c
+                                    input(class="bar-block__filter-type-c__input" type="checkbox" id="bar_type_5")
+                                    label(class="bar-block__filter-type-c__label" for="bar_type_5")
+                                    .bar-block__filter-type-c__i 
+                                        img(src="./img/bar/flag.png" alt="icons")
+                                    .bar-block__filter-type-c__t Италия
+                            .bar-block__filter-line
+                            .bar-block__filter-country
+                                .bar-block__filter-country-c
+                                    input(class="bar-block__filter-country-c__input" type="checkbox" id="bar_country_1")
+                                    label(class="bar-block__filter-country-c__label" for="bar_country_1")
+                                    .bar-block__filter-country-c__i 
+                                        img(src="./img/bar/flag.png" alt="icons")
+                                    .bar-block__filter-country-c__t Италия
+                                .bar-block__filter-country-c
+                                    input(class="bar-block__filter-country-c__input" type="checkbox" id="bar_country_2")
+                                    label(class="bar-block__filter-country-c__label" for="bar_country_2")
+                                    .bar-block__filter-country-c__i 
+                                        img(src="./img/bar/flag.png" alt="icons")
+                                    .bar-block__filter-country-c__t Италия
+                                .bar-block__filter-country-c
+                                    input(class="bar-block__filter-country-c__input" type="checkbox" id="bar_country_3")
+                                    label(class="bar-block__filter-country-c__label" for="bar_country_3")
+                                    .bar-block__filter-country-c__i 
+                                        img(src="./img/bar/flag.png" alt="icons")
+                                    .bar-block__filter-country-c__t Италия
+                                .bar-block__filter-country-c
+                                    input(class="bar-block__filter-country-c__input" type="checkbox" id="bar_country_4")
+                                    label(class="bar-block__filter-country-c__label" for="bar_country_4")
+                                    .bar-block__filter-country-c__i 
+                                        img(src="./img/bar/flag.png" alt="icons")
+                                    .bar-block__filter-country-c__t Италия
+                                .bar-block__filter-country-c
+                                    input(class="bar-block__filter-country-c__input" type="checkbox" id="bar_country_5")
+                                    label(class="bar-block__filter-country-c__label" for="bar_country_5")
+                                    .bar-block__filter-country-c__i 
+                                        img(src="./img/bar/flag.png" alt="icons")
+                                    .bar-block__filter-country-c__t Италия
+                            .bar-block__filter-line
+                            .bar-block__filter-volume
+                                .bar-block__filter-volume-c
+                                    input(class="bar-block__filter-volume-c__input" type="checkbox" id="bar_volume_1")
+                                    label(class="bar-block__filter-volume-c__label" for="bar_volume_1")
+                                    .bar-block__filter-volume-c__t Италия
+                                .bar-block__filter-volume-c
+                                    input(class="bar-block__filter-volume-c__input" type="checkbox" id="bar_volume_2")
+                                    label(class="bar-block__filter-volume-c__label" for="bar_volume_2")
+                                    .bar-block__filter-volume-c__t Италия
+                                .bar-block__filter-volume-c
+                                    input(class="bar-block__filter-volume-c__input" type="checkbox" id="bar_volume_3")
+                                    label(class="bar-block__filter-volume-c__label" for="bar_volume_3")
+                                    .bar-block__filter-volume-c__t Италия
+                                .bar-block__filter-volume-c
+                                    input(class="bar-block__filter-volume-c__input" type="checkbox" id="bar_volume_4")
+                                    label(class="bar-block__filter-volume-c__label" for="bar_volume_4")
+                                    .bar-block__filter-volume-c__t Италия
+                                .bar-block__filter-volume-c
+                                    input(class="bar-block__filter-volume-c__input" type="checkbox" id="bar_volume_5")
+                                    label(class="bar-block__filter-volume-c__label" for="bar_volume_5")
+                                    .bar-block__filter-volume-c__t Италия
+                            .bar-block__filter-line
+                            .bar-block__filter-product
+                                .bar-block__filter-product-c
+                                    input(class="bar-block__filter-product-c__input" type="checkbox" id="bar_product_1")
+                                    label(class="bar-block__filter-product-c__label" for="bar_product_1")
+                                    .bar-block__filter-product-c__t Италия
+                                .bar-block__filter-product-c
+                                    input(class="bar-block__filter-product-c__input" type="checkbox" id="bar_product_2")
+                                    label(class="bar-block__filter-product-c__label" for="bar_product_2")
+                                    .bar-block__filter-product-c__t Италия
+                                .bar-block__filter-product-c
+                                    input(class="bar-block__filter-product-c__input" type="checkbox" id="bar_product_3")
+                                    label(class="bar-block__filter-product-c__label" for="bar_product_3")
+                                    .bar-block__filter-product-c__t Италия
+                                .bar-block__filter-product-c
+                                    input(class="bar-block__filter-product-c__input" type="checkbox" id="bar_product_4")
+                                    label(class="bar-block__filter-product-c__label" for="bar_product_4")
+                                    .bar-block__filter-product-c__t Италия
+                                .bar-block__filter-product-c
+                                    input(class="bar-block__filter-product-c__input" type="checkbox" id="bar_product_5")
+                                    label(class="bar-block__filter-product-c__label" for="bar_product_5")
+                                    .bar-block__filter-product-c__t Италия
+
+                    //- .bar-block__filter-catalog 
+                    //-     select(class="cart-select" name="cart" style="display: none")
+                    //-         option Все категории
+                    //-         option(value="default" selected="") Новые
+                    //-         option(value="price_desc") Цена уменьшение
+                    //-         option(value="price_desc") Цена уменьшение
+                    //-         option(value="price_desc") Цена уменьшение
+                    //-         option(value="price_desc") Цена уменьшение
+                    //-         option(value="price_desc") Цена уменьшение
+                    //-         option(value="price_desc") Цена уменьшение
+                    //-         option(value="price_desc") Цена уменьшение
+                    //- .bar-block__filter-country
+                    //-     select(class="c_select" name="sort" style="display: none")
+                    //-         option(data-icon="./img/bar/flag.png" value="default" selected="") Италия
+                    //-         option(data-icon="./img/bar/flag.png" value="element_2") 1талия
+                    //-         option(data-icon="./img/bar/flag.png" value="element_3") Италия
+                    //-         option(data-icon="./img/bar/flag.png" value="element_4") Италия
+                    //-         option(data-icon="./img/bar/flag.png" value="element_5") Италия
+                    //-         option(data-icon="./img/bar/flag.png" value="element_6") Италия
+                    //-         option(data-icon="./img/bar/flag.png" value="element_7") Италия
+                    //-         option(data-icon="./img/bar/flag.png" value="element_8") Италия
+                    //- .bar-block__filter-fortress
+                    //-     select(class="cart-select" name="cart" style="display: none")
+                    //-         option Крепость 14%
+                    //-         option(value="default" selected="") Новые
+                    //-         option(value="price_desc") Цена уменьшение
+                    //-         option(value="price_desc") Цена уменьшение
+                    //-         option(value="price_desc") Цена уменьшение
+                    //-         option(value="price_desc") Цена уменьшение
+                    //-         option(value="price_desc") Цена уменьшение
+                    //-         option(value="price_desc") Цена уменьшение
+                    //-         option(value="price_desc") Цена уменьшение
+                    //- .bar-block__filter-search 
+                    //-     input(type="text" placeholder="Найти напиток" value='')
+                    //-     button.bar-block__filter-search-btn
+                    //- .bar-block__filter-reset
+                    //-     img(src="./svg/bar/close.svg" alt="close")
+                    //-     p Сбросить
             .bar-block__list 
                 a(href="#").bar-block__items.bar-block__items-v
                     .bar-block__items-new 
