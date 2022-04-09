@@ -605,7 +605,7 @@ $(".modelBookingForm__close").on("click", function () {
 });
 
 for (var _i6 = 1; _i6 <= $(".booking-block__items-block").length; _i6++) {
-  $(".booking-block__items-block:nth-child(".concat(_i6, ") .booking-block__items-title h3,\n\t\t.booking-block__items-block:nth-child(").concat(_i6, ") .booking-block__items-photo img")).on("click", function () {
+  $(".booking-block__items-block:nth-child(".concat(_i6, ") .booking-block__items-add button")).on("click", function () {
     $(".modelBookingPhoto").removeClass("display-n");
     $("body").css("overflow", "hidden");
   });
@@ -664,11 +664,11 @@ var sliderDish = new Swiper(".sliderDish", {
 ;
 window.addEventListener("scroll", function () {
   if (pageYOffset >= 100) {
-    $(".header__logo img").eq(1).addClass('opacity');
-    $(".header__logo img").eq(2).addClass('opacity');
+    $(".header__logo img").eq(1).addClass("opacity");
+    $(".header__logo img").eq(2).addClass("opacity");
   } else if (pageYOffset <= 100) {
-    $(".header__logo img").eq(1).removeClass('opacity');
-    $(".header__logo img").eq(2).removeClass('opacity');
+    $(".header__logo img").eq(1).removeClass("opacity");
+    $(".header__logo img").eq(2).removeClass("opacity");
   }
 });
 var elementBasketCount = 5;

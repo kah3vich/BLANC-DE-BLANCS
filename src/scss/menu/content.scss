@@ -79,7 +79,7 @@
 			display: flex;
 			align-items: center;
 			justify-content: flex-start;
-			margin: 15px 0 0 0;
+			margin: 12px 0 0 0;
 			& img {
 				object-fit: contain;
 				width: 32px;
@@ -236,6 +236,15 @@
 				transition: all 0.5s ease;
 				transform: scale(1.1);
 			}
+			& .menu-block__items-price {
+				background: #06417D;
+				border: 3px solid #FFFFFF;
+				transition: all 0.5s ease;
+				& p {
+					color: #FFFFFF;
+					transition: all 0.5s ease;
+				}
+			}
 		}
 		&-photo {
 			width: 100%;
@@ -263,10 +272,11 @@
 			right: 15px;
 		}
 		&-price {
-			background: #06417d;
-			border: 3px solid #ffffff;
+			background: #FFFFFF;
+			border: 3px solid #06417D;
 			box-sizing: border-box;
 			border-radius: 31px;
+			transition: all 0.5s ease;
 			padding: 16px 32px;
 			position: absolute;
 			left: 50%;
@@ -276,12 +286,14 @@
 			& p {
 				font-family: TTNorms;
 				font-style: normal;
+				transition: all 0.5s ease;
 				font-weight: 500;
 				font-size: 19px;
 				line-height: 22px;
 				text-align: center;
+				transition: all 0.5s ease;
 				letter-spacing: 0.1em;
-				color: #ffffff;
+				color: #06417D;
 			}
 		}
 		&-line {

@@ -227,4 +227,16 @@
 		position: relative;
 		justify-content: flex-start;
 	}
+	.booking-block__items-add {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		& button {
+			margin: 20px 0;
+		}
+	}
+	.booking-block__items-add img {
+		margin: 0 0 0 13px !important;
+	}
 }

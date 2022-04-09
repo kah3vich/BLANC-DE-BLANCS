@@ -175,6 +175,40 @@
 		overflow: hidden;
 		width: 100%;
 		cursor: pointer;
+		&-add {
+			margin: 20px 0;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			& h5 {
+				font-family: TTNorms;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 31px;
+				color: #003f80;
+			}
+			& p {
+				font-family: PTSans !important;
+				font-style: normal !important;
+				font-weight: 400 !important;
+				margin: 0 !important;
+				font-size: 19px !important;
+				line-height: 25px !important;
+				color: #003F80 !important;
+				text-decoration-line: underline;
+			}
+			& button {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: transparent;
+			}
+			& img {
+				margin: 0 0 0 13px;
+			}
+		}
 		& img {
 			height: 100%;
 			object-fit: contain;
@@ -373,13 +407,37 @@
 						cursor: pointer;
 					}
 					&-add {
-						font-family: TTNorms;
-						font-style: normal;
-						font-weight: normal;
-						font-size: 24px;
-						line-height: 31px;
-						color: #003f80;
 						margin: 20px 0;
+						width: 100%;
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						& h5 {
+							font-family: TTNorms;
+							font-style: normal;
+							font-weight: normal;
+							font-size: 24px;
+							line-height: 31px;
+							color: #003f80;
+						}
+						& p {
+							font-family: PTSans;
+							font-style: normal;
+							font-weight: 400;
+							margin: 0;
+							font-size: 19px;
+							line-height: 25px;
+							color: #003F80;
+						}
+						& button {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							background: transparent;
+						}
+						& img {
+							margin: 0 0 0 13px;
+						}
 					}
 					&-check {
 						display: flex;

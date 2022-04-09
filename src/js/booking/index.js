@@ -22,8 +22,7 @@ $(".modelBookingForm__close").on("click", () => {
 
 for (let i = 1; i <= $(".booking-block__items-block").length; i++) {
 	$(
-		`.booking-block__items-block:nth-child(${i}) .booking-block__items-title h3,
-		.booking-block__items-block:nth-child(${i}) .booking-block__items-photo img`
+		`.booking-block__items-block:nth-child(${i}) .booking-block__items-add button`
 	).on("click", () => {
 		$(".modelBookingPhoto").removeClass("display-n");
 		$("body").css("overflow", "hidden");
