@@ -251,3 +251,10 @@
 		overflow: auto;
 	}
 }
+
+@media (max-height: 1000px) {
+	.menus__wrapper {
+		height: 100vh;
+		overflow: auto;
+	}
+}

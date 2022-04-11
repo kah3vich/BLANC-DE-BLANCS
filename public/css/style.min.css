@@ -1133,6 +1133,7 @@ h6 {
 	grid-template-areas : "modelBookingPhoto_1 modelBookingPhoto_2" "modelBookingPhoto_3 modelBookingPhoto_2";
 	gap : 6px;
 	width : 100%;
+	height : 310px;
 }
 .modelBookingPhoto__photo img {
 	object-fit : cover;
@@ -2578,6 +2579,12 @@ h6 {
 		overflow : auto;
 	}
 }
+@media (max-height: 1000px) {
+	.menus__wrapper {
+		height : 100vh;
+		overflow : auto;
+	}
+}
 .bar {
 	position : relative;
 }
@@ -3852,6 +3859,17 @@ h6 {
 	align-items : center;
 	justify-content : flex-start;
 	transition : all 0.5s ease;
+}
+.wine-block__filter-catalog-c input
+,
+.wine-block__filter-type-c input
+,
+.wine-block__filter-country-c input
+,
+.wine-block__filter-volume-c input
+,
+.wine-block__filter-product-c input {
+	opacity : 0;
 }
 .wine-block__filter-catalog-c__i
 ,
