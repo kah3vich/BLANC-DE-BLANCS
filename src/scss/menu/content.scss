@@ -40,7 +40,7 @@
 		cursor: pointer;
 		position: fixed;
 		right: 25px;
-		top: 110px;
+		top: 130px;
 		z-index: 102;
 		max-height: 622px;
 		&-active {
@@ -67,7 +67,7 @@
 				}
 				& img {
 					object-fit: contain;
-					transform: rotate(180deg);
+					transform: rotate(0deg);
 					transition: all 0.5s ease;
 				}
 			}
@@ -79,19 +79,19 @@
 			display: flex;
 			align-items: center;
 			justify-content: flex-start;
-			margin: 12px 0 0 0;
+			margin: 6px 0 0 0;
 			& img {
 				object-fit: contain;
-				width: 32px;
+				width: 25px;
 			}
 			& h3 {
 				font-family: TTNorms;
 				font-style: normal;
-				font-weight: normal;
-				font-size: 16px;
-				line-height: 25px;
+				font-weight: 400;
+				font-size: 12px;
+				line-height: 13px;
 				color: #021245;
-				margin: 0 0 0 23px;
+				margin: 0 0 0 20px;
 				display: none;
 				transition: all 0.5s ease;
 			}
@@ -100,7 +100,7 @@
 					font-style: normal;
 					font-weight: normal;
 					font-size: 14px;
-					line-height: 20px;
+					line-height: 13px;
 					color: #000000;
 				}
 			}
@@ -113,13 +113,12 @@
 			justify-content: center;
 			width: 32px;
 			height: 32px;
-			border: 2px solid #06417d;
-			border-radius: 50%;
+			margin: 0 0 10px 0;
 			& img {
 				object-fit: contain;
-				width: 18px;
-				height: 18px;
-				transform: rotate(0deg);
+				width: 32px;
+				height: 32px;
+				transform: rotate(180deg);
 				transition: all 0.5s ease;
 			}
 			& h3 {
@@ -144,9 +143,16 @@
 			line-height: 15px;
 			color: #ffffff;
 			font-family: TTNorms;
-			margin: 0 0 0 20px;
+			margin: 0 0 0 16px;
 			display: none;
 			transition: all 0.5s ease;
+		}
+		&-rec {
+			margin: 20px 0;
+			& img {
+				width: 32px;
+				height: 32px;
+			}
 		}
 	}
 	&__containers {
@@ -237,11 +243,11 @@
 				transform: scale(1.1);
 			}
 			& .menu-block__items-price {
-				background: #06417D;
-				border: 3px solid #FFFFFF;
+				background: #06417d;
+				border: 3px solid #ffffff;
 				transition: all 0.5s ease;
 				& p {
-					color: #FFFFFF;
+					color: #ffffff;
 					transition: all 0.5s ease;
 				}
 			}
@@ -272,8 +278,8 @@
 			right: 15px;
 		}
 		&-price {
-			background: #FFFFFF;
-			border: 3px solid #06417D;
+			background: #ffffff;
+			border: 3px solid #06417d;
 			box-sizing: border-box;
 			border-radius: 31px;
 			transition: all 0.5s ease;
@@ -293,7 +299,7 @@
 				text-align: center;
 				transition: all 0.5s ease;
 				letter-spacing: 0.1em;
-				color: #06417D;
+				color: #06417d;
 			}
 		}
 		&-line {

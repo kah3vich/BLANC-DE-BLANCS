@@ -3136,7 +3136,7 @@ h6 {
 	cursor : pointer;
 	position : fixed;
 	right : 25px;
-	top : 110px;
+	top : 130px;
 	z-index : 102;
 	max-height : 622px;
 }
@@ -3173,9 +3173,9 @@ h6 {
 .menu-block__list-active .menu-block__list-arrow img {
 	-o-object-fit : contain;
 	   object-fit : contain;
-	-webkit-transform : rotate(180deg);
-	    -ms-transform : rotate(180deg);
-	        transform : rotate(180deg);
+	-webkit-transform : rotate(0deg);
+	    -ms-transform : rotate(0deg);
+	        transform : rotate(0deg);
 	-webkit-transition : all 0.5s ease;
 	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
@@ -3195,23 +3195,23 @@ h6 {
 	-webkit-box-pack : start;
 	-ms-flex-pack : start;
 	justify-content : flex-start;
-	margin : 12px 0 0 0;
+	margin : 6px 0 0 0;
 }
 
 .menu-block__list-items img {
 	-o-object-fit : contain;
 	   object-fit : contain;
-	width : 32px;
+	width : 25px;
 }
 
 .menu-block__list-items h3 {
 	font-family : TTNorms;
 	font-style : normal;
-	font-weight : normal;
-	font-size : 16px;
-	line-height : 25px;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 13px;
 	color : #021245;
-	margin : 0 0 0 23px;
+	margin : 0 0 0 20px;
 	display : none;
 	-webkit-transition : all 0.5s ease;
 	     -o-transition : all 0.5s ease;
@@ -3222,7 +3222,7 @@ h6 {
 	font-style : normal;
 	font-weight : normal;
 	font-size : 14px;
-	line-height : 20px;
+	line-height : 13px;
 	color : #000000;
 }
 
@@ -3240,18 +3240,17 @@ h6 {
 	justify-content : center;
 	width : 32px;
 	height : 32px;
-	border : 2px solid #06417d;
-	border-radius : 50%;
+	margin : 0 0 10px 0;
 }
 
 .menu-block__list-arrow img {
 	-o-object-fit : contain;
 	   object-fit : contain;
-	width : 18px;
-	height : 18px;
-	-webkit-transform : rotate(0deg);
-	    -ms-transform : rotate(0deg);
-	        transform : rotate(0deg);
+	width : 32px;
+	height : 32px;
+	-webkit-transform : rotate(180deg);
+	    -ms-transform : rotate(180deg);
+	        transform : rotate(180deg);
 	-webkit-transition : all 0.5s ease;
 	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
@@ -3281,11 +3280,20 @@ h6 {
 	line-height : 15px;
 	color : #ffffff;
 	font-family : TTNorms;
-	margin : 0 0 0 20px;
+	margin : 0 0 0 16px;
 	display : none;
 	-webkit-transition : all 0.5s ease;
 	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
+}
+
+.menu-block__list-rec {
+	margin : 20px 0;
+}
+
+.menu-block__list-rec img {
+	width : 32px;
+	height : 32px;
 }
 
 .menu-block__containers {
@@ -3433,15 +3441,15 @@ h6 {
 }
 
 .menu-block__items:hover .menu-block__items-price {
-	background : #06417D;
-	border : 3px solid #FFFFFF;
+	background : #06417d;
+	border : 3px solid #ffffff;
 	-webkit-transition : all 0.5s ease;
 	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 }
 
 .menu-block__items:hover .menu-block__items-price p {
-	color : #FFFFFF;
+	color : #ffffff;
 	-webkit-transition : all 0.5s ease;
 	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
@@ -3485,8 +3493,8 @@ h6 {
 }
 
 .menu-block__items-price {
-	background : #FFFFFF;
-	border : 3px solid #06417D;
+	background : #ffffff;
+	border : 3px solid #06417d;
 	-webkit-box-sizing : border-box;
 	        box-sizing : border-box;
 	border-radius : 31px;
@@ -3517,7 +3525,7 @@ h6 {
 	text-align : center;
 	        transition : all 0.5s ease;
 	letter-spacing : 0.1em;
-	color : #06417D;
+	color : #06417d;
 }
 
 .menu-block__items-line {
@@ -5556,8 +5564,8 @@ h6 {
 	margin : 18px 0 0 0;
 }
 
-.wines-block__info-status {
-	margin : 5px 0 39px 0;
+.wines-block__info-statu {
+	margin : 5px 0 75px 0;
 	display : -webkit-box;
 	display : -ms-flexbox;
 	display : flex;
@@ -5896,7 +5904,7 @@ h6 {
 	display : block;
 	width : 22px;
 	height : 22px;
-	background : #C4C4C4;
+	background : #c4c4c4;
 	border-radius : 50%;
 	position : absolute;
 	top : 4px;
@@ -5912,7 +5920,7 @@ h6 {
 	display : block;
 	width : 10px;
 	height : 10px;
-	background : #FFFFFF;
+	background : #ffffff;
 	border-radius : 50%;
 	opacity : 0;
 	position : absolute;
@@ -8462,6 +8470,7 @@ h6 {
 	-webkit-box-align : center;
 	-ms-flex-align : center;
 	align-items : center;
+	border-radius : 10px;
 	-webkit-box-pack : start;
 	-ms-flex-pack : start;
 	justify-content : flex-start;
@@ -8469,19 +8478,18 @@ h6 {
 	-webkit-box-direction : normal;
 	-ms-flex-direction : column;
 	    flex-direction : column;
-	height : -webkit-max-content;
-	height :    -moz-max-content;
-	height :         max-content;
 }
 
 .delivery-block__items-photo {
 	width : 100%;
 	height : 177px;
 	overflow : hidden;
+	border-radius : 10px 10px 0 0;
 }
 
 .delivery-block__items-photo img {
 	width : 100%;
+	border-radius : 10px 10px 0 0;
 	height : 100%;
 	-o-object-fit : cover;
 	   object-fit : cover;
@@ -8502,6 +8510,7 @@ h6 {
 	-ms-flex-pack : start;
 	justify-content : flex-start;
 	padding : 25px 30px;
+	height : 100%;
 }
 
 .delivery-block__items-description {
@@ -8518,6 +8527,7 @@ h6 {
 	-webkit-box-pack : start;
 	-ms-flex-pack : start;
 	justify-content : flex-start;
+	margin : 0 0 auto 0;
 }
 
 .delivery-block__items-description h3 {
@@ -8526,7 +8536,7 @@ h6 {
 	font-weight : 700;
 	font-size : 20px;
 	line-height : 25px;
-	color : #003F80;
+	color : #003f80;
 }
 
 .delivery-block__items-description p {
@@ -8540,7 +8550,7 @@ h6 {
 }
 
 .delivery-block__items-btn {
-	background : #003F80;
+	background : #003f80;
 	border-radius : 39px;
 	padding : 15px 45px;
 	font-family : PTSans;
@@ -8549,8 +8559,8 @@ h6 {
 	font-size : 24px;
 	line-height : 30px;
 	text-align : center;
-	color : #FFFFFF;
-	margin : 45px 0 25px 0;
+	color : #ffffff;
+	margin : 35px 0 25px 0;
 }
 
 .business {
@@ -13224,7 +13234,8 @@ h6 {
 		width : 100%;
 		max-width : 100%;
 		position : fixed;
-		height : 100%;
+		height : 100vh;
+		max-height : 100%;
 		padding : 15px 15px 20px 15px;
 	}
 
