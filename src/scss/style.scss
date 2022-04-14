@@ -1235,11 +1235,11 @@ h6 {
 	transition: all 0.5s ease;
 	&__wrapper {
 		position: absolute;
-		width: 535px;
+		width: 375px;
 		top: 0;
 		left: -100%;
 		background: #fff;
-		padding: 30px 56px 35px 56px;
+		padding: 30px 45px 35px 45px;
 		display: grid;
 		height: 100%;
 		grid-template-columns: repeat(1, 1fr);
@@ -1274,9 +1274,9 @@ h6 {
 		& p {
 			font-family: Prata;
 			font-style: normal;
-			font-weight: normal;
-			font-size: 24px;
-			line-height: 33px;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 24px;
 			text-align: center;
 			color: #003f80;
 		}
