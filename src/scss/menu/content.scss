@@ -40,7 +40,7 @@
 		cursor: pointer;
 		position: fixed;
 		right: 25px;
-		top: 130px;
+		top: 110px;
 		z-index: 102;
 		max-height: 622px;
 		&-active {
@@ -82,7 +82,7 @@
 			margin: 6px 0 0 0;
 			& img {
 				object-fit: contain;
-				width: 25px;
+				width: 33px;
 			}
 			& h3 {
 				font-family: TTNorms;
@@ -143,12 +143,12 @@
 			line-height: 15px;
 			color: #ffffff;
 			font-family: TTNorms;
-			margin: 0 0 0 16px;
+			margin: 0 0 0 23px;
 			display: none;
 			transition: all 0.5s ease;
 		}
 		&-rec {
-			margin: 20px 0;
+			margin: 15px 0 10px 0;
 			& img {
 				width: 32px;
 				height: 32px;

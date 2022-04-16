@@ -3136,7 +3136,7 @@ h6 {
 	cursor : pointer;
 	position : fixed;
 	right : 25px;
-	top : 130px;
+	top : 110px;
 	z-index : 102;
 	max-height : 622px;
 }
@@ -3201,7 +3201,7 @@ h6 {
 .menu-block__list-items img {
 	-o-object-fit : contain;
 	   object-fit : contain;
-	width : 25px;
+	width : 33px;
 }
 
 .menu-block__list-items h3 {
@@ -3280,7 +3280,7 @@ h6 {
 	line-height : 15px;
 	color : #ffffff;
 	font-family : TTNorms;
-	margin : 0 0 0 16px;
+	margin : 0 0 0 23px;
 	display : none;
 	-webkit-transition : all 0.5s ease;
 	     -o-transition : all 0.5s ease;
@@ -3288,7 +3288,7 @@ h6 {
 }
 
 .menu-block__list-rec {
-	margin : 20px 0;
+	margin : 15px 0 10px 0;
 }
 
 .menu-block__list-rec img {
@@ -15203,7 +15203,7 @@ h6 {
 		font-family : Prata;
 		font-style : normal;
 		font-weight : normal;
-		font-size : 18px;
+		font-size : 20px;
 		line-height : 25px;
 		text-align : center;
 		color : #003f80;
