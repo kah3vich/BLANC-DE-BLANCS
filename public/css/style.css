@@ -3195,7 +3195,7 @@ h6 {
 	-webkit-box-pack : start;
 	-ms-flex-pack : start;
 	justify-content : flex-start;
-	margin : 6px 0 0 0;
+	margin : 13px 0 0 0;
 }
 
 .menu-block__list-items img {
@@ -3208,8 +3208,8 @@ h6 {
 	font-family : TTNorms;
 	font-style : normal;
 	font-weight : 400;
-	font-size : 12px;
-	line-height : 13px;
+	font-size : 14px;
+	line-height : 20px;
 	color : #021245;
 	margin : 0 0 0 20px;
 	display : none;
@@ -3288,7 +3288,7 @@ h6 {
 }
 
 .menu-block__list-rec {
-	margin : 15px 0 10px 0;
+	margin : 15px 0 0 0;
 }
 
 .menu-block__list-rec img {
