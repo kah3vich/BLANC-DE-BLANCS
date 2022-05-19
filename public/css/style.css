@@ -2472,7 +2472,7 @@ h6 {
 }
 
 .ind-header__slider .swiper-pagination-bullet-active {
-	background : white;
+	background : rgb(255, 255, 255);
 }
 
 .ind-header__slider .swiper-button-next {
@@ -11582,6 +11582,103 @@ h6 {
 	color : #000000;
 }
 
+.error {
+	padding : 240px 0 0 0;
+	width : 100%;
+}
+
+.error__w {
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : justify;
+	-ms-flex-pack : justify;
+	justify-content : space-between;
+}
+
+.error__t {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+}
+
+.error__t span {
+	font-family : TTNorms;
+	font-style : normal;
+	font-weight : 400;
+	font-size : 25px;
+	line-height : 35px;
+	color : #021245;
+}
+
+.error__t h2 {
+	margin : 28px 0 0 0;
+	font-family : Prata;
+	font-style : normal;
+	font-weight : 400;
+	font-size : 110px;
+	line-height : 149px;
+	color : #013f80;
+}
+
+.error__t p {
+	width : 472px;
+	margin : 18px 0 0 0;
+	font-family : PTSerif;
+	font-style : normal;
+	font-weight : 400;
+	font-size : 25px;
+	line-height : 35px;
+	color : #021245;
+}
+
+.error__btn {
+	width : -webkit-max-content;
+	width :    -moz-max-content;
+	width :         max-content;
+	margin : 50px 0 0 0;
+	background : #003f80;
+	border : 2px solid #ffffff;
+	border-radius : 27px;
+	padding : 14px 37px;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+}
+
+.error__btn p {
+	width : -webkit-max-content;
+	width :    -moz-max-content;
+	width :         max-content;
+	margin : 0;
+	font-family : Prata;
+	font-style : normal;
+	font-weight : 400;
+	font-size : 16px;
+	line-height : 22px;
+	color : #ffffff;
+}
+
 @media (min-width: 1500px) {
 	.header__order {
 		right : 20%;
@@ -12484,6 +12581,48 @@ h6 {
 	.modelBookingPhoto__photo img:nth-child(3) {
 		-ms-grid-row : 5;
 		-ms-grid-column : 1;
+	}
+}
+
+@media (max-width: 1170px) {
+	.error__b {
+		display : none;
+	}
+
+	.error__w {
+		-webkit-box-pack : center;
+		-ms-flex-pack : center;
+		justify-content : center;
+	}
+
+	.error__t {
+		display : -webkit-box;
+		display : -ms-flexbox;
+		display : flex;
+		-webkit-box-orient : vertical;
+		-webkit-box-direction : normal;
+		-ms-flex-direction : column;
+		    flex-direction : column;
+		-webkit-box-align : center;
+		-ms-flex-align : center;
+		align-items : center;
+		-webkit-box-pack : center;
+		-ms-flex-pack : center;
+		justify-content : center;
+	}
+
+	.error__t p {
+		width : 90%;
+		text-align : center;
+	}
+
+	.error__btn p {
+		width : 100%;
+	}
+
+	.error {
+		padding : 240px 0 55px 0;
+		width : 100%;
 	}
 }
 
@@ -15095,6 +15234,29 @@ h6 {
 		font-size : 56px;
 		line-height : 71px;
 		color : #021245;
+	}
+
+	.error__t p {
+		margin : 18px 0 0 0;
+		font-family : PTSerif;
+		font-style : normal;
+		font-weight : 400;
+		font-size : 18px;
+		line-height : 35px;
+		color : #021245;
+	}
+
+	.error__btn p {
+		width : -webkit-max-content;
+		width :    -moz-max-content;
+		width :         max-content;
+		margin : 0;
+		font-family : Prata;
+		font-style : normal;
+		font-weight : 400;
+		font-size : 16px;
+		line-height : 22px;
+		color : #ffffff;
 	}
 
 	.ind-advantage__table-text {

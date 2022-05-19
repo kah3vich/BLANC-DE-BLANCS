@@ -1,0 +1,24 @@
+@@include('components/_head.pug', {
+    "title": "Ошибка",
+})
+
+@@include('components/_header.pug')
+
+.error
+    .containers
+        .error__w
+            .error__t 
+                span ошибка
+                h2 404
+                p Кажется что-то пошло не так! Страница, которую вы запрашиваете, не существует. Возможно она устарела, была удалена, или был введен неверный адрес в адресной строке.
+                a(href="index.html").error__btn 
+                    p Перейти на главную
+            .error__b 
+                img(src="./img/404/bg.png" alt="photo")
+
+
+
+
+@@include('components/_menus.pug')
+
+@@include('components/_script.pug')
